@@ -31,10 +31,38 @@ require_once('header.php');
 <!--........//slider........-->
 
 <!--........index content........-->
-<div class="event_message_notice debug">
-    <div class="event debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsum, vitae exercitationem modi illo ratione, illum quis nobis aspernatur nisi fugit nam praesentium reprehenderit eius consequuntur. Magnam cumque accusantium atque.</div>
-    <div class="message debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum voluptatibus deleniti, corrupti totam ab saepe eius at qui id quibusdam odio dicta. Itaque iusto vel ex maiores, ipsam nam.</div>
-    <div class="notice debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum voluptatibus deleniti, corrupti totam ab saepe eius at qui id quibusdam odio dicta. Itaque iusto vel ex maiores, ipsam nam.</div>
+<div class="event_message_notice">
+    <div class="event">
+        <div class="card border-success">
+            <div class="card-header bg-transparent border-success">Header</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Success card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer bg-transparent border-success">Footer</div>
+        </div>
+    </div>
+    <div class="message">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="notice">
+        <div class="event">
+            <div class="card border-danger">
+                <div class="card-header bg-transparent border-danger">Header</div>
+                <div class="card-body text-danger">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div class="card-footer bg-transparent border-danger">Footer</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--........//index content........-->

@@ -1,6 +1,5 @@
 .debug {
   border: 1px solid red;
-  padding: 1rem;
 }
 
 /**...........navbar..............*/
@@ -23,11 +22,22 @@
 .event_message_notice {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.event_message_notice .event_message_notice {
-  min-width: 20%;
+.event_message_notice .event {
+  flex: 0 0 25%;
+  padding: 1rem;
 }
-.event_message_notice .common {
+.event_message_notice .message {
+  flex: 1 0 50%;
+}
+.event_message_notice .notice {
+  flex: 0 0 25%;
+}
+@media only screen and (max-width: 768px) {
+  .event_message_notice {
+    flex-direction: column;
+  }
 }
 /*........//index content........ */
