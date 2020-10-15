@@ -1,0 +1,33 @@
+.debug {
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+/**...........navbar..............*/
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
+}
+.text-uppercase {
+  letter-spacing: 0.08em;
+}
+
+/**...........navbar ends..............*/
+
+/*........index content........ */
+.event_message_notice {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.event_message_notice .event_message_notice {
+  min-width: 20%;
+}
+.event_message_notice .common {
+}
+/*........//index content........ */
