@@ -23,7 +23,7 @@
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0" style="color: black;">Legacy</a></li>
+                                                    <li class="nav-item"><a href="legacy.php" class="nav-link text-small pb-0" style="color: black;">Legacy</a></li>
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">History</a></li>
                                                 </ul>
                                             </div>
@@ -37,12 +37,12 @@
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled ">
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Aims and Objectives</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Rules and Regulations</a></li>
+                                                    <li class="nav-item"><a href="rules.php" class="nav-link text-small pb-0 " style="color: black;">Rules and Regulations</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Principals</a></li>
+                                                    <li class="nav-item"><a href="principle.php" class="nav-link text-small pb-0 " style="color: black;">Principals</a></li>
                                                 </ul>
                                             </div>
                                         </div>
