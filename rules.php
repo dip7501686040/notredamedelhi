@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Rules and Regulations</title>
 	<link rel="stylesheet" type="text/css" href="css/rules.css">
 </head>
+
 <body>
 	<div class="container col-sm-12">
 		<h4 class="head">ADMISSION AND WITHDRAWAL OF PUPILS</h4>
@@ -16,7 +18,7 @@
 			<li>The School Management, acting through the Principal will request the withdrawal of a pupil who fails for TWO consecutive years in the same class.</li>
 			<li>The school is not responsible for goods or money lost. Students are requested not to wear expensive watches, ornaments, jewellery Money should not be borrowed, lent or articles of any nature exchanged.</li>
 			<li>When the school is in session, the students are strictly forbidden to leave the class without the teacher's permission. They are not allowed to leave the school premises without a gate-pass.</li>
-			
+
 		</ol>
 
 		<h4 class="head">CODE OF CONDUCT FOR PUPILS</h4>
@@ -26,7 +28,7 @@
 			<li>All items belonging to the student must have his/her name.</li>
 			<li>Students are not allowed to bring mobile phone, walkman, ipod or other costly products to school. If a student is found carrying any of the above they will be confiscated. The school is not responsible for goods lost.</li>
 			<li>Inappropriate magazines, books and other print-video/digital materials should not, under any circumstance, be brought to school.</li>
-			
+
 		</ol>
 
 		<h4 class="head">Bursting of crackers and playing with colours will lead to expulsion of students from school</h4>
@@ -36,7 +38,7 @@
 			<li>We believe our students are gentle, well behaved and so we discourage abusive language.</li>
 			<li>Misbehaviour in the bus, violence in school, participation in destructive activities and causing damage to school property is considered a major disciplinary violation. Reports of violence in any form in or out of the school shall result in the rustication of the pupil concerned.</li>
 
-			<li>Each child is under our care and protection, we expect to see that  violence is not done either to or by him/her.</li>
+			<li>Each child is under our care and protection, we expect to see that violence is not done either to or by him/her.</li>
 
 			<li>Any student found commuting to school individually or with fellow students in a motorised vehicle, will be liable for disciplinary action.</li>
 		</ol>
@@ -94,11 +96,12 @@
 		<h4 class="head">OFFICE HOURS</h4>
 		<p class="lead">Principal Office Visiting time for parents.</p>
 		<p class="lead">Monday to Friday <b>8:30 a.m. to 9:30 a.m.</b> (other times by appointment only).</p>
-		<p class="lead">Business Office Monday to Saturday  <b>8:00 a.m. to 1:00 p.m.</b></p>
+		<p class="lead">Business Office Monday to Saturday <b>8:00 a.m. to 1:00 p.m.</b></p>
 		<p class="lead">School Office is closed on the second Saturday of each month.</p>
 		<p class="lead">No School business will be transacted on holidays.</p>
 		<p class="lead">No phone calls will be entertained before 7:30 a.m. and after 3:00 p.m.</p>
 
 	</div>
 </body>
+
 </html>
