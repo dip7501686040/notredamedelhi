@@ -15,13 +15,13 @@ require('header.php');
                 </a>
             </div>
             <div class="col-sm-3">
-                <a href="" class="card text-white bg-warning mb-4 admin_dashboard_item">
+                <a href="videos.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h4>Youtube Video</h4>
                     </div>
                 </a>
             </div>
-            <div class="col-sm-3">
+           <div class="col-sm-3">
                 <a href="create_gallery.php" class="card text-white bg-info mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>Gallery</h2>
