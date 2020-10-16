@@ -131,3 +131,13 @@ td {
 }
 
 /*...................while container- fluid...................*/
+/* admin dashboard */
+.admin_dashboard {
+  min-height: 78vh;
+  max-width: 80vw;
+  margin: 7vh auto;
+}
+.admin_dashboard_item {
+  height: 5rem;
+}
+/* admin dashboard */
