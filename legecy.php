@@ -57,31 +57,77 @@
 
 			}
 
-			h2 {
-				color: #300a6e;
-
+			.main {
+				display: flex;
+				margin: 10px;
+				padding: 10px;
+				background-color: #d5e3dd;
 			}
 
 			.one {
+				width: 33%;
+				height: 97%;
+				text-align: justify;
+				font-size: 20px;
+				margin-right: 20px;
 
-				width: 100%;
-				height: auto;
-				margin-bottom: 20px;
 			}
 
 			.two {
-
-				width: 100%;
-				height: auto;
-				margin-bottom: 2px;
+				width: 33%;
+				height: 97%;
+				text-align: justify;
+				font-size: 20px;
+				margin-right: 20px;
 			}
 
 			.three {
 
-				width: 100%;
-				height: auto;
+				width: 33%;
+				height: 97%;
+				text-align: justify;
+				font-size: 20px;
+				margin-right: 20px;
+
 			}
 
+			@media (max-width: 768px) {
+				.main {
+					display: block;
+					width: 100%;
+					height: auto;
+					margin: 0px;
+					padding: 0px;
+
+
+				}
+
+				h2 {
+					color: #300a6e;
+
+				}
+
+				.one {
+
+					width: 100%;
+					height: auto;
+					margin-bottom: 20px;
+				}
+
+				.two {
+
+					width: 100%;
+					height: auto;
+					margin-bottom: 2px;
+				}
+
+				.three {
+
+					width: 100%;
+					height: auto;
+				}
+
+			}
 		}
 	</style>
 </head>
