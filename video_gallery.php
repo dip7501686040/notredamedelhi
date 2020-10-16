@@ -28,7 +28,7 @@ else if($page=='jv'){
 	justify-content: space-between;
 }
 .gallery-box{
-	flex:0 0 calc(50% - 50px);
+	flex:0 0 calc(40% - 50px);
 	margin: 5px;
 }
 
@@ -37,8 +37,8 @@ else if($page=='jv'){
 	min-width: 100%;
 }
 .pop_img video{
-	max-width: 50%;
-	min-width: 50%; 
+	max-width: 100%;
+	min-width: 100%; 
 }
 }
 	</style>
@@ -54,7 +54,7 @@ else if($page=='jv'){
 ?>
 	<div class="gallery-box">
 		<a href="<?php echo 'uploads/'.$row['file_name'] ?>">
-			<video width="320" height="240" controls>
+			<video  controls>
          <source src="<?php echo 'uploads/'.$row['file_name'] ?>" type="video/mp4">
   
  

@@ -1,4 +1,4 @@
-<html>
+<?php require_once('header.php');  ?>
 
 <head>
 	<title>legecy</title>
@@ -8,7 +8,7 @@
 			color: #072b52;
 			margin: 10px;
 			padding: 10px;
-			font-size: 20px;
+			font-size: 30px;
 
 		}
 
@@ -105,26 +105,33 @@
 				h2 {
 					color: #300a6e;
 
+
 				}
 
 				.one {
 
-					width: 100%;
+					width: 98%;
 					height: auto;
+					margin-left: 1%;
+					margin-right: 1%;
 					margin-bottom: 20px;
 				}
 
 				.two {
 
-					width: 100%;
+					width: 98%;
 					height: auto;
+					margin-left: 1%;
+					margin-right: 1%;
 					margin-bottom: 2px;
 				}
 
 				.three {
 
-					width: 100%;
+					width: 98%;
 					height: auto;
+					margin-left: 1%;
+					margin-right: 1%;
 				}
 
 			}
@@ -133,7 +140,7 @@
 </head>
 
 <body>
-	<h2>OUR LEGACY</h2>
+	<h2 align="center">OUR LEGACY</h2>
 	<div class="main">
 		<div class="one">
 			<b>Notre Dame School</b> strives to keep alive the legacy of <b>St. Julie Billiart</b>, her Spiritual Mother,who
@@ -152,11 +159,13 @@
 
 		</div>
 		<div class="two">
+			<img src="images/sister1.jpg" width="90%" style="margin-left: 5%;margin-right: 5%;"><br>
 			After twenty-three years of severe paralysis, Julie was healed miraculously. With her newfound energy,
 			Julie opened several schools in France and Belgium. She was acclaimed not only as an educator,but also
 			as a holy person who manifested God’s love and compassion for all people.She died on April 8, 1816.
 		</div>
 		<div class="three">
+			<img src="images/HilligondeElizChildToledo.jpg"><br>
 			<b>Sister Mary Aloysia and Sister Mary Ignatia</b>, the founding members of the Sisters of Notre Dame in Coesfeld,
 			Germany in 1850 were greatly inspired by the spirit and charism of St. Julie Billiart. From Germany, the
 			Congregation spread to other parts of the world:Italy, Holland, England, the United States, Brazil, Indonesia,
@@ -166,6 +175,7 @@
 			economically poor, believing that education was the best way to better their lives.
 		</div>
 	</div>
+<?php  require_once('footer.php'); ?>	
 </body>
 
 </html>

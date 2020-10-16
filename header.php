@@ -14,7 +14,7 @@ $db_handler = new DBController();
 
 <body>
     <!--......navbar.......-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm"> <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a> <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span class="navbar-toggler-icon"></span> </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm"> <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none"></a> <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span class="navbar-toggler-icon"></span> </button>
         <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Home</a></li>
@@ -28,7 +28,7 @@ $db_handler = new DBController();
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="legacy.php" class="nav-link text-small pb-0" style="color: black;">Legacy</a></li>
+                                                    <li class="nav-item"><a href="legecy.php" class="nav-link text-small pb-0" style="color: black;">Legecy</a></li>
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">History</a></li>
                                                 </ul>
                                             </div>
@@ -68,27 +68,27 @@ $db_handler = new DBController();
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0" style="color: black;">Scheme of Examination and Promotion</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Curriculum (9-12)</a></li>
+                                                    <li class="nav-item"><a href="EXAMINATION_AND_PROMOTIONS.php" class="nav-link text-small pb-0" style="color: black;">Scheme of Examination and Promotion</a></li>
+                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/curriculum.html" class="nav-link text-small pb-0 " style="color: black;">Curriculum (9-12)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">H P E</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Former</a></li>
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled ">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Sample Question Paper</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Epathshala</a></li>
+                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/SQP_CLASSX_2019_20.html" class="nav-link text-small pb-0 " style="color: black;">Sample Question Paper for 10th</a></li>
+                                                    <li class="nav-item"><a href="https://epathshala.nic.in//" class="nav-link text-small pb-0 " style="color: black;">Epathshala</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Diksha</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">CBSE Sample paper</a></li>
+                                                    <li class="nav-item"><a href="https://diksha.gov.in/explore" class="nav-link text-small pb-0 " style="color: black;">Diksha</a></li>
+                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/SQP_CLASSXII_2019_20.html" class="nav-link text-small pb-0 " style="color: black;">CBSE Sample paper</a></li>
                                                 </ul>
                                             </div>
                                         </div>
