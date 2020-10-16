@@ -6,7 +6,7 @@
 	h2{
 		color:#072b52;
 		margin:10px;
-		pading:10px;
+		padding:10px;
 		font-size:20px;
 		
 	}
