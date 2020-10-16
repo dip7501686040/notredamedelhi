@@ -1,3 +1,8 @@
+<?php
+require('dbcontroller.php');
+$db_handler = new DBController();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -6,7 +11,7 @@
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css?version=1.1">
-<link rel="stylesheet" type="text/css" href="css/gallery.css">
+
 <body>
     <!--......navbar.......-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm"> <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a> <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span class="navbar-toggler-icon"></span> </button>
@@ -150,22 +155,22 @@
 
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0">Video (Senior)</a></li>
+                                                    <li class="nav-item"><a href="video_gallery.php?page=sv" class="nav-link text-small pb-0">Video (Senior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Photo (Senior)</a></li>
+                                                    <li class="nav-item"><a href="gallery.php?page=sp" class="nav-link text-small pb-0 ">Photo (Senior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Video (Junior)</a></li>
+                                                    <li class="nav-item"><a href="video_gallery.php?page=jv" class="nav-link text-small pb-0 ">Video (Junior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Photo (Junior)</a></li>
+                                                    <li class="nav-item"><a href="gallery.php?page=jp" class="nav-link text-small pb-0 ">Photo (Junior)</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -176,7 +181,7 @@
                         </div>
                     </div>
                 </li>
-
+                <li class="nav-item"><a href="admin.php" class="nav-link font-weight-bold text-uppercase">Admin</a></li>
             </ul>
         </div>
     </nav>

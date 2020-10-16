@@ -20,10 +20,14 @@ body{
 	justify-content: space-between;
 }
 .gallery-box{
-	flex:0 0 calc(20% - 30px);
+	flex:0 0 calc(25% - 30px);
 	margin: 5px;
 }
 .gallery-box img{
+	max-width: 100%;
+	min-width: 100%;
+}
+.gallery-box video{
 	max-width: 100%;
 	min-width: 100%;
 }
@@ -51,6 +55,10 @@ body{
 	max-width: 100%;
 	min-width: 100%; 
 }
+.pop_img video{
+	max-width: 100%;
+	min-width: 100%; 
+}
 @media screen and (max-width: 769px) {
     .gallery-wrap{
 	width: 100%;
@@ -64,6 +72,10 @@ body{
 	margin: 5px;
 }
 .gallery-box img{
+	max-width: 100%;
+	min-width: 100%;
+}
+.gallery-box video{
 	max-width: 100%;
 	min-width: 100%;
 }

@@ -1,6 +1,14 @@
 <?php
 include"connect.php"; 
 include"function.php";
+$page=$_GET['page'];
+if($page=='sp'){
+	$result=getseniorPhotos($conn);
+}
+else if($page=='jp'){
+	$result=getJuniorPhotos($conn);
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -14,10 +22,10 @@ include"function.php";
 </head>
 <body>
 
-	<div>
+	<div class="container">
 <div class="gallery-wrap">
 	<?php
-    $result=getjuniorPhotos($conn);    
+        
    while($row = mysqli_fetch_array($result)) {
    	$imageURL = 'uploads/'.$row["file_name"];
 ?>
