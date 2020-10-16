@@ -9,9 +9,18 @@
       </div>
       <div class="col-5" style="margin-top: 7rem;">
          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-         </div>
+         <?php
+               $sql= "SELECT name FROM videos ";
+               $row = mysqli_fetch_assoc($res);
+               $res = $db_handler->runQuery($sql);            
+               $name = urldecode($row['name']);
+               
+
+           ?>
+            <iframe class="embed-responsive-item" src="videos/<?php echo $name;?>" allowfullscreen></iframe>
+        </div>
       </div>
+         
       <div class="col" style="margin-top: 10rem;">
          <!--Google map-->
          <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 10rem;">
