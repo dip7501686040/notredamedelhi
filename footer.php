@@ -1,14 +1,15 @@
+
 <!-- Footer -->
 <footer class="page-footer font-small" style="background-color: #294a70;">
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-        <a href="https://mdbootstrap.com/" style="color: white;"> Copyright. All rights reserved.</a>
-    </div>
-    <div class="footer-copyright text-center py-3" style="color: white;">Copyright ©2020 . All rights reserved.
-        <a href="https://mdbootstrap.com/" style="color: white;"> | Developed By : | Generic Software Solutions Pvt.Ltd</a>
-    </div>
-    <!-- Copyright -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <a href="https://mdbootstrap.com/" style="color: white;"> Copyright. All rights reserved.</a>
+  </div>
+   <div class="footer-copyright text-center py-3" style="color: white;">Copyright ©2020 . All rights reserved.
+    <a href="https://mdbootstrap.com/" style="color: white;" >  | Developed By : | Generic Software Solutions Pvt.Ltd</a>
+  </div>
+  <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
@@ -21,5 +22,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 
 </body>
+
 
 </html>

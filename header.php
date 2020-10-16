@@ -157,22 +157,22 @@ $db_handler = new DBController();
 
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0">Video (Senior)</a></li>
+                                                    <li class="nav-item"><a href="video_gallery.php?page=sv" class="nav-link text-small pb-0">Video (Senior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Photo (Senior)</a></li>
+                                                    <li class="nav-item"><a href="gallery.php?page=sp" class="nav-link text-small pb-0 ">Photo (Senior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Video (Junior)</a></li>
+                                                    <li class="nav-item"><a href="video_gallery.php?page=jv" class="nav-link text-small pb-0 ">Video (Junior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Photo (Junior)</a></li>
+                                                    <li class="nav-item"><a href="gallery.php?page=jp" class="nav-link text-small pb-0 ">Photo (Junior)</a></li>
                                                 </ul>
                                             </div>
                                         </div>
