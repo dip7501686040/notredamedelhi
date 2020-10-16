@@ -181,7 +181,7 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-
+                <li class="nav-item"><a href="admin.php" class="nav-link font-weight-bold text-uppercase">Admin</a></li>
             </ul>
         </div>
     </nav>
