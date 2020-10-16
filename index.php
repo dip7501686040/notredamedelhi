@@ -65,19 +65,23 @@ require_once('header.php');
         <div class="col">
             <div class="card example-1 scrollbar-ripe-malinka">
                 <div class="card-body">
-                    <h4 id="section1"><strong>First title of the news</strong></h4>
-                    <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
-                        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
-                        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
-                        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
-                        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
-                    </p>
-                    <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
-                        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
-                        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
-                        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
-                        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
-                    </p>
+                    <h4 id="section1"><strong>Recent Notices</strong></h4>
+                    <hr>
+                    <?php
+                    $query = "select * from notices";
+                    $result = $db_handler->runQuery($query);
+                    while ($notice = $result->fetch_assoc()) {
+
+                    ?>
+                        <h6><?php echo $notice['date']; ?></h6>
+                        <a href="notice_uploads/<?php echo $notice['file']; ?>" download="notice-<?php echo $notice['date']; ?>">
+                            <p class="notice_body">
+                                <?php echo $notice['notice']; ?>
+                            </p>
+                        </a>
+                    <?php
+                    }
+                    ?>
                     <a href=""><button class="btn btn-success" style="margin-bottom:0.50rem; ">More News</button></a>
                 </div>
             </div>

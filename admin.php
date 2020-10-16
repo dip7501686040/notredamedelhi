@@ -8,7 +8,7 @@ require('header.php');
     <div class="card-body">
         <div class="row">
             <div class="col-sm-3">
-                <a href="" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                <a href="upload_notice.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>Notice</h2>
                     </div>
@@ -31,7 +31,6 @@ require('header.php');
         </div>
     </div>
 </div>
-
 <?php
 require('footer.php');
 ?>
