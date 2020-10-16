@@ -1,3 +1,8 @@
+<?php
+require('dbcontroller.php');
+$db_handler = new DBController();
+?>
+
 <!DOCTYPE html>
 <html>
 
