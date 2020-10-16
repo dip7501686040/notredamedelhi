@@ -9,18 +9,14 @@
       </div>
       <div class="col-5" style="margin-top: 7rem;">
          <div class="embed-responsive embed-responsive-16by9">
-         <?php
-               $sql= "SELECT name FROM videos ";
-               $row = mysqli_fetch_assoc($res);
-               $res = $db_handler->runQuery($sql);            
-               $name = urldecode($row['name']);
-               
-
-           ?>
-            <iframe class="embed-responsive-item" src="videos/<?php echo $name;?>" allowfullscreen></iframe>
-        </div>
+            <?php
+            $sql = "select name from video order by id desc limit 1";
+            $res = $db_handler->runQuery($sql);
+            $video = $res->fetch_assoc();
+            ?>
+            <iframe class="embed-responsive-item" src="<?php echo urldecode($video['name']); ?>" allowfullscreen></iframe>
+         </div>
       </div>
-         
       <div class="col" style="margin-top: 10rem;">
          <!--Google map-->
          <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 10rem;">

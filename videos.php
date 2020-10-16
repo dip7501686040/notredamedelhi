@@ -5,28 +5,29 @@ require('header.php');
     <div class="card-header">
         VIDEOS
     </div>
-
-
-    <h1><a href="videos_list.php">VIDEOS</a> </h1>
-
-    <form method="POST" action="videos.php" enctype="multipart/form-data">
-        <input type="text" name="link">
-        <input type="submit" name="upload" value="UPLOAD">
-    </form>
-
+    <div class="card-body d-flex flex-column align-items-center admin_youtube_video">
+        <form method="POST" class="w-75" action="videos.php" enctype="multipart/form-data">
+            <div class="form-group d-flex">
+                <input class="form-control w-75" type="text" name="link">
+                <input class="form-control w-25 ml-2" type="submit" name="upload" value="ADD VIDEO">
+            </div>
+        </form>
+    </div>
 </div>
 <?php
+require('footer.php');
+?>
+<?php
 
-if (isset($_POST['upload']))
-{
+if (isset($_POST['upload'])) {
     $name = urlencode($_POST['link']);
 
 
-    $sql= "INSERT INTO video (name) VALUES('$name')";
+    $sql = "INSERT INTO video (name) VALUES('$name')";
 
     $res = $db_handler->runQuery($sql);
 
-    if($res == 1){
+    if ($res == 1) {
         echo "<script>
          {
           alert('Successfully Inserted!!');
@@ -35,8 +36,4 @@ if (isset($_POST['upload']))
         </script>";
     }
 }
-?>
-
-<?php
-require('footer.php');
 ?>
