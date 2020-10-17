@@ -8,16 +8,18 @@ $db_handler = new DBController();
 
 <head>
     <title>notredamedelhi/</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css?version=1.1">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css?version=1.1">
 
 <body>
     <!--......navbar.......-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm"> <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none"></a> <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span class="navbar-toggler-icon"></span> </button>
         <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="index.php" class="nav-link font-weight-bold text-uppercase">Home</a></li>
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">About us</a>
                     <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
                         <div class="container">
@@ -36,7 +38,7 @@ $db_handler = new DBController();
 
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">School Information</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Former</a></li>
+                                                    <li class="nav-item"><a href="all_faculty.php" class="nav-link text-small pb-0 " style="color: black;">Faculty</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
@@ -99,7 +101,7 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Events</a></li>
+                <li class="nav-item"><a href="activity/index.htm" class="nav-link font-weight-bold text-uppercase">Events</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Achievements
@@ -135,7 +137,7 @@ $db_handler = new DBController();
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Fee Structure</a></li>
+                                                    <li class="nav-item"><a href="all_fees.php" class="nav-link text-small pb-0 ">Fee Structure</a></li>
                                                 </ul>
                                             </div>
                                         </div>

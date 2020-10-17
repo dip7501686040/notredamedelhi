@@ -141,3 +141,6 @@ td {
   height: 5rem;
 }
 /* admin dashboard */
+.notice_body {
+  font-size: 14px;
+}
