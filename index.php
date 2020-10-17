@@ -36,84 +36,66 @@ require_once('header.php');
 </div>
 <!--........//slider........-->
 <!--........index content........-->
-<div class="container-fluid" style=" margin-top: 5rem;">
-    <div class="row">
-        <div class="col">
-            <!-- Grid row -->
-            <!-- Exaple 1 -->
-            <div class="card example-1 scrollbar-ripe-malinka">
-                <div class="card-body">
-                    <h4 id="section1"><strong>First title of the news</strong></h4>
-                    <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
-                        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
-                        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
-                        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
-                        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
-                    </p>
-                    <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
-                        qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
-                        mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
-                        qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
-                        Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
-                    </p>
-                    <a href=""><button class="btn btn-success" style="margin-bottom:0.50rem; ">View all Events</button></a>
-                </div>
+<div class="event_message_notice">
+    <div class="event">
+        <div class="card border-success">
+            <div class="card-header bg-transparent border-success">Recent Events</div>
+            <div class="card-body scrollbar-ripe-malinka event_body">
+                <h4 id="section1"><strong>First title of the news</strong></h4>
+                <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+                    qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+                    mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+                    qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+                    Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+                </p>
+                <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
+                    qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
+                    mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
+                    qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic.
+                    Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+                </p>
             </div>
-            <!-- Grid row -->
-        </div>
-        <div class="col-6">
-            <div class="event_message_notice debug">
-                <h3><b>Principal’s Message </b></h3>
-                <div class="event debug">
-                    Notre Dame School, Badarpur, Delhi, since its inception and
-                    foundation has always set up high benchmarks of value based
-                    holistic education for its students. The school has been imparting knowledge and
-                    skills that have cont ributed towards the growth and vision
-                    in building global citizens and a conscientious humanity.
-                </div>
-                <div class="message debug">
-                    I am proud to be a part of this Education system and I am hopeful
-                    that I will carry forward the Notre Dame legacy in the
-                    years to come with innovation, in keeping with its creative ways.<br>
-                    <b>“The highest education is that which does not merely give us information
-                        but makes our life in harmony with all existence” </b>- (Rabindranath Tagore)
-                </div>
-                <div class="notice debug">
-
-                    <b>“Creativity leads to thinking, thinking leads to Knowledge,
-                    Knowledge make you great” </b>(Dr. APJ Abdul Kalam)<br>
-                    Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
-
-                    <br><b>Sr. Mary Alice, SND</b>
-                </div>
+            <div class="card-footer bg-transparent border-success">
+                <a href=""><button class="btn bg-success text-light" style="margin-bottom:0.50rem; ">View all Events</button></a>
             </div>
         </div>
-        <div class="col">
-            <div class="card example-1 scrollbar-ripe-malinka">
-                <div class="card-body">
-                    <h4 id="section1"><strong>Recent Notices</strong></h4>
-                    <hr>
-                    <?php
-                    $query = "select * from notices";
-                    $result = $db_handler->runQuery($query);
-                    while ($notice = $result->fetch_assoc()) {
+    </div>
+    <div class="message">
+        <div class="card">
+            <div class="card-body scrollbar-ripe-malinka">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="notice">
+        <div class="card border-danger ">
+            <div class="card-header bg-transparent border-danger">Recent Notices</div>
+            <div class="card-body scrollbar-ripe-malinka notice_body">
+                <?php
+                $query = "select * from notices";
+                $result = $db_handler->runQuery($query);
+                while ($notice = $result->fetch_assoc()) {
 
-                    ?>
-                        <h6><?php echo $notice['date']; ?></h6>
-                        <a href="notice_uploads/<?php echo $notice['file']; ?>" download="notice-<?php echo $notice['date']; ?>">
-                            <p class="notice_body">
-                                <?php echo $notice['notice']; ?>
-                            </p>
-                        </a>
-                    <?php
-                    }
-                    ?>
-                    <a href=""><button class="btn btn-success" style="margin-bottom:0.50rem; ">More News</button></a>
-                </div>
+                ?>
+                    <h6><?php echo $notice['date']; ?></h6>
+                    <a href="notice_uploads/<?php echo $notice['file']; ?>" download="notice-<?php echo $notice['date']; ?>">
+                        <p class="notice_body_text">
+                            <?php echo $notice['notice']; ?>
+                        </p>
+                    </a>
+                <?php
+                }
+                ?>
+            </div>
+            <div class="card-footer bg-transparent border-danger">
+                <a href=""><button class="btn text-light bg-danger" style="margin-bottom:0.50rem; ">More News</button></a>
             </div>
         </div>
     </div>
 </div>
+
 <!--........//index content........-->
 <?php
 require_once('map.php');
