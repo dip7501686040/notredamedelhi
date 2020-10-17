@@ -10,7 +10,7 @@
       <div class="col-5" style="margin-top: 7rem;">
          <div class="embed-responsive embed-responsive-16by9">
          <?php
-               $sql= "SELECT name FROM videos ";
+               $sql= "SELECT name FROM video ";
                $row = mysqli_fetch_assoc($res);
                $res = $db_handler->runQuery($sql);            
                $name = urldecode($row['name']);
