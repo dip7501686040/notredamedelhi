@@ -21,12 +21,67 @@
 
 /*........index content........ */
 .event_message_notice {
-  width: 100%;
+  max-width: 100vw !important;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.event_message_notice .event {
+  flex: 0 0 25%;
+  padding: 1rem;
+  width: 100%;
+}
+.event_message_notice .event_body {
+  height: 15rem;
+  overflow-y: scroll;
+}
+.event_message_notice .message {
+  flex: 1 0 50%;
+  width: 100%;
+  padding: 1rem;
+}
+.event_message_notice .notice {
+  flex: 0 0 25%;
+  padding: 1rem;
+  width: 100%;
+}
+.event_message_notice .notice_body {
+  height: 15rem;
+  overflow-y: scroll;
+}
+.event_message_notice .notice_body_text {
+  font-size: 14px;
+}
+.calender_yvideo_gmap {
+  max-width: 100vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calender_yvideo_gmap .calender {
+  flex: 0 0 30%;
+  width: 100%;
+  padding: 1rem;
+}
+.calender_yvideo_gmap .yvideo {
+  flex: 1 0 40%;
+  width: 100%;
+  padding: 1rem;
+}
+.calender_yvideo_gmap .gmap {
+  flex: 0 0 30%;
+  width: 100%;
+  padding: 1rem;
+}
+.calender_yvideo_gmap .calender_body {
+  height: 15rem;
+  overflow-y: scroll;
 }
 @media only screen and (max-width: 768px) {
   .event_message_notice {
+    flex-direction: column;
+  }
+  .calender_yvideo_gmap {
     flex-direction: column;
   }
 }
@@ -143,6 +198,3 @@ td {
   height: 5rem;
 }
 /* admin dashboard */
-.notice_body {
-  font-size: 14px;
-}
