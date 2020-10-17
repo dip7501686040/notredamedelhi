@@ -17,7 +17,7 @@
                
 
            ?>
-            <iframe class="embed-responsive-item" src="videos/<?php echo $name;?>" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" src="<?php echo $name;?>" allowfullscreen></iframe>
         </div>
       </div>
          

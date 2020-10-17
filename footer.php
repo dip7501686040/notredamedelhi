@@ -7,7 +7,7 @@
     <a href="" style="color: white;"> Copyright. All rights reserved.</a>
   </div>
    <div class="footer-copyright text-center py-3" style="color: white;">Copyright ©2020 . All rights reserved.
-    <a href="" style="color: white;" >  | Developed By : | Generic Software Solutions Pvt.Ltd</a>
+    <a href="" style="color: white;" >  | Developed By : |Innerwork Solutions Pvt.Ltd</a>
   </div>
   <!-- Copyright -->
 
