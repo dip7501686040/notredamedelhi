@@ -1,7 +1,7 @@
-<html>
-<head>
-<title>history</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<?php
+require('header.php');
+?>
 <style>
 h2{
 		color:#072b52;
@@ -20,8 +20,7 @@ h2{
 		font-size:20px;
 	}
 </style>
-</head>
-<body>
+
 <div class="main1">
 The history of Notre Dame School, Badarpur begins with the invitation of NTPC, 
 BTPS unit to start a project school for the children of their employees and the 
@@ -39,6 +38,8 @@ many giant strides with the collaborative efforts of devoted Principals, Sisters
  Parents and Well-wishers. As the School marches ahead to new heights of excellence, we keep 
  our focus on the motto of the school.
 </div>
-<h2>"GLORY TO GOD AND SERVICE TO AL"</h2>
-</body>
-</html>
+<h2>"GLORY TO GOD AND SERVICE TO ALL."</h2>
+
+<?php
+require('footer.php');
+?>

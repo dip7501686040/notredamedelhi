@@ -10,13 +10,19 @@ require_once('header.php');
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/slider1.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+            <img src="images/slider_photo3.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
         </div>
         <div class="carousel-item">
-            <img src="images/slider2.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+            <img src="images/slider_photo2.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
         </div>
         <div class="carousel-item">
-            <img src="images/slider3.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+            <img src="images/slider_photo1.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+        </div>
+        <div class="carousel-item">
+            <img src="images/slider_photo4.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+        </div>
+        <div class="carousel-item">
+            <img src="images/slider_photo5.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -57,9 +63,29 @@ require_once('header.php');
         </div>
         <div class="col-6">
             <div class="event_message_notice debug">
-                <div class="event debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsum, vitae exercitationem modi illo ratione, illum quis nobis aspernatur nisi fugit nam praesentium reprehenderit eius consequuntur. Magnam cumque accusantium atque.</div>
-                <div class="message debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum voluptatibus deleniti, corrupti totam ab saepe eius at qui id quibusdam odio dicta. Itaque iusto vel ex maiores, ipsam nam.</div>
-                <div class="notice debug">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum voluptatibus deleniti, corrupti totam ab saepe eius at qui id quibusdam odio dicta. Itaque iusto vel ex maiores, ipsam nam.</div>
+                <h3><b>Principal’s Message </b></h3>
+                <div class="event debug">
+                    Notre Dame School, Badarpur, Delhi, since its inception and
+                    foundation has always set up high benchmarks of value based
+                    holistic education for its students. The school has been imparting knowledge and
+                    skills that have cont ributed towards the growth and vision
+                    in building global citizens and a conscientious humanity.
+                </div>
+                <div class="message debug">
+                    I am proud to be a part of this Education system and I am hopeful
+                    that I will carry forward the Notre Dame legacy in the
+                    years to come with innovation, in keeping with its creative ways.<br>
+                    <b>“The highest education is that which does not merely give us information
+                        but makes our life in harmony with all existence” </b>- (Rabindranath Tagore)
+                </div>
+                <div class="notice debug">
+
+                    <b>“Creativity leads to thinking, thinking leads to Knowledge,
+                    Knowledge make you great” </b>(Dr. APJ Abdul Kalam)<br>
+                    Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
+
+                    <br><b>Sr. Mary Alice, SND</b>
+                </div>
             </div>
         </div>
         <div class="col">

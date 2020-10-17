@@ -15,8 +15,11 @@ $db_handler = new DBController();
 </head>
 
 <body>
+    <div class="container-fluid">
+       <center> <img src="images/logo.jpg" alt="School"></center>
+    </div>
     <!--......navbar.......-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm"> <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">MegaMenu</a> <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span class="navbar-toggler-icon"></span> </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm"> <a href="#" class="navbar-brand font-weight-bold d-block d-lg-none">Notre Dame School</a> <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span class="navbar-toggler-icon"></span> </button>
         <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a href="index.php" class="nav-link font-weight-bold text-uppercase">Home</a></li>
@@ -70,7 +73,7 @@ $db_handler = new DBController();
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0" style="color: black;">Scheme of Examination and Promotion</a></li>
+                                                    <li class="nav-item"><a href="promotion.php" class="nav-link text-small pb-0" style="color: black;">Scheme of Examination and Promotion</a></li>
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Curriculum (9-12)</a></li>
                                                 </ul>
                                             </div>
