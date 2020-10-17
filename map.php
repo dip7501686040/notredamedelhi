@@ -27,8 +27,7 @@
          <div class="card-body">
             <!--Google map-->
             <div id="map-container-google-2" class="z-depth-1-half map-container">
-               <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56097.69780285086!2d77.302406!3d28.506455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedb20aa6b7cd7ce0!2sNotre%20Dame%20School!5e0!3m2!1sen!2sus!4v1602932106411!5m2!1sen!2sus" width="350" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
             <!--Google Maps-->
          </div>
       </div>
