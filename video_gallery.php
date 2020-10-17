@@ -20,6 +20,7 @@ if ($page == 'sv') {
 	<?php require_once('header.php'); ?>
 	<style type="text/css">
 		@media screen and (max-width: 769px) {
+
 			.gallery-wrap {
 				width: 100%;
 				padding: 0px;
@@ -43,15 +44,16 @@ if ($page == 'sv') {
 				min-width: 50%;
 			}
 		}
+
 	</style>
 </head>
 
 <body>
 
+
 	<div class="container" style="height: 80vh; margin: 7vh 0;">
 		<div class="gallery-wrap">
 			<?php
-
 			while ($row = mysqli_fetch_array($result)) {
 				$imageURL = 'uploads/' . $row["file_name"];
 			?>

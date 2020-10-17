@@ -41,7 +41,7 @@ $db_handler = new DBController();
 
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">School Information</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Former</a></li>
+                                                    <li class="nav-item"><a href="all_faculty.php" class="nav-link text-small pb-0 " style="color: black;">Faculty</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
@@ -73,27 +73,27 @@ $db_handler = new DBController();
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="promotion.php" class="nav-link text-small pb-0" style="color: black;">Scheme of Examination and Promotion</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Curriculum (9-12)</a></li>
+                                                    <li class="nav-item"><a href="EXAMINATION_AND_PROMOTIONS.php" class="nav-link text-small pb-0" style="color: black;">Scheme of Examination and Promotion</a></li>
+                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/curriculum.html" class="nav-link text-small pb-0 " style="color: black;">Curriculum (9-12)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">H P E</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Former</a></li>
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled ">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Sample Question Paper</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Epathshala</a></li>
+                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/SQP_CLASSX_2019_20.html" class="nav-link text-small pb-0 " style="color: black;">Sample Question Paper for 10th</a></li>
+                                                    <li class="nav-item"><a href="https://epathshala.nic.in//" class="nav-link text-small pb-0 " style="color: black;">Epathshala</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">Diksha</a></li>
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: black;">CBSE Sample paper</a></li>
+                                                    <li class="nav-item"><a href="https://diksha.gov.in/explore" class="nav-link text-small pb-0 " style="color: black;">Diksha</a></li>
+                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/SQP_CLASSXII_2019_20.html" class="nav-link text-small pb-0 " style="color: black;">CBSE Sample paper</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Events</a></li>
+                <li class="nav-item"><a href="activity/index.htm" class="nav-link font-weight-bold text-uppercase">Events</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Achievements
@@ -140,7 +140,7 @@ $db_handler = new DBController();
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Fee Structure</a></li>
+                                                    <li class="nav-item"><a href="all_fees.php" class="nav-link text-small pb-0 ">Fee Structure</a></li>
                                                 </ul>
                                             </div>
                                         </div>

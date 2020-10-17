@@ -43,5 +43,26 @@ else{
 	return "no data";
 }
 }
+function getfaculty($conn){
+	$result = mysqli_query($conn,"SELECT * FROM faculty" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}  
+
+function getfeestructure($conn){
+	$result = mysqli_query($conn,"SELECT * FROM fees" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}
 
 ?>
