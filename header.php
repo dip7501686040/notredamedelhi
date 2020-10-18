@@ -104,7 +104,7 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="activity/index.htm" class="nav-link font-weight-bold text-uppercase">Events</a></li>
+                <li class="nav-item"><a href="activity/index.php" class="nav-link font-weight-bold text-uppercase">Events</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Achievements

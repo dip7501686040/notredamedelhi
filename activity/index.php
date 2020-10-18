@@ -12,7 +12,9 @@
 <link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://notredamedelhi.com/?feed=rss2" />
 <link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://notredamedelhi.com/?feed=comments-rss2" />
 <link rel="alternate" type="text/calendar" title=" &raquo; iCal Feed" href="https://notredamedelhi.com?post_type=tribe_events&#038;ical=1" />
-		
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/notredamedelhi.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script>
 		<style type="text/css">
 img.wp-smiley,
@@ -92,7 +94,150 @@ img.emoji {
 		</div> <!-- .container -->
 	</div><!--  #tophead -->
 
-	<!-- #site-navigation -->
+	<header id="masthead" class="site-header" role="banner"><div class="container">			    <div class="site-branding">
+
+		    <a href="https://notredamedelhi.com/" class="custom-logo-link" rel="home"><img width="1022" height="189" src="https://notredamedelhi.com/wp-content/uploads/2020/02/cropped-LOGO-FOR-NDS-1024x512-1.png" class="custom-logo" alt="" srcset="https://notredamedelhi.com/wp-content/uploads/2020/02/cropped-LOGO-FOR-NDS-1024x512-1.png 1022w, https://notredamedelhi.com/wp-content/uploads/2020/02/cropped-LOGO-FOR-NDS-1024x512-1-300x55.png 300w, https://notredamedelhi.com/wp-content/uploads/2020/02/cropped-LOGO-FOR-NDS-1024x512-1-768x142.png 768w, https://notredamedelhi.com/wp-content/uploads/2020/02/cropped-LOGO-FOR-NDS-1024x512-1-360x67.png 360w" sizes="(max-width: 1022px) 100vw, 1022px" /></a>
+									
+	    </div><!-- .site-branding -->
+
+	    	    
+        </div><!-- .container --></header><!-- #masthead -->    <div id="main-nav" class="clear-fix">
+        <div class="container">
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i>
+			Menu</button>
+            <div class="wrap-menu-content">
+				<div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1' tabindex='0'><span class='mega-toggle-label' role='button' aria-expanded='false'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-home mega-align-bottom-left mega-menu-grid mega-menu-item-36' id='mega-menu-item-36'><a class="mega-menu-link" href="https://notredamedelhi.com/" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-1389' id='mega-menu-item-1389'><a class="mega-menu-link" href="http://www.notredamedelhi.com/" aria-haspopup="true" aria-expanded="false" tabindex="0">About Us<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-row' id='mega-menu-1389-0'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-0-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-582' id='mega-menu-item-582'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=581">LEGACY</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-0-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-2-columns mega-menu-item-603' id='mega-menu-item-603'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=602">Rules and Regulations</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-0-2'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-600' id='mega-menu-item-600'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=599">Former principals</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1389-1'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-1-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-35' id='mega-menu-item-35'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=8">History</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-1-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-585' id='mega-menu-item-585'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=584">School Information</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1389-2'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-2-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-588' id='mega-menu-item-588'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=587">Aims and objectives</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1389-2-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-609' id='mega-menu-item-609'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=608">Faculty</a></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-1390' id='mega-menu-item-1390'><a class="mega-menu-link" href="" aria-haspopup="true" aria-expanded="false" tabindex="0">Academics<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-row' id='mega-menu-1390-0'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-0-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-1058' id='mega-menu-item-1058'><a class="mega-menu-link" href="../EXAMINATION_AND_PROMOTIONS.php">Scheme of Examination and Promotion</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-0-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1340' id='mega-menu-item-1340'><a class="mega-menu-link" href="http://cbseacademic.nic.in/SQP_CLASSXII_2019_20.html">CBSE Sample Question Papers of Class XII</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-0-2'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1497' id='mega-menu-item-1497'><a class="mega-menu-link" href="https://diksha.gov.in/explore">Diksha</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1390-1'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-1-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1338' id='mega-menu-item-1338'><a class="mega-menu-link" href="http://cbseacademic.nic.in/curriculum.html">Curriculum (IX-XII )</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-1-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1688' id='mega-menu-item-1688'><a class="mega-menu-link" href="http://cbseacademic.nic.in/SQP_CLASSX_2019_20.html">Sample Question Paper X</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1390-2'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-2-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1215' id='mega-menu-item-1215'><a class="mega-menu-link" href="">H P E</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-2-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1495' id='mega-menu-item-1495'><a class="mega-menu-link" href="http://epathshala.nic.in/e-pathshala-4/students/">epathshala</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1390-4'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1390-4-0'></li>	</ul>
+</li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-30' id='mega-menu-item-30'><a class="mega-menu-link" href="" aria-haspopup="true" aria-expanded="false" tabindex="0">Achievements<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-row' id='mega-menu-30-0'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-30-0-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1657' id='mega-menu-item-1657'><a class="mega-menu-link" href="">Academics Achievements</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1655' id='mega-menu-item-1655'><a class="mega-menu-link" href="">Awards</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-30-1'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-30-1-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-1216' id='mega-menu-item-1216'><a class="mega-menu-link" href="">Sports Achievements</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-30-2'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-30-2-0'></li>	</ul>
+</li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-current-menu-item mega-page_item mega-page-item-1475 mega-current_page_item mega-align-bottom-left mega-menu-flyout mega-menu-item-1476' id='mega-menu-item-1476'><a class="mega-menu-link" href="#" tabindex="0">Events</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-1590' id='mega-menu-item-1590'><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Gallery<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-row' id='mega-menu-1590-0'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1590-0-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-1591' id='mega-menu-item-1591'><a class="mega-menu-link" href="">Juniors<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-358' id='mega-menu-item-358'><a class="mega-menu-link" href="../gallery.php?page=jp">Photo</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-361' id='mega-menu-item-361'><a class="mega-menu-link" href="../viedo_gallery.php?page=jv">Video</a></li>			</ul>
+</li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1590-0-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-menu-item-355' id='mega-menu-item-355'><a class="mega-menu-link" href="https://notredamedelhi.com/?page_id=354">Seniors<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-364' id='mega-menu-item-364'><a class="mega-menu-link" href="../gallery.php?page=sp">Photo</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-363' id='mega-menu-item-363'><a class="mega-menu-link" href="../viedo_gallery.php?page=sv">Video</a></li>			</ul>
+</li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-1548' id='mega-menu-item-1548'><a class="mega-menu-link" href="" aria-haspopup="true" aria-expanded="false" tabindex="0">Admission<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-row' id='mega-menu-1548-0'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1548-0-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-619' id='mega-menu-item-619'><a class="mega-menu-link" href="">Nursery(Pre-school)</a></li>		</ul>
+</li><li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1548-0-1'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-629' id='mega-menu-item-629'><a class="mega-menu-link" href="../all_fees.php">Fee Structure</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1548-1'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1548-1-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-623' id='mega-menu-item-623'><a class="mega-menu-link" href="">Pre-Primary to VIII</a></li>		</ul>
+</li>	</ul>
+</li><li class='mega-menu-row' id='mega-menu-1548-2'>
+	<ul class="mega-sub-menu">
+<li class='mega-menu-column mega-menu-columns-3-of-12' id='mega-menu-1548-2-0'>
+		<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-626' id='mega-menu-item-626'><a class="mega-menu-link" href="">Class XI Admission</a></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li></ul></div>            </div><!-- .menu-content -->
+        </nav><!-- #site-navigation -->
        </div> <!-- .container -->
     </div> <!-- #main-nav -->
     
@@ -115,7 +260,7 @@ img.emoji {
 <p>The Principal, Sr. Mary Alice threw light on the importance of the day and blessed the gathering with her inspirational words.</p>
 </div>
 <p>&nbsp;</p>
-<p><a style="color: red; font-weight: 900;" title="Permalink to Pre-Primary Annual Day Report" href="http://www.notredamedelhi.com/activity/index-1.htm?p=760" rel="bookmark">Graduation Ceremony and Farewell</a></p>
+<p><a style="color: red; font-weight: 900;" title="Permalink to Pre-Primary Annual Day Report" href="index-1.htm?p=760" rel="bookmark">Graduation Ceremony and Farewell</a></p>
 <p>“Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbour. Catch the trade winds in your sails. Explore, Dream, Discover.”</p>
 <article id="post-760" class="post-760 post type-post status-publish format-standard hentry category-general">
 <div class="entry-content">
@@ -260,23 +405,23 @@ We wish this relationship between Notre Dame and GBSSS No 1 Badarpur to grow fro
 	<li><a href='index-38.htm?m=201602' title='February 2016'>February 2016</a></li>
 	<li><a href='index-39.htm?m=201512' title='December 2015'>December 2015</a></li>
 	
-	<li><a href='index.htm?m=201504' title='April 2015'>April 2015</a></li>
-	<li><a href='index.htm?m=201502' title='February 2015'>February 2015</a></li>
-	<li><a href='index.htm?m=201412' title='December 2014'>December 2014</a></li>
-	<li><a href='index.htm?m=201411' title='November 2014'>November 2014</a></li>
-	<li><a href='index.htm?m=201409' title='September 2014'>September 2014</a></li>
-	<li><a href='index.htm?m=201408' title='August 2014'>August 2014</a></li>
-	<li><a href='index.htm?m=201407' title='July 2014'>July 2014</a></li>
-	<li><a href='index.htm?m=201406' title='June 2014'>June 2014</a></li>
-	<li><a href='index.htm?m=201404' title='April 2014'>April 2014</a></li>
-	<li><a href='index.htm?m=201402' title='February 2014'>February 2014</a></li>
-	<li><a href='index.htm?m=201401' title='January 2014'>January 2014</a></li>
-	<li><a href='index.htm?m=201312' title='December 2013'>December 2013</a></li>
-	<li><a href='index.htm?m=201310' title='October 2013'>October 2013</a></li>
-	<li><a href='index.htm?m=201309' title='September 2013'>September 2013</a></li>
-	<li><a href='index.htm?m=201308' title='August 2013'>August 2013</a></li>
-	<li><a href='index.htm?m=201305' title='July 2013'>July 2013</a></li>
-	<li><a href='index.htm?m=201305' title='May 2013'>May 2013</a></li>
+	<li><a href='index.php?m=201504' title='April 2015'>April 2015</a></li>
+	<li><a href='index.php?m=201502' title='February 2015'>February 2015</a></li>
+	<li><a href='index.php?m=201412' title='December 2014'>December 2014</a></li>
+	<li><a href='index.php?m=201411' title='November 2014'>November 2014</a></li>
+	<li><a href='index.php?m=201409' title='September 2014'>September 2014</a></li>
+	<li><a href='index.php?m=201408' title='August 2014'>August 2014</a></li>
+	<li><a href='index.php?m=201407' title='July 2014'>July 2014</a></li>
+	<li><a href='index.php?m=201406' title='June 2014'>June 2014</a></li>
+	<li><a href='index.php?m=201404' title='April 2014'>April 2014</a></li>
+	<li><a href='index.php?m=201402' title='February 2014'>February 2014</a></li>
+	<li><a href='index.php?m=201401' title='January 2014'>January 2014</a></li>
+	<li><a href='index.php?m=201312' title='December 2013'>December 2013</a></li>
+	<li><a href='index.php?m=201310' title='October 2013'>October 2013</a></li>
+	<li><a href='index.php?m=201309' title='September 2013'>September 2013</a></li>
+	<li><a href='index.php?m=201308' title='August 2013'>August 2013</a></li>
+	<li><a href='index.php?m=201305' title='July 2013'>July 2013</a></li>
+	<li><a href='index.php?m=201305' title='May 2013'>May 2013</a></li>
 		</ul>
 </aside>
 </div>
