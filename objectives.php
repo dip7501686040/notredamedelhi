@@ -1,4 +1,8 @@
 <html>
+<?php
+require_once('header.php');
+?>
+
 <head>
 <title>Aims and objectives</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +11,21 @@
 		display:flex;
 		margin:10px;
 		padding:10px;
-		//background-color:#d5e3dd;
+		background-color:#d5e3dd;
 		background:linear-gradient(to left,#dcf1f5,white);
 	}
 	
 	.four{
 		
-		//width:33%;
-		//height:97%;
+		width:33%;
+		height:97%;
 		text-align:justify;
 		font-size:20px;
 		margin-right: 18px;
 	}
 	.five{
-			//width:33%;
-		//height:97%;
+		width:33%;
+		height:97%;
 		text-align:justify;
 		font-size:18px;
 		margin-right:20px;	
@@ -86,6 +90,8 @@ demands/ requests by giving generously of her/his time, talents, and service.<br
 (f) Physical exercises, sports and athletic skills which help her/him develop a sound mind in a sound body.<br>
 </div>
 </div>
-</body>
-</html>
+
 	
+<?php
+require_once('footer.php');
+?>

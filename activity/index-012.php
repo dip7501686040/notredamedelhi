@@ -1,45 +1,6 @@
-﻿<!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" lang="en-US">
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="en-US">
-<![endif]-->
-<!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html lang="en-US">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>ndsuser | Events | Notre Dame School | New Delhi</title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="http://www.notredamedelhi.com/activity/xmlrpc.php">
-<!--[if lt IE 9]>
-<script src="http://www.notredamedelhi.com/activity/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<link rel="alternate" type="application/rss+xml" title="Events | Notre Dame School | New Delhi &raquo; Feed" href="index.xml?feed=rss2">
-<link rel="alternate" type="application/rss+xml" title="Events | Notre Dame School | New Delhi &raquo; Comments Feed" href="http://www.notredamedelhi.com/activity/?feed=comments-rss2">
-<link rel="alternate" type="application/rss+xml" title="Events | Notre Dame School | New Delhi &raquo; Posts by ndsuser Feed" href="index-2.xml?feed=rss2&#038;author=1">
-<link rel='stylesheet' id='twentytwelve-fonts-css' href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,latin-ext' type='text/css' media='all'>
-<link rel='stylesheet' id='twentytwelve-style-css' href='wp-content\themes\twentytwelve\style.css?ver=3.5.1' type='text/css' media='all'>
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://www.notredamedelhi.com/activity/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
-<![endif]-->
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.notredamedelhi.com/activity/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes\wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 3.5.1">
-	<style type="text/css">
-			.site-title,
-		.site-description {
-			position: absolute !important;
-			clip: rect(1px 1px 1px 1px); /* IE7 */
-			clip: rect(1px, 1px, 1px, 1px);
-		}
-		</style>
-	<style type="text/css" id="custom-background-css">
-body.custom-background { background-color: #6b6b6b; background-image: url('wp-content/uploads/2013/05/bg31.jpg'); background-repeat: repeat; background-position: top left; background-attachment: fixed; }
-</style>
-</head>
+﻿<?php
+require_once('header.php');
+?>
 
 <body class="archive author author-ndsuser author-1 custom-background custom-font-enabled single-author">
 <div id="page" class="hfeed site">

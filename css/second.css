@@ -1,0 +1,28 @@
+.d1{
+	border: 1px solid lightgrey;
+	text-align: center;
+	margin-top: 40px;
+	color: #0cf50c;
+}
+.d2{
+	height: 100px;
+}
+table{
+	margin-top: 40px;
+	border: lightgrey;
+}
+.cen{
+	color: red;
+}
+.cen1{
+	text-align: center;
+}
+footer{
+	background-color: #42364d;
+	color: white;
+	height: 50px;
+	/*line-height: 25px;*/
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 20px; 
+}

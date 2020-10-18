@@ -106,11 +106,11 @@ $db_handler = new DBController();
                 </li>
                 <li class="nav-item"><a href="activity/index.php" class="nav-link font-weight-bold text-uppercase">Events</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Achievements
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                        <a class="dropdown-item" href="#">Academic Achievements</a>
+                        <a class="dropdown-item" href="zonal.php">Academic Achievements</a>
                         <a class="dropdown-item" href="#">Sports Achievements</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">AWARDS</a>
@@ -125,7 +125,7 @@ $db_handler = new DBController();
                                         <div class="row">
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0" style="color:white;">Nursery</a></li>
+                                                    <li class="nav-item"><a href="second.php" class="nav-link text-small pb-0" style="color:white;">Nursery</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
