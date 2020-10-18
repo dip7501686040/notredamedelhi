@@ -260,7 +260,7 @@ img.emoji {
 <p>The Principal, Sr. Mary Alice threw light on the importance of the day and blessed the gathering with her inspirational words.</p>
 </div>
 <p>&nbsp;</p>
-<p><a style="color: red; font-weight: 900;" title="Permalink to Pre-Primary Annual Day Report" href="http://www.notredamedelhi.com/activity/index-1.htm?p=760" rel="bookmark">Graduation Ceremony and Farewell</a></p>
+<p><a style="color: red; font-weight: 900;" title="Permalink to Pre-Primary Annual Day Report" href="index-1.htm?p=760" rel="bookmark">Graduation Ceremony and Farewell</a></p>
 <p>“Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbour. Catch the trade winds in your sails. Explore, Dream, Discover.”</p>
 <article id="post-760" class="post-760 post type-post status-publish format-standard hentry category-general">
 <div class="entry-content">
@@ -405,23 +405,23 @@ We wish this relationship between Notre Dame and GBSSS No 1 Badarpur to grow fro
 	<li><a href='index-38.htm?m=201602' title='February 2016'>February 2016</a></li>
 	<li><a href='index-39.htm?m=201512' title='December 2015'>December 2015</a></li>
 	
-	<li><a href='index.htm?m=201504' title='April 2015'>April 2015</a></li>
-	<li><a href='index.htm?m=201502' title='February 2015'>February 2015</a></li>
-	<li><a href='index.htm?m=201412' title='December 2014'>December 2014</a></li>
-	<li><a href='index.htm?m=201411' title='November 2014'>November 2014</a></li>
-	<li><a href='index.htm?m=201409' title='September 2014'>September 2014</a></li>
-	<li><a href='index.htm?m=201408' title='August 2014'>August 2014</a></li>
-	<li><a href='index.htm?m=201407' title='July 2014'>July 2014</a></li>
-	<li><a href='index.htm?m=201406' title='June 2014'>June 2014</a></li>
-	<li><a href='index.htm?m=201404' title='April 2014'>April 2014</a></li>
-	<li><a href='index.htm?m=201402' title='February 2014'>February 2014</a></li>
-	<li><a href='index.htm?m=201401' title='January 2014'>January 2014</a></li>
-	<li><a href='index.htm?m=201312' title='December 2013'>December 2013</a></li>
-	<li><a href='index.htm?m=201310' title='October 2013'>October 2013</a></li>
-	<li><a href='index.htm?m=201309' title='September 2013'>September 2013</a></li>
-	<li><a href='index.htm?m=201308' title='August 2013'>August 2013</a></li>
-	<li><a href='index.htm?m=201305' title='July 2013'>July 2013</a></li>
-	<li><a href='index.htm?m=201305' title='May 2013'>May 2013</a></li>
+	<li><a href='index.php?m=201504' title='April 2015'>April 2015</a></li>
+	<li><a href='index.php?m=201502' title='February 2015'>February 2015</a></li>
+	<li><a href='index.php?m=201412' title='December 2014'>December 2014</a></li>
+	<li><a href='index.php?m=201411' title='November 2014'>November 2014</a></li>
+	<li><a href='index.php?m=201409' title='September 2014'>September 2014</a></li>
+	<li><a href='index.php?m=201408' title='August 2014'>August 2014</a></li>
+	<li><a href='index.php?m=201407' title='July 2014'>July 2014</a></li>
+	<li><a href='index.php?m=201406' title='June 2014'>June 2014</a></li>
+	<li><a href='index.php?m=201404' title='April 2014'>April 2014</a></li>
+	<li><a href='index.php?m=201402' title='February 2014'>February 2014</a></li>
+	<li><a href='index.php?m=201401' title='January 2014'>January 2014</a></li>
+	<li><a href='index.php?m=201312' title='December 2013'>December 2013</a></li>
+	<li><a href='index.php?m=201310' title='October 2013'>October 2013</a></li>
+	<li><a href='index.php?m=201309' title='September 2013'>September 2013</a></li>
+	<li><a href='index.php?m=201308' title='August 2013'>August 2013</a></li>
+	<li><a href='index.php?m=201305' title='July 2013'>July 2013</a></li>
+	<li><a href='index.php?m=201305' title='May 2013'>May 2013</a></li>
 		</ul>
 </aside>
 </div>
