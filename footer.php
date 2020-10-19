@@ -1,6 +1,6 @@
 
 <!-- Footer -->
-<footer class="page-footer font-small" style="background-color: #294a70;height:9rem;">
+<footer class="page-footer font-small" style="background-color: #294a70;">
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">
