@@ -40,9 +40,9 @@ require_once('header.php');
 <div class="event_message_notice">
     <div class="event">
         <div class="card border-success">
-            <div class="card-header bg-transparent border-success">Recent Events</div>
+            <div class="card-header bg-transparent border-success">Upcoming Events</div>
             <div class="card-body scrollbar-ripe-malinka event_body">
-                <h4 id="section1"><strong>First title of the news</strong></h4>
+                <h4 id="section1"><strong>Teacher's day</strong></h4>
                 <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
                     qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan
                     mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim
@@ -64,9 +64,20 @@ require_once('header.php');
     <div class="message">
         <div class="card">
             <div class="card-body scrollbar-ripe-malinka">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h3 class="card-title"><b>Principal’s Message</b></h3>
+                <p class="card-text">Notre Dame School, Badarpur, Delhi, since its inception and foundation has always set 
+                    up high benchmarks of value based holistic education for its students. The school has been imparting knowledge and skills 
+                    that have cont ributed towards the growth and vision in building global citizens and a conscientious humanity.<br>
+                    I am proud to be a part of this Education system and I am hopeful that I will carry forward the Notre Dame legacy
+                     in the years to come with innovation, in keeping with its creative ways.<br>
+                    <b> “The highest education is that which does not merely give us information but makes our
+                      life in harmony with all existence”</b> <br>(Rabindranath Tagore)<br>
+                     <b>“Creativity leads to thinking, thinking leads to Knowledge, Knowledge make you great” </b><br>(Dr. APJ Abdul Kalam)<br>
+                     Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
+                     <br><br>
+                     <b>Sr. Mary Alice, SND</b>
+                </p>
+
             </div>
         </div>
     </div>
