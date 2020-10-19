@@ -34,6 +34,7 @@ require_once('header.php');
         <span class="sr-only">Next</span>
     </a>
 </div>
+<marquee   onMouseOver="this.stop()" onMouseOut="this.start()"><a href="#" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;">Application form for Pre School(Nursery) admission 2020-2021 will be available from the school website from 29 November to 27 December 2019. For details click on the Downloads from the Home Screen</a></marquee>
 <!--........//slider........-->
 <!--........index content........-->
 <div class="event_message_notice">
