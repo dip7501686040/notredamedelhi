@@ -187,8 +187,9 @@ $db_handler = new DBController();
                     </div>
                 </li>
                 <li class="nav-item"><a href="admin.php" class="nav-link font-weight-bold text-uppercase">Admin</a></li>
+           <li class="nav-item"><a href="/files/TC.pdf" class="nav-link font-weight-bold text-uppercase" style='color:#13355e;'><b>TC</b></a></li>
+                
                 <div><li class="nav-item"><a href="https://nds.genericsoftware.in/Parent/login.aspx" class="nav-link font-weight-bold text-uppercase btn " style='color:white;background-color:#13355e;'>Parent Login</a></li></div>
-           <li class="nav-item"><a href="/files/TC.pdf" class="nav-link font-weight-bold text-uppercase btn" style='color:white;background-color:#13355e;'>TC</a></li>
            
             </ul>
         </div>
