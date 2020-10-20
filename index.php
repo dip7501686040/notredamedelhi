@@ -34,13 +34,13 @@ require_once('header.php');
         <span class="sr-only">Next</span>
     </a>
 </div>
-<marquee   onMouseOver="this.stop()" onMouseOut="this.start()"><a href="#" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;">Application form for Pre School(Nursery) admission 2020-2021 will be available from the school website from 29 November to 27 December 2019. For details click on the Downloads from the Home Screen</a></marquee>
+<marquee   onMouseOver="this.stop()" onMouseOut="this.start()"><a href="#" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b>Application form for Pre School(Nursery) admission 2020-2021 will be available from the school website from 29 November to 27 December 2019. For details click on the Downloads from the Home Screen</b></a></marquee>
 <!--........//slider........-->
 <!--........index content........-->
 <div class="event_message_notice">
     <div class="event">
         <div class="card border-success">
-            <div class="card-header bg-transparent border-success">Upcoming Events</div>
+            <div class="card-header border-success" style="background-color: green;color:white;">Upcoming Events</div>
             <div class="card-body scrollbar-ripe-malinka event_body">
                 <h4 id="section1"><strong>Teacher's day</strong></h4>
                 <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out
@@ -56,8 +56,8 @@ require_once('header.php');
                     Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
                 </p>
             </div>
-            <div class="card-footer bg-transparent border-success">
-                <a href=""><button class="btn bg-success text-light" style="margin-bottom:0.50rem; ">View all Events</button></a>
+            <div class="card-footer border-success" style="background-color: green;">
+                <a href=""><button class="btn btn-light " style="margin-bottom:0.50rem;">View all Events</button></a>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@ require_once('header.php');
     </div>
     <div class="notice">
         <div class="card border-danger ">
-            <div class="card-header bg-transparent border-danger">Recent Notices</div>
+            <div class="card-header border-danger" style="background-color: #dc3545;color:white;" >Recent Notices</div>
             <div class="card-body scrollbar-ripe-malinka notice_body">
                 <?php
                 $query = "select * from notices";
@@ -101,8 +101,8 @@ require_once('header.php');
                 }
                 ?>
             </div>
-            <div class="card-footer bg-transparent border-danger">
-                <a href=""><button class="btn text-light bg-danger" style="margin-bottom:0.50rem; ">More News</button></a>
+            <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;" >
+                <a href=""><button class="btn btn-light" style="margin-bottom:0.50rem; ">More News</button></a>
             </div>
         </div>
     </div>
