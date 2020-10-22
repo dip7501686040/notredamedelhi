@@ -1,18 +1,12 @@
 <div class="calender_yvideo_gmap my-5">
    <div class="calender">
       <div class="card">
-         <div class="card-header">
-            <button id="btnPrev" type="button">Prev</button>
-            <button id="btnNext" type="button">Next</button>
-         </div>
-         <div class="card-body calender_body">
-            <div id="divCal"></div>
-         </div>
+      <img src="images/sister1.jpg" alt="">
       </div>
    </div>
    <div class="yvideo">
       <div class="card embed-responsive embed-responsive-16by9">
-         <div class="card-body">
+         <div class="card-body" >
             <?php
             $sql = "select name from video order by id desc limit 1";
             $res = $db_handler->runQuery($sql);

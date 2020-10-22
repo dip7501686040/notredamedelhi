@@ -64,6 +64,10 @@ require_once('header.php');
 		</table>
 	</div>
 </section>
+<br>
+<br>
+<br>
+<br>
 
 <!--------------footer--------------->
 
