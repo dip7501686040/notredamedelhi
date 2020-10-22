@@ -8,10 +8,13 @@ $db_handler = new DBController();
 
 <head>
     <title>notredamedelhi/</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css?version=1.1">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -104,16 +107,16 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="activity/index.php" class="nav-link font-weight-bold text-uppercase">Events</a></li>
+                <li class="nav-item"><a href="event.php" class="nav-link font-weight-bold text-uppercase">Events</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Achievements
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
-                        <a class="dropdown-item" href="zonal.php">Academic Achievements</a>
-                        <a class="dropdown-item" href="#">Sports Achievements</a>
+                        <a class="dropdown-item" href="files/a1.pdf" target="_new">Academic Achievements</a>
+                        <a class="dropdown-item" href="files/a2.pdf" target="_new">Sports Achievements</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">AWARDS</a>
+                        <a class="dropdown-item" href="zonal.php">AWARDS</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Admission</a>
@@ -186,8 +189,8 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="admin.php" class="nav-link font-weight-bold text-uppercase">Admin</a></li>
-           <li class="nav-item"><a href="/files/TC.pdf" class="nav-link font-weight-bold text-uppercase" style='color:#13355e;'><b>TC</b></a></li>
+               
+           <li class="nav-item"><a href="files/TC.pdf" target="_new" class="nav-link font-weight-bold text-uppercase" style='color:#13355e;'><b>TC</b></a></li>
                 
                 <div><li class="nav-item"><a href="https://nds.genericsoftware.in/Parent/login.aspx" class="nav-link font-weight-bold text-uppercase btn " style='color:white;background-color:#13355e;'>Parent Login</a></li></div>
            
