@@ -51,13 +51,13 @@
         <div class="col-sm">
             <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
                 <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="https://i.imgur.com/9VZGPJF.jpg" alt=""> <a>
+                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
                         <div class="mask rgba-white-slight"></div>
                     </a> </div>
                 <!--Card Body-->
                 <div class="card-body card-body-cascade text-center">
                     <!--Card Title-->
-                    <h4 class="card-title"><strong><a href="">hdfjshdf</a></strong></h4> <!-- Card Description-->
+                    <h5 class="card-title"><strong><a href="" style="color:black;">Parent Testimony</a></strong></h5> <!-- Card Description-->
                   
                 </div>
             </div>
@@ -66,13 +66,13 @@
         <div class="col-sm">
             <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
                 <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="https://i.imgur.com/Fc9aj6m.jpg" alt=""> <a>
+                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
                         <div class="mask rgba-white-slight"></div>
                     </a> </div>
                 <!--Card Body-->
                 <div class="card-body card-body-cascade text-center">
                     <!--Card Title-->
-                    <h4 class="card-title"><strong><a href="">sdsdxd</a></strong></h4>
+                    <h5 class="card-title"><strong><a href="" style="color:black;">Student Testimony</a></strong></h5>
                     <!--Card Description-->
                  
                 </div>
@@ -82,13 +82,13 @@
         <div class="col-sm">
             <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
                 <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="https://i.imgur.com/FDdJ4Xm.jpg" alt=""> <a>
+                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
                         <div class="mask rgba-white-slight"></div>
                     </a> </div>
                 <!--Card Body-->
                 <div class="card-body card-body-cascade text-center">
                     <!--Card Title-->
-                    <h4 class="card-title"><strong><a href="">eerer</a></strong></h4>
+                    <h5 class="card-title"><strong><a href="" style="color:black;">Father Colin Program</a></strong></h5>
                    
                 </div>
             </div>
@@ -97,13 +97,13 @@
           <div class="col-sm">
             <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
                 <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="https://i.imgur.com/9VZGPJF.jpg" alt=""> <a>
+                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
                         <div class="mask rgba-white-slight"></div>
                     </a> </div>
                 <!--Card Body-->
                 <div class="card-body card-body-cascade text-center">
                     <!--Card Title-->
-                    <h4 class="card-title"><strong><a href="">dsdsdsd</a></strong></h4> <!-- Card Description-->
+                    <h5 class="card-title"><strong><a href="" style="color:black;">Friendship Day</a></strong></h5> <!-- Card Description-->
                   
                 </div>
             </div>
