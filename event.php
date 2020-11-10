@@ -60,7 +60,7 @@ h3{
 </style>
 </head>
 <body>
-<div class="main3">
+<div class=" container main3">
 <div class="nine">
 <h3>Goodbye Sir Jose</h3>
 Goodbyes are only for those who love with their eyes. Because, for those who love with their heart and soul,
@@ -210,61 +210,33 @@ Sr. Mary Shaija delivered a special message to the staff on the special occasion
 <input type="submit" name="submit" value="search" style="color:white;background-color:orange;width:70px;height:30px;font-family:arial;font-size:15px;border-radius:6px;">
 </form>
 <h4>Archives</h4>
-<a href="">&#8608; JANUARY 2020</a><br>
-<a href="">&#8608; December 2019</a><br>
-<a href="">&#8608; November 2019</a><br>
-<a href="">&#8608; October 2019</a><br>
-<a href="">&#8608; September 2019</a><br>
-<a href="">&#8608; August 2019</a><br>
-<a href="">&#8608; May 2019</a><br>
-<a href="">&#8608; April 2019</a><br>
-<a href="">&#8608; February 2019</a><br>
-<a href="">&#8608; January 2019</a><br>
-<a href="">&#8608; October 2018</a><br>
-<a href="">&#8608; September 2018</a><br>
-<a href="">&#8608; August 2018</a><br>
-<a href="">&#8608; July 2018</a><br>
-<a href="">&#8608; May 2018</a><br>
-<a href="">&#8608; April 2018</a><br>
-<a href="">&#8608; March 2018</a><br>
-<a href="">&#8608; February 2018</a><br>
-<a href="">&#8608; January 2018</a><br>
-<a href="">&#8608; September 2017</a><br>
-<a href="">&#8608; August 2017</a><br>
-<a href="">&#8608; May 2017</a><br>
-<a href="">&#8608; April 2017</a><br>
-<a href="">&#8608; February 2017</a><br>
-<a href="">&#8608; December 2016</a><br>
-<a href="">&#8608; November 2016</a><br>
-<a href="">&#8608; October 2016</a><br>
-<a href="">&#8608; September 2016</a><br>
-<a href="">&#8608; August 2016</a><br>
-<a href="">&#8608; July 2016</a><br>
-<a href="">&#8608; May 2016</a><br>
-<a href="">&#8608; February 2016</a><br>
-<a href="">&#8608; December 2015</a><br>
-<a href="">&#8608; November 2015</a><br>
-<a href="">&#8608; September 2015</a><br>
-<a href="">&#8608; July 2015</a><br>
-<a href="">&#8608; June 2015</a><br>
-<a href="">&#8608; May 2015</a><br>
-<a href="">&#8608; April 2015</a><br>
-<a href="">&#8608; February 2015</a><br>
-<a href="">&#8608; December 2014</a><br>
-<a href="">&#8608; November 2014</a><br>
-<a href="">&#8608; September 2014</a><br>
-<a href="">&#8608; August 2014</a><br>
-<a href="">&#8608; July 2014</a><br>
-<a href="">&#8608; June 2014</a><br>
-<a href="">&#8608; April 2014</a><br>
-<a href="">&#8608; February 2014</a><br>
-<a href="">&#8608; January 2014</a><br>
-<a href="">&#8608; December 2013</a><br>
-<a href="">&#8608; October 2013</a><br>
-<a href="">&#8608; September 2013</a><br>
-<a href="">&#8608; August 2013</a><br>
-<a href="">&#8608; July 2013</a><br>
-<a href="">&#8608; May 2013</a><br><br>
+<a href="activity/index-14.htm?m=201911">&#8608; JANUARY 2020</a><br>
+<a href="activity/index-14.htm?m=201911">&#8608; December 2019</a><br>
+<a href="activity/index-14.htm?m=201911">&#8608; November 2019</a><br>
+<a href="activity/index-15.htm?m=201910">&#8608; October 2019</a><br>
+<a href="activity/index-16.htm">&#8608; September 2019</a><br>
+<a href="activity/index-17.htm">&#8608; August 2019</a><br>
+<a href="activity/index-18.htm">&#8608; May 2019</a><br>
+<a href="activity/index-19.htm">&#8608; August 2018</a><br>
+<a href="activity/index-20.htm">&#8608; July 2018</a><br>
+<a href="activity/index-21.htm">&#8608; May 2018</a><br>
+<a href="activity/index-22.htm">&#8608; April 2018</a><br>
+<a href="activity/index-23.htm">&#8608; March 2018</a><br>
+<a href="activity/index-24.htm">&#8608; February 2018</a><br>
+<a href="activity/index-25.htm">&#8608; January 2018</a><br>
+<a href="activity/index-26.htm">&#8608; September 2017</a><br>
+<a href="activity/index-27.htm">&#8608; August 2017</a><br>
+<a href="activity/index-28.htm">&#8608; May 2017</a><br>
+<a href="activity/index-29.htm">&#8608; April 2017</a><br>
+<a href="activity/index-30.htm">&#8608; February 2017</a><br>
+<a href="activity/index-31.htm">&#8608; December 2016</a><br>
+<a href="activity/index-32.htm">&#8608; November 2016</a><br>
+<a href="activity/index-33.htm">&#8608; October 2016</a><br>
+<a href="activity/index-34.htm">&#8608; September 2016</a><br>
+<a href="activity/index-35.htm">&#8608; August 2016</a><br>
+<a href="activity/index-36.htm">&#8608; July 2016</a><br>
+<a href="activity/index-37.htm">&#8608; May 2016</a><br>
+<a href="activity/index-38.htm">&#8608; February 2016</a><br>
 <h3>Health and Physical Education (HPE) SEWA by Std.XI</h3>
 <b>On September 7, 2019</b> students of XI B took part in a day's activities of an NGO named 'Jansharnam' in Molarband extension.
  This NGO is taken care of by Mr.Ramanshu Verma and his team which consists of six teachers.<br><br>

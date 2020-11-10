@@ -42,42 +42,9 @@ require_once('header.php');
 <div class="event_message_notice">
     <div class="event">
         <div class="card border-success " style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
-            <div class="card-header border-success" style="background-color: green;color:white;">Upcoming Events</div>
+            <div class="card-header border-success" style="background-color: green;color:white;">Diary Dates</div>
             <div class="wrapper">
 
-    <div class="container-calendar">
-        <h3 id="monthAndYear"></h3>
-        
-        <div class="button-container-calendar">
-            <button id="previous" onclick="previous()">&#8249;</button>
-            <button id="next" onclick="next()">&#8250;</button>
-        </div>
-        
-        <table class="table-calendar" id="calendar" data-lang="en">
-            <thead id="thead-month"></thead>
-            <tbody id="calendar-body"></tbody>
-        </table>
-        
-        <div class="footer-container-calendar">
-             <label for="month">Jump To: </label>
-             <select id="month" onchange="jump()">
-                 <option value=0>Jan</option>
-                 <option value=1>Feb</option>
-                 <option value=2>Mar</option>
-                 <option value=3>Apr</option>
-                 <option value=4>May</option>
-                 <option value=5>Jun</option>
-                 <option value=6>Jul</option>
-                 <option value=7>Aug</option>
-                 <option value=8>Sep</option>
-                 <option value=9>Oct</option>
-                 <option value=10>Nov</option>
-                 <option value=11>Dec</option>
-             </select>
-             <select id="year" onchange="jump()"></select>       
-        </div>
-
-    </div>
     
 </div>
             <div class="card-footer border-success" style="background-color: green;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
@@ -88,18 +55,24 @@ require_once('header.php');
     <div class="message">
         <div class="card">
             <div class="card-body scrollbar-ripe-malinka">
-                <h3 class="card-title"><b>Principal’s Message</b></h3>
-                <p class="card-text">Notre Dame School, Badarpur, Delhi, since its inception and foundation has always set 
+             <h3 class="card-title"><b><span class="border border-secondary" style="padding: 0.10em;box-shadow: 10px 10px 5px grey;">Principal’s Message</span></b>
+            
+            </h3>
+            <br>
+            <img src="images/main.jpeg" alt="main" class="img-thumbnail" style="height: 15em;float:left;">
+                <br> <p class="card-text" style="font-size: 18px;">Notre Dame School, Badarpur, Delhi, since its inception and foundation has always set 
                     up high benchmarks of value based holistic education for its students. The school has been imparting knowledge and skills 
                     that have cont ributed towards the growth and vision in building global citizens and a conscientious humanity.<br>
+                    
                     I am proud to be a part of this Education system and I am hopeful that I will carry forward the Notre Dame legacy
-                     in the years to come with innovation, in keeping with its creative ways.<br><br>
-                    <b> “The highest education is that which does not merely give us information but makes our
-                      life in harmony with all existence”</b> <br><br>(Rabindranath Tagore)<br>
-                     <b>“Creativity leads to thinking, thinking leads to Knowledge, Knowledge make you great” </b><br><br>(Dr. APJ Abdul Kalam)<br>
-                     Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
+                     in the years to come with innovation, in keeping with its creative ways.<br>
+                   <br> <b style="font-family: 'Satisfy', cursive;"> “The highest education is that which does not merely give us information but makes our
+                      life in harmony with all existence”</b><br><b style="float: right;">-(Rabindranath Tagore)</b><br>
+                    <br> <b style="font-family: 'Satisfy', cursive;">“Creativity leads to thinking, thinking leads to Knowledge, Knowledge make you great” </b><br>
+                    <b style="float: right;">-(Dr. APJ Abdul Kalam)</b><br>
+                     <br> Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
                      <br><br>
-                     <b>Sr. Mary Alice, SND</b>
+                     <b style="font-family: 'Satisfy', cursive;">Sr. Mary Alice, SND</b>
                 </p>
 
             </div>
@@ -107,7 +80,7 @@ require_once('header.php');
     </div>
     <div class="notice">
         <div class="card border-danger" style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
-            <div class="card-header border-danger" style="background-color: #dc3545;color:white;" >Recent Notices</div>
+            <div class="card-header border-danger" style="background-color: #dc3545;color:white;" >Notice Board  </div>
             <div class="card-body scrollbar-ripe-malinka notice_body">
                 <?php
                 $query = "select * from notices";
@@ -134,8 +107,9 @@ require_once('header.php');
 
 <!--........//index content........-->
 <?php
-require_once('map.php');
+require_once('event_slider.php');
 ?>
+<br>
 <?php
 require_once('footer.php');
 ?>
