@@ -42,6 +42,14 @@ require('header.php');
                     </div>
                 </a>
             </div>
+
+            <div class="col-sm-3">
+                <a href="add_home_link.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Home links</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

@@ -65,4 +65,27 @@ function getfeestructure($conn){
    }  
 }
 
+function gethomelink($conn){
+	$result = mysqli_query($conn,"SELECT * FROM home_links" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+} 
+
+function homelink($conn){
+	$result = mysqli_query($conn,"SELECT * FROM home_links WHERE id=(SELECT max(id) FROM home_links);" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}
+
+
 ?>

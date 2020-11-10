@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-	<title>Former Principles</title>
-	<link rel="stylesheet" type="text/css" href="css/principle.css">
-
-<body>
+<?php
+require_once('header.php');
+?>
+	<link rel="stylesheet" type="text/css" href="principle.css">
 
 	<div class="container">
 		<h1 class="heading"><span>meet</span>Our Former Principals</h1>
@@ -33,6 +28,6 @@
 			</div>
 		</div>
 	</div>
-</body>
-
-</html>
+	<?php
+require_once('footer.php');
+?>

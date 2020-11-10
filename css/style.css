@@ -25,6 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20rem;
 }
 .event_message_notice .event {
   flex: 0 0 25%;
@@ -46,7 +47,7 @@
   width: 100%;
 }
 .event_message_notice .notice_body {
-  height: 15rem;
+  height: 25rem;
   overflow-y: scroll;
 }
 .event_message_notice .notice_body_text {
@@ -85,66 +86,12 @@
     flex-direction: column;
   }
 }
+.card-header:first-child {
+  border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) 0 0;
+}
 /*........//index content........ */
 
-/*...............calender.........*/
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: baseline;
-}
-
-a {
-  text-decoration: none;
-}
-
-.calendar-wrapper {
-  width: 360px;
-  margin: 3em auto;
-  padding: 2em;
-  border: 1px solid;
-  border-radius: 5px;
-}
-table {
-  clear: both;
-  width: 100%;
-  border-radius: 3px;
-  border-collapse: collapse;
-}
-td {
-  height: 48px;
-  text-align: center;
-  vertical-align: middle;
-  border-top: 1px soli;
-  width: 100% / 7;
-}
-
-#btnPrev {
-  float: left;
-  margin-bottom: 20px;
-}
-#btnNext {
-  float: right;
-  margin-bottom: 20px;
-}
-#btnPrev,
-#btnNext {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 1em;
-  cursor: pointer;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
 /*...............calender.........*/
 /*.................map............*/
 .map-container-2 {
@@ -198,3 +145,20 @@ td {
   height: 5rem;
 }
 /* admin dashboard */
+/**..................bact to top...............**/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#ffab1f;
+  color: blue;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}

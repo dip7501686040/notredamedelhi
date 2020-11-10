@@ -1,18 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-*{
-	padding: 0;
-	margin: 0;
-}
 
-body{
-	background-color: #12172b;
-	font-family: 'Poppins', sans-serif;
-}
-
-.container{
-	margin:20px 40px;
-	color: white;
-}
 
 .heading{
 	font-size: 40px;
@@ -54,7 +40,7 @@ body{
 	font-size: 18px;
 	font-weight: 100;
 	letter-spacing: 3px;
-	color: #ccc;
+	color:grey;
 }
 
 @media only screen and (max-width: 1150px){
