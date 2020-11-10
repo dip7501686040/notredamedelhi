@@ -38,8 +38,8 @@ require_once('header.php');
 <!--........//slider........-->
 <!--........index content........-->
 <div class="event_message_notice">
-    <div class="event">
-        <div class="card border-success">
+    <div class="event" >
+        <div class="card border-success" style="border-radius:6rem;">
             <div class="card-header border-success" style="background-color: green;color:white;">Upcoming Events</div>
             <div class="card-body scrollbar-ripe-malinka event_body">
                 <h4 id="section1"><strong>Teacher's day</strong></h4>
