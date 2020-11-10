@@ -1,5 +1,6 @@
 <?php
 require_once('header.php');
+require_once('function.php');
 ?>
 
 <link rel="stylesheet" href="css/calendar.css">
@@ -36,7 +37,15 @@ require_once('header.php');
         <span class="sr-only">Next</span>
     </a>
 </div>
+<<<<<<< HEAD
 <marquee onMouseOver="this.stop()" onMouseOut="this.start()"><a href="#" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b>Application form for Pre School(Nursery) admission 2020-2021 will be available from the school website from 29 November to 27 December 2019. For details click on the Downloads from the Home Screen</b></a></marquee>
+=======
+<?php
+$result=homelink($conn);
+$row = mysqli_fetch_array($result);
+?>
+<marquee   onMouseOver="this.stop()" onMouseOut="this.start()"><a href="<?php echo $row['link']  ?>" target="_new" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b> <?php echo $row['title']  ?> </b></a></marquee>
+>>>>>>> beec47fbe3226ceffbb95607051ec5c00402d5b5
 <!--........//slider........-->
 <!--........index content........-->
 <div class="event_message_notice">
