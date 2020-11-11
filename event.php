@@ -60,7 +60,7 @@ h3{
 </style>
 </head>
 <body>
-<div class=" container main3">
+<div class=" container-fluid main3">
 <div class="nine">
 <h3>Goodbye Sir Jose</h3>
 Goodbyes are only for those who love with their eyes. Because, for those who love with their heart and soul,

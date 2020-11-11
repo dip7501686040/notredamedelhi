@@ -40,6 +40,11 @@
         font-weight: 600
     }
 </style>
+<?php require_once('function.php');
+$result = mysqli_query($conn, "SELECT * FROM eventsindex ORDER BY id DESC LIMIT 4
+");
+
+?>
 
 <!--For Page-->
 
@@ -57,72 +62,36 @@
             </div>
         </a>
         <!--Card 1-->
-        <div class="col-sm">
-            <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
-                <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
-                        <div class="mask rgba-white-slight"></div>
-                    </a> </div>
-                <!--Card Body-->
-                <div class="card-body card-body-cascade text-center">
-                    <!--Card Title-->
-                    <h5 class="card-title"><strong><a href="" style="color:black;">Parent Testimony</a></strong></h5> <!-- Card Description-->
+        <?php
+        while ($row = mysqli_fetch_array($result)) {
 
+
+        ?>
+            <div class="col-sm">
+                <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
+                    <!--Card image-->
+                    <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="uploads/<?php echo $row['img']   ?>" alt=""> <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a> </div>
+                    <!--Card Body-->
+                    <div class="card-body card-body-cascade text-center">
+                        <!--Card Title-->
+                        <h5 class="card-title"><strong><a href="show_event.php?n=<?php echo $row['id']  ?>" style="color:black;"><?php echo $row['title']   ?></a></strong></h5> <!-- Card Description-->
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Card 2-->
-        <div class="col-sm">
-            <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
-                <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
-                        <div class="mask rgba-white-slight"></div>
-                    </a> </div>
-                <!--Card Body-->
-                <div class="card-body card-body-cascade text-center">
-                    <!--Card Title-->
-                    <h5 class="card-title"><strong><a href="" style="color:black;">Student Testimony</a></strong></h5>
-                    <!--Card Description-->
+           
+        <?php
+        }
+        ?>
 
+<a href="" style="color:#13355e;">
+                <div style="margin-top:10em;">
+                    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
                 </div>
-            </div>
-        </div>
-        <!--Card 2-->
-        <div class="col-sm">
-            <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
-                <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
-                        <div class="mask rgba-white-slight"></div>
-                    </a> </div>
-                <!--Card Body-->
-                <div class="card-body card-body-cascade text-center">
-                    <!--Card Title-->
-                    <h5 class="card-title"><strong><a href="" style="color:black;">Father Colin Program</a></strong></h5>
-
-                </div>
-            </div>
-        </div>
-        <!--Card 1-->
-        <div class="col-sm">
-            <div class="card card-cascade card-ecommerce wider shadow mb-5 ">
-                <!--Card image-->
-                <div class="view view-cascade overlay text-center"> <img class="card-img-top" src="images/imgno.jpg" alt=""> <a>
-                        <div class="mask rgba-white-slight"></div>
-                    </a> </div>
-                <!--Card Body-->
-                <div class="card-body card-body-cascade text-center">
-                    <!--Card Title-->
-                    <h5 class="card-title"><strong><a href="" style="color:black;">Friendship Day</a></strong></h5> <!-- Card Description-->
-
-                </div>
-            </div>
-        </div>
-        <div style="margin-top:10em;">
-            <a href=""  style="color:#13355e;">
-                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                </svg>
             </a>
-        </div>
     </div>
 </div>

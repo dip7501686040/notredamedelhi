@@ -50,6 +50,21 @@ require('header.php');
                     </div>
                 </a>
             </div>
+
+            <div class="col-sm-3">
+                <a href="add_event.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Events</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="calendar.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Calendar</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

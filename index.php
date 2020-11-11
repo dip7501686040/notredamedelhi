@@ -95,7 +95,7 @@ $row = mysqli_fetch_array($result);
 
             </div>
             <div class="card-footer border-success" style="background-color: green;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
-                <a href=""><button class="btn btn-light " style="margin-bottom:0.50rem;">View all Events</button></a>
+                <a href="calendaruser.php"><button class="btn btn-light " style="margin-bottom:0.50rem;">View all Events</button></a>
             </div>
         </div>
     </div>
@@ -131,19 +131,20 @@ $row = mysqli_fetch_array($result);
             <div class="col">
                   <h3>Notice Board</h3>
             </div>
-            <div class="col">
-            <img src="images/notice.gif" alt="" style="height: 3em;float:right;">
-            </div>
+            
 
         </div>
         </div>
             <div class="card-body scrollbar-ripe-malinka notice_body">
+            <img src="images/notice.gif" alt="" style="height: 3em;float:right;">
                 <?php
                 $query = "select * from notices";
                 $result = $db_handler->runQuery($query);
+                
                 while ($notice = $result->fetch_assoc()) {
 
                 ?>
+                
                     <h6><?php echo $notice['date']; ?></h6>
                     <a href="notice_uploads/<?php echo $notice['file']; ?>" download="notice-<?php echo $notice['date']; ?>">
                         <p class="notice_body_text">
@@ -152,7 +153,9 @@ $row = mysqli_fetch_array($result);
                     </a>
                 <?php
                 }
+                
                 ?>
+                
             </div>
             <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
                 <a href=""><button class="btn btn-light" style="margin-bottom:0.50rem; ">More News</button></a>
