@@ -1,5 +1,5 @@
 <?php require_once('header.php'); 
-include"function.php";
+
  ?>
 
 <link rel="stylesheet" type="text/css" href="css/form.css">
@@ -73,7 +73,7 @@ include"function.php";
         <td><?php echo $row['title']; ?></td>
         <td><a href="<?php echo $row['link']; ?>"><?php echo $row['link']; ?></a></td>
         <td><form action="delete_post.php" method="GET" enctype="multipart/form-data" >
-      <input type="hidden" name="table" value="home_link">
+      <input type="hidden" name="table" value="home_links">
       <input type="hidden" name="loc" value="add_home_link.php">
     <input type="hidden" name="delete" value="<?php echo $row['id'] ?>">
     <input type="submit" name="submit" value="Remove" style="align-self: center;">

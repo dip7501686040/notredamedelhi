@@ -1,5 +1,4 @@
-<?php require_once('header.php');
-include"function.php";  ?>
+<?php require_once('header.php');  ?>
 <div class="container">
   <h2 align="center">Fee Structure</h2>
              

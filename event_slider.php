@@ -4,7 +4,7 @@
     }
 
     .page {
-        background-color: #dfe6e0;
+        background-color: white;
         padding: 2%;
         margin: auto
     }

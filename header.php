@@ -1,6 +1,9 @@
 <?php
 require('dbcontroller.php');
 $db_handler = new DBController();
+require_once('function.php');
+$result = mysqli_query($conn,"SELECT * FROM Academic_link where id=1" );
+$Academic = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
@@ -133,7 +136,7 @@ $db_handler = new DBController();
 
                                                 <ul class="list-unstyled">
                                                     <li class="nav-item"><a href="EXAMINATION_AND_PROMOTIONS.php" class="nav-link text-small pb-0" style="color: white;">Scheme of Examination and Promotion</a></li>
-                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/curriculum.html" target="_new" class="nav-link text-small pb-0 " style="color: white;">Curriculum (9-12)</a></li>
+                                                    <li class="nav-item"><a href="<?php echo $Academic['curriculum']  ?>" target="_new" class="nav-link text-small pb-0 " style="color: white;">Curriculum (9-12)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
@@ -145,14 +148,14 @@ $db_handler = new DBController();
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled ">
-                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/SQP_CLASSX_2019_20.html" target="_new" class="nav-link text-small pb-0 " style="color: white;">Sample Question Paper for 10th</a></li>
-                                                    <li class="nav-item"><a href="https://epathshala.nic.in//" target="_new" class="nav-link text-small pb-0 " style="color: white;">Epathshala</a></li>
+                                                    <li class="nav-item"><a href="<?php echo $Academic['Class_X_Sample_Question_Paper_&_Marking_Scheme_for_Exam']  ?>" target="_new" class="nav-link text-small pb-0 " style="color: white;">Sample Question Paper for 10th</a></li>
+                                                    <li class="nav-item"><a href="<?php echo $Academic['E-Pathshala']  ?>" target="_new" class="nav-link text-small pb-0 " style="color: white;">Epathshala</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="https://diksha.gov.in/explore" target="_new" class="nav-link text-small pb-0 " style="color: white;">Diksha</a></li>
-                                                    <li class="nav-item"><a href="http://cbseacademic.nic.in/SQP_CLASSXII_2019_20.html" target="_new" class="nav-link text-small pb-0 " style="color: white;">CBSE Sample paper</a></li>
+                                                    <li class="nav-item"><a href="<?php echo $Academic['Diksha']  ?>" target="_new" class="nav-link text-small pb-0 " style="color: white;">Diksha</a></li>
+                                                    <li class="nav-item"><a href="<?php echo $Academic['CBSE_Sample_paper']  ?>" target="_new" class="nav-link text-small pb-0 " style="color: white;">CBSE Sample paper</a></li>
                                                 </ul>
                                             </div>
                                         </div>

@@ -146,7 +146,7 @@ $row = mysqli_fetch_array($result);
                 ?>
                 
                     <h6><?php echo $notice['date']; ?></h6>
-                    <a href="notice_uploads/<?php echo $notice['file']; ?>" download="notice-<?php echo $notice['date']; ?>">
+                    <a href="notice_uploads/<?php echo $notice['file'];?>" target="_new" download="notice-<?php echo $notice['date']; ?>">
                         <p class="notice_body_text">
                             <?php echo $notice['notice']; ?>
                         </p>

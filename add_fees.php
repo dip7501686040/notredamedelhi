@@ -1,5 +1,5 @@
 <?php require_once('header.php'); 
-include"function.php";
+
  ?>
 
 <link rel="stylesheet" type="text/css" href="css/form.css">

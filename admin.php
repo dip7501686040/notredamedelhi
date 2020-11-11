@@ -65,6 +65,14 @@ require('header.php');
                     </div>
                 </a>
             </div>
+ 
+            <div class="col-sm-3">
+                <a href="Academic.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Academic links</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
