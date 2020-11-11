@@ -65,7 +65,6 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </div> 
-            <button type="button" class="btn" style="background-color:#13355e;"><a href="contact.php" style="color:white;">Contact us</a> </button> &nbsp;
             <button type="button" class="btn" style="background-color:#13355e;color:white;">Alumni</button> &nbsp;
             <button type="button" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></button> &nbsp;
       
@@ -246,7 +245,8 @@ $db_handler = new DBController();
                         </div>
                     </div>
                 </li>
-            
+                <button type="button" class="btn" style="background-color:#13355e;"><a href="contact.php" style="color:white;">Contact us</a> </button> &nbsp;
+           
 
             </ul>
         </div>
