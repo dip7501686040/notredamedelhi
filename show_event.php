@@ -4,7 +4,7 @@ $id=$_GET['n'];
  $result = mysqli_query($conn,"SELECT * FROM events where id=$id" );
  while($row = mysqli_fetch_array($result)){
  ?>
-<link rel="stylesheet" type="text/css" href="css/form.css">
+
 <div class="container">
  <img src="uploads/<?php echo $row['img']?>" width="100%" >
  <h2 align="center"><?php echo $row['title'];  ?></h2>
@@ -12,6 +12,6 @@ $id=$_GET['n'];
 </div>
 <?php } ?>
 
-<div style="margin-top: 400px;">
+<div>
 <?php   require_once('footer.php'); ?>
 </div>

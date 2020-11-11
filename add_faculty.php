@@ -3,7 +3,7 @@ include"function.php";
  ?>
 
 <link rel="stylesheet" type="text/css" href="css/form.css">
-<div class="container">
+<div class="container" class="con">
 	<?php
 
        if(isset($_GET['msg'])){
