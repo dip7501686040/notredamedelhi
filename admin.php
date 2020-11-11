@@ -66,6 +66,14 @@ require('header.php');
                     </div>
                 </a>
             </div>
+
+            <div class="col-sm-3">
+                <a href="home_slider.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>index slider</h2>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

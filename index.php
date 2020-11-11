@@ -1,6 +1,7 @@
 <?php
 require_once('header.php');
-require_once('function.php');
+$img=homeimage($conn);
+
 ?>
 
 <link rel="stylesheet" href="css/calendar.css">
@@ -10,23 +11,24 @@ require_once('function.php');
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/slider_photo3.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
-        </div>
-        <div class="carousel-item">
-            <img src="images/slider_photo2.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
-        </div>
-        <div class="carousel-item">
-            <img src="images/slider_photo1.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
-        </div>
-        <div class="carousel-item">
-            <img src="images/slider_photo4.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
-        </div>
-        <div class="carousel-item">
             <img src="images/slider_photo5.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
         </div>
+       <?php while($irow = mysqli_fetch_array($img)){  ?>
+        <div class="carousel-item">
+            <img src="uploads/<?php  echo $irow['img']  ?>" class="d-block w-100" alt="..." style="height: 30rem;">
+        </div>
+        <?php  
+         }
+         ?>
+
+        
+        
+        
+        
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -145,7 +147,7 @@ $row = mysqli_fetch_array($result);
 
                 ?>
                     <h6><?php echo $notice['date']; ?></h6>
-                    <a href="notice_uploads/<?php echo $notice['file']; ?>" download="notice-<?php echo $notice['date']; ?>">
+                    <a href="notice_uploads/<?php echo $notice['file']; ?>" >
                         <p class="notice_body_text">
                             <?php echo $notice['notice']; ?>
                         </p>

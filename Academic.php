@@ -1,5 +1,5 @@
 <?php require_once('header.php');
-      require_once('function.php');
+     
       $result = mysqli_query($conn,"SELECT * FROM Academic_link where id=1" );
 $Academic = mysqli_fetch_array($result);
   ?>

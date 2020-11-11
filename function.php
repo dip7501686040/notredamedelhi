@@ -87,5 +87,14 @@ function homelink($conn){
    }  
 }
 
+function homeimage($conn){
+	$result = mysqli_query($conn,"SELECT * FROM homeimage ORDER BY id DESC LIMIT 4" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
 
+	}
+   else{
+   	return "no Data";
+   }  
+}
 ?>
