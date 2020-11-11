@@ -1,6 +1,6 @@
 <?php  include"connect.php";
 
-function getseniorPhotos($conn){
+function getseniorPhotos($conn){		
 	$result = mysqli_query($conn,"SELECT * FROM files where category='Senior' AND type='Photo'");
 if (mysqli_num_rows($result) > 0) {
 	
