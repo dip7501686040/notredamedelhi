@@ -4,7 +4,7 @@
     }
 
     .page {
-        background-color: #dfe6e0;
+        background-color: white;
         padding: 2%;
         margin: auto
     }
@@ -40,9 +40,9 @@
         font-weight: 600
     }
 </style>
-<?php require_once('function.php');  
-$result = mysqli_query($conn,"SELECT * FROM events ORDER BY id DESC LIMIT 4
-" );
+<?php require_once('function.php');
+$result = mysqli_query($conn, "SELECT * FROM events ORDER BY id DESC LIMIT 4
+");
 
 ?>
 
@@ -62,8 +62,8 @@ $result = mysqli_query($conn,"SELECT * FROM events ORDER BY id DESC LIMIT 4
             </div>
         </a>
         <!--Card 1-->
-        <?php   
-        while($row = mysqli_fetch_array($result)){
+        <?php
+        while ($row = mysqli_fetch_array($result)) {
 
 
         ?>

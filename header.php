@@ -248,7 +248,7 @@ $Academic = mysqli_fetch_array($result);
                         </div>
                     </div>
                 </li>
-                <button type="button" class="btn" style="background-color:#13355e;"><a href="contact.php" style="color:white;">Contact us</a> </button> &nbsp;
+                <li class="nav-item"><a href="contact.php" class="nav-link font-weight-bold text-uppercase">Contact us</a></li>
            
 
             </ul>

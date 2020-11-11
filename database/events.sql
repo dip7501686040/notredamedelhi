@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `events`
+-- Table structure for table `eventsindex`
 --
 
-CREATE TABLE `events` (
+CREATE TABLE `eventsindex` (
   `id` int(11) NOT NULL,
   `title` text NOT NULL,
   `img` varchar(255) NOT NULL,
@@ -36,10 +36,10 @@ CREATE TABLE `events` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `events`
+-- Dumping data for table `eventsindex`
 --
 
-INSERT INTO `events` (`id`, `title`, `img`, `date`, `content`) VALUES
+INSERT INTO `eventsindex` (`id`, `title`, `img`, `date`, `content`) VALUES
 (1, 'test', '919829984428_status_dc8c1984300c4475ab6ddc7dae264fd5.jpg', '2020-11-11', '        dsfgdcv'),
 (2, 'test', '919829984428_status_dc8c1984300c4475ab6ddc7dae264fd5.jpg', '2020-11-11', '        dsadadadsadsadsad'),
 (3, 'wddasdsaa', '919829984428_status_dc8c1984300c4475ab6ddc7dae264fd5.jpg', '2020-11-05', '        asdasdsadsadasdasds'),
@@ -50,9 +50,9 @@ INSERT INTO `events` (`id`, `title`, `img`, `date`, `content`) VALUES
 --
 
 --
--- Indexes for table `events`
+-- Indexes for table `eventsindex`
 --
-ALTER TABLE `events`
+ALTER TABLE `eventsindex`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -60,9 +60,9 @@ ALTER TABLE `events`
 --
 
 --
--- AUTO_INCREMENT for table `events`
+-- AUTO_INCREMENT for table `eventsindex`
 --
-ALTER TABLE `events`
+ALTER TABLE `eventsindex`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
