@@ -1,6 +1,9 @@
 <?php
 require_once('header.php');
 $img=homeimage($conn);
+$principal=principal($conn);
+$prow = mysqli_fetch_array($principal);
+$eve=event_date($conn);
 
 ?>
 
@@ -51,20 +54,27 @@ $row = mysqli_fetch_array($result);
         <div class="card border-success " style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
             <div class="card-header border-success" style="background-color: green;color:white;"><h3>Diary Dates</h3></div>
             <div class="wrapper">
+                <?php while($erow = mysqli_fetch_array($eve)){  ?>
                 <br>
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <h3>12</h3>
-                                <b> March</b>
+                                <?php  $string = $erow['start_event'];
+                                $timestamp = strtotime($string);
+                                $month_num=date("m", $timestamp);
+                                 $month_name = date("F", mktime(0, 0, 0, $month_num, 10)); 
+                                    ?>
+                                <h3><?php echo date("d", $timestamp); ?></h3>
+                                <b> <?php echo $month_name; ?></b>
                             </div>
                             <div class="col">
-                                <h3>Youth Festival</h3>
+                                <h3><?php echo $erow['title'] ?></h3>
                             </div>
                         </div>
                     </div>
                 </div>
+            <?php  } ?>
                 <br>
                 <div class="card" style="background-color: #13355e;color:white;">
                     <div class="card-body">
@@ -104,23 +114,20 @@ $row = mysqli_fetch_array($result);
     <div class="message">
         <div class="card">
             <div class="card-body scrollbar-ripe-malinka">
-                <img src="images/main.jpeg" alt="main" class="img-thumbnail" style="height: 15em;float:right;">
+                <img src="uploads/<?php echo $prow['img']; ?>" alt="main" class="img-thumbnail" style="height: 15em;float:right;">
                 <h3 class="card-title"><b><span class="border border-secondary" style="padding: 0.10em;box-shadow: 10px 10px 5px grey;">Principal’s Message</span></b>
                 </h3>
                 <br>
-                <p class="card-text" style="font-size: 18px;">Notre Dame School, Badarpur, Delhi, since its inception and foundation has always set
-                    up high benchmarks of value based holistic education for its students. The school has been imparting knowledge and skills
-                    that have cont ributed towards the growth and vision in building global citizens and a conscientious humanity.<br>
+                <p class="card-text" style="font-size: 18px;"><?php echo $prow['message']."<br>".$prow['message2'];  ?>
 
-                    I am proud to be a part of this Education system and I am hopeful that I will carry forward the Notre Dame legacy
-                    in the years to come with innovation, in keeping with its creative ways.<br>
+                   <br>
                     <br> <b style="font-family: 'Satisfy', cursive;"> “The highest education is that which does not merely give us information but makes our
                         life in harmony with all existence”</b><br><b style="float: right;">-(Rabindranath Tagore)</b><br>
                     <br> <b style="font-family: 'Satisfy', cursive;">“Creativity leads to thinking, thinking leads to Knowledge, Knowledge make you great” </b><br>
                     <b style="float: right;">-(Dr. APJ Abdul Kalam)</b><br>
                     <br> Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
                     <br><br>
-                    <b style="font-family: 'Satisfy', cursive;">Sr. Mary Alice, SND</b>
+                    <b style="font-family: 'Satisfy', cursive;"><?php echo $prow['name'];  ?>, SND</b>
                 </p>
 
             </div>

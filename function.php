@@ -108,4 +108,46 @@ function admission_doc($conn){
    	return "no Data";
    }  
 }
+
+function principal($conn){
+	$result = mysqli_query($conn,"SELECT * FROM current_principle WHERE id=(SELECT max(id) FROM current_principle);" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}
+function old_principal($conn){
+	$result = mysqli_query($conn,"SELECT * FROM current_principle where id !=(SELECT max(id) from current_principle) order by id asc;" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}
+function join_date($conn,$id){
+	$result = mysqli_query($conn,"SELECT start from current_principle  WHERE  id != (SELECT Max(id) from current_principle);" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return 1;
+   }  
+}
+ 
+ function event_date($conn){
+	$result = mysqli_query($conn,"SELECT * FROM events order by id desc" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}
 ?>

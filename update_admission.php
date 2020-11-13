@@ -1,5 +1,6 @@
 <?php
 require_once('header.php');
+
 ?>
 
   <link rel="stylesheet" type="text/css" href="css/second.css">
