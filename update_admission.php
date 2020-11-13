@@ -24,7 +24,7 @@ require_once('header.php');
 				<th class="cen1">1</th>
 				<th>Admission form</th>
 				<th class="cen1">click</th>
-				
+				<th class="cen1">click</th>
 			</tr>
 
 			<tr>

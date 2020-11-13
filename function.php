@@ -97,4 +97,15 @@ function homeimage($conn){
    	return "no Data";
    }  
 }
+
+function admission_doc($conn){
+	$result = mysqli_query($conn,"SELECT * FROM admission_doc where id =1" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}
 ?>
