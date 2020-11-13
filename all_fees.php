@@ -7,8 +7,8 @@
       <tr style="text-align: center;">
       	<th >S.no</th>
         <th>Tuition Fees</th>
-        <th>NTPC</th>
-        <th>NON-NTPC</th>
+      
+        <th>AMOUNT</th>
         
       </tr>
     </thead>
@@ -20,7 +20,6 @@
     	 <tr>
     	 	<td><?php echo $count; ?></td>
     	 	<td><?php echo $row['Fee_name']; ?></td>
-    	 	<td><?php echo $row['NTPC']; ?></td>
         <td><?php echo $row['Amount']; ?></td>
     	 </tr>
     <?php
