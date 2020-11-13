@@ -138,10 +138,10 @@ $row = mysqli_fetch_array($result);
         </div>
         </div>
             <div class="card-body scrollbar-ripe-malinka notice_body">
-            <img src="images/notice.gif" alt="" style="height: 3em;float:right;">
-            <marquee direction="up">
+            
+            <marquee direction="up"  onMouseOver="this.stop()" onMouseOut="this.start()">
                 <?php
-                $query = "select * from notices ORDER BY id DESC";
+                $query = "select * from notices ORDER BY id DESC LIMIT 5";
                 $result = $db_handler->runQuery($query);
                 
                 while ($notice = $result->fetch_assoc()) {
@@ -149,10 +149,10 @@ $row = mysqli_fetch_array($result);
                 ?>
                 
                     <h6><?php echo $notice['date']; ?></h6>
-                    <a href="notice_uploads/<?php echo $notice['file'];?>" target="_new" download="notice-<?php echo $notice['date']; ?>">
-                        <p class="notice_body_text">
-                            <?php echo $notice['notice']; ?>
-                        </p>
+                    <a href="notice_uploads/<?php echo $notice['file'];?>" target="_new">
+                        <p class="notice_body_text" style="color:#dc3545;">
+                            <?php echo strtoupper($notice['notice']); ?><img src="images/notice.gif" alt="" style="height: 3em;float:right;">
+                            </p><hr style="border-top: 1px dotted red;">
                     </a>
                 <?php
                 }

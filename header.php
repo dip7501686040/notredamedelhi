@@ -69,7 +69,8 @@ $Academic = mysqli_fetch_array($result);
                     </div>
                 </div> 
             <button type="button" class="btn" style="background-color:#13355e;color:white;">Alumni</button> &nbsp;
-            <button type="button" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></button> &nbsp;
+            <a href="https://www.facebook.com/notredamedelhi" target="_new" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></a> &nbsp;
+           
       
             </div>
         </div>
@@ -77,7 +78,7 @@ $Academic = mysqli_fetch_array($result);
 
     <!--...........image logo...........-->
     <div class="container">
-        <center> <img src="images/logo.jpg" alt="School" style="height: 8rem;width:100%"></center>
+        <center> <img src="images/logo.png" alt="School" style="width:100%"></center>
 
     </div>
     <!--......navbar.......-->

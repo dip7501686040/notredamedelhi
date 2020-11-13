@@ -21,7 +21,8 @@
     <div class="col-md-4">
       <img src="images/icon1.png" alt="" style="float: right;">
       <img src="images/icon2.png" alt="" style="float: right;">
-      <img src="images/icon3.png" alt="" style="float: right;">
+      <a href="https://www.facebook.com/notredamedelhi" target="_new"><img src="images/icon3.png" alt="" style="float: right;"></a>
+      
     </div>
   </div>
      </div>
