@@ -20,18 +20,18 @@ $eve=event_date($conn);
         <div class="carousel-item active">
             <img src="images/slider_photo5.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
         </div>
-       <?php while($irow = mysqli_fetch_array($img)){  ?>
-        <div class="carousel-item">
-            <img src="uploads/<?php  echo $irow['img']  ?>" class="d-block w-100" alt="..." style="height: 30rem;">
-        </div>
-        <?php  
-         }
-         ?>
+        <?php while ($irow = mysqli_fetch_array($img)) {  ?>
+            <div class="carousel-item">
+                <img src="uploads/<?php echo $irow['img']  ?>" class="d-block w-100" alt="..." style="height: 30rem;">
+            </div>
+        <?php
+        }
+        ?>
 
-        
-        
-        
-        
+
+
+
+
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -43,17 +43,19 @@ $eve=event_date($conn);
     </a>
 </div>
 <?php
-$result=homelink($conn);
+$result = homelink($conn);
 $row = mysqli_fetch_array($result);
 ?>
-<marquee   onMouseOver="this.stop()" onMouseOut="this.start()"><a href="<?php echo $row['link']  ?>" target="_new" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b> <?php echo $row['title']  ?> </b></a></marquee>
+<marquee onMouseOver="this.stop()" onMouseOut="this.start()"><a href="<?php echo $row['link']  ?>" target="_new" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b> <?php echo $row['title']  ?> </b></a></marquee>
 <!--........//slider........-->
 <!--........index content........-->
 <div class="event_message_notice">
-    <div class="event">
+    <div class="event  ">
         <div class="card border-success " style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
-            <div class="card-header border-success" style="background-color: green;color:white;"><h3>Diary Dates</h3></div>
-            <div class="wrapper">
+            <div class="card-header border-success" style="background-color: green;color:white;">
+            <h3>Diary Dates</h3
+            ></div>
+            <div class="wrapper scrollbar-ripe-malinka_a notice_a_body ">
                 <?php while($erow = mysqli_fetch_array($eve)){  ?>
                 <br>
                 <div class="card">
@@ -69,7 +71,7 @@ $row = mysqli_fetch_array($result);
                                 <b> <?php echo $month_name; ?></b>
                             </div>
                             <div class="col">
-                                <h3><?php echo $erow['title'] ?></h3>
+                                <h5><?php echo $erow['title'] ?></h5>
                             </div>
                         </div>
                     </div>
@@ -136,36 +138,37 @@ $row = mysqli_fetch_array($result);
     <div class="notice">
         <div class="card border-danger" style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
             <div class="card-header border-danger" style="background-color: #dc3545;color:white;">
-        <div class="row">
-            <div class="col">
-                  <h3>Notice Board</h3>
+                <div class="row">
+                    <div class="col">
+                        <h3>Notice Board</h3>
+                    </div>
+
+
+                </div>
             </div>
-            
-
-        </div>
-        </div>
             <div class="card-body scrollbar-ripe-malinka notice_body">
-            
-            <marquee direction="up"  onMouseOver="this.stop()" onMouseOut="this.start()">
-                <?php
-                $query = "select * from notices ORDER BY id DESC LIMIT 5";
-                $result = $db_handler->runQuery($query);
-                
-                while ($notice = $result->fetch_assoc()) {
 
-                ?>
-                
-                    <h6><?php echo $notice['date']; ?></h6>
-                    <a href="notice_uploads/<?php echo $notice['file'];?>" target="_new">
-                        <p class="notice_body_text" style="color:#dc3545;">
-                            <?php echo strtoupper($notice['notice']); ?><img src="images/notice.gif" alt="" style="height: 3em;float:right;">
-                            </p><hr style="border-top: 1px dotted red;">
-                    </a>
-                <?php
-                }
-                
-                ?>
-               </marquee> 
+                <marquee direction="up" onMouseOver="this.stop()" onMouseOut="this.start()">
+                    <?php
+                    $query = "select * from notices ORDER BY id DESC LIMIT 5";
+                    $result = $db_handler->runQuery($query);
+
+                    while ($notice = $result->fetch_assoc()) {
+
+                    ?>
+
+                        <h6><?php echo $notice['date']; ?></h6>
+                        <a href="notice_uploads/<?php echo $notice['file']; ?>" target="_new">
+                            <p class="notice_body_text" style="color:#dc3545;">
+                                <?php echo strtoupper($notice['notice']); ?><img src="images/notice.gif" alt="" style="height: 3em;float:right;">
+                            </p>
+                            <hr style="border-top: 1px dotted red;">
+                        </a>
+                    <?php
+                    }
+
+                    ?>
+                </marquee>
             </div>
             <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
                 <a href=""><button class="btn btn-light" style="margin-bottom:0.50rem; ">More News</button></a>

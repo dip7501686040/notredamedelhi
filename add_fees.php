@@ -34,12 +34,13 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="NTPC">NTPC</label>
+        <label for="NTPC">Fee Type</label>
       </div>
       <div class="col-75">
         <select id="NTPC" name="NTPC">
-          <option value="NA">No</option>
-          <option value="NTPC">Yes</option>
+          <option value="Tution_Fee">Tution Fee</option>
+          <option value="Annual_Fee">Annual Fee</option>
+          <option value="Development_Fee">Development Fee</option>
         </select>
       </div>
     </div>

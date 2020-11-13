@@ -89,9 +89,9 @@ require('header.php');
                 </a>
             </div>
             <div class="col-sm-3">
-                <a href="old_principals.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                <a href="tc_issued.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
-                        <h2>Old Principals</h2>
+                        <h2>TC Issued</h2>
                     </div>
                 </a>
             </div>
