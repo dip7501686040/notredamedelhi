@@ -53,10 +53,10 @@ $Academic = mysqli_fetch_array($result);
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form action="tc_verify.php" action="POST">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Registration Number</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <input type="text" class="form-control" id="exampleInputEmail1" >
                                     </div>
 
                                     <button type="submit" class="btn btn-primary">Submit</button>

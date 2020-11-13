@@ -7,6 +7,9 @@
 .megamenu {
   position: static;
 }
+.slide{
+  height: 30rem;
+}
 
 .megamenu .dropdown-menu {
   background: none;
@@ -92,6 +95,10 @@
   .calender_yvideo_gmap {
     flex-direction: column;
   }
+  .slide1{
+    height: 30rem;
+  }
+  
 }
 .card-header:first-child {
   border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) 0 0;

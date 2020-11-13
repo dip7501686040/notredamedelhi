@@ -1,31 +1,27 @@
 <?php
 require_once('header.php');
+$principal=old_principal($conn);
+
 ?>
 	<link rel="stylesheet" type="text/css" href="principle.css">
 
 	<div class="container">
 		<h1 class="heading"><span>meet</span>Our Former Principals</h1>
-		<div class="profiles">
+				<div class="profiles">
+
+		<?php while ($prow = mysqli_fetch_array($principal)) {
+               
+		 ?>
 			<div class="profile">
-				<img src="images/img1.jpg" class="profile-img">
+				<img src="uploads/<?php echo $prow['img'] ?>" class="profile-img">
 
-				<h3 class="pl-name">SR. MARY RANJITA</h3>
-				<h5>SND (1990-2000)</h5>
+				<h3 class="pl-name"><?php echo $prow['name'] ?></h3>
+				<h5>SND (<?php echo $prow['start']; ?>)</h5>
 			</div>
+  <?php }?>
+			
 
-			<div class="profile">
-				<img src="images/img2.jpg" class="profile-img">
-
-				<h3 class="pl-name">SR. MARY BEENA</h3>
-				<h5>SND (2000-2008)</h5>
-			</div>
-
-			<div class="profile">
-				<img src="images/img3.jpg" class="profile-img">
-
-				<h3 class="pl-name">SR. MARY HEMA</h3>
-				<h5>SND (2008-2012)</h5>
-			</div>
+			
 		</div>
 	</div>
 	<?php

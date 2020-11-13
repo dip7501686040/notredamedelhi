@@ -19,7 +19,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $insert = mysqli_query($conn,"INSERT into events(img,title,content, date) VALUES ('".$fileName."','".$title."','".$con."', '".$date."')");
+            $insert = mysqli_query($conn,"INSERT into eventsindex(img,title,content, date) VALUES ('".$fileName."','".$title."','".$con."', '".$date."')");
             if($insert){
                 $msg="done";
                 $statusMsg = "The  ".$title. " event has been uploaded successfully.";

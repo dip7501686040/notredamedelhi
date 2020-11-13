@@ -22,7 +22,7 @@ $id=$_GET['n'];
 </div>
     </div>
 <?php  
- $sql=mysqli_query($conn,"SELECT * FROM events ORDER BY id DESC" );
+ $sql=mysqli_query($conn,"SELECT * FROM eventsindex ORDER BY id DESC" );
 ?>
 
     <div class="col-sm-4">

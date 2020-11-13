@@ -41,7 +41,7 @@
     }
 </style>
 <?php require_once('function.php');
-$result = mysqli_query($conn, "SELECT * FROM events ORDER BY id DESC LIMIT 4
+$result = mysqli_query($conn, "SELECT * FROM eventsindex ORDER BY id DESC LIMIT 4
 ");
 
 ?>
