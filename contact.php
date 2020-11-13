@@ -40,6 +40,9 @@ require_once('header.php');
                 <br><br>
                 <p class="h4 mb-4  signintext top"><strong> Notre Dame School</strong></p>
                 <p class="signintext">  BTPS, Staff Colony, Badarpur, Delhi 110044, India</p>
+               Phone →  <a href="tel:26948713" style="color:black;">26948713 </a>, <a href="tel:29942337" style="color:black;"> 29942337</a> <br> 
+ <a href="mailto: notredameschoolbadarpur@gmail.com" style="color:black;">Email → notredameschoolbadarpur@gmail.com</a>
+ 
         </div>
     </div>
 </div>
