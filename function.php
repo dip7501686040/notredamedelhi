@@ -172,4 +172,15 @@ function school_info($conn){
    	return "no Data";
    }  
 }  
+
+function getexam_prom($conn){
+	$result = mysqli_query($conn,"SELECT * FROM exam_prom" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}  
 ?>
