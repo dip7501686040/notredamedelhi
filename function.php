@@ -191,5 +191,4 @@ function gethistory($conn){
    else{
    	return "no Data";
    }  
-} 
-?>
+}
