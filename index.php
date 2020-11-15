@@ -78,34 +78,7 @@ $row = mysqli_fetch_array($result);
                 </div>
             <?php  } ?>
                 <br>
-                <div class="card" style="background-color: #13355e;color:white;">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <h3>18</h3>
-                                <b> July</b>
-                            </div>
-                            <div class="col">
-                                <h3>Parents Day</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <h3>12</h3>
-                                <b> March</b>
-                            </div>
-                            <div class="col">
-                                <h3>Youth Festival</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
+               
 
             </div>
             <div class="card-footer border-success" style="background-color: green;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
@@ -170,6 +143,57 @@ $row = mysqli_fetch_array($result);
                     ?>
                 </marquee>
             </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+ <?php 
+if(isset($_GET['status'])){
+ if($_GET['status']=='done'){
+    echo '<script>
+    $(document).ready(function(){
+        $("#myModal").modal("show");
+    });
+</script>';
+ } 
+ else{
+    echo '<script>
+    $(document).ready(function(){
+        alert("TC is Not available");
+    });
+</script>';
+ }}
+   ?>
+ 
+
+
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">issued TC </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Verify your TC here</h4>
+       <embed src="TCs/<?php echo $_GET['tc'];?>" width="100%"  />
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
             <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
                 <a href=""><button class="btn btn-light" style="margin-bottom:0.50rem; ">More News</button></a>
             </div>

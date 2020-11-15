@@ -50,6 +50,10 @@ $Academic = mysqli_fetch_array($result);
 				<th>CBSE_Sample_paper</th>
 				<td><input type="text" name="cbse" value="<?php echo $Academic['CBSE_Sample_paper']  ?>"></td>
 			</tr>
+			<tr>
+				<th>H P E</th>
+				<td><input type="text" name="hpe" value="<?php echo $Academic['hpe']  ?>"></td>
+			</tr>
 		</table>
 		<input type="submit" name="submit" value="Update"  >
 	</form>
