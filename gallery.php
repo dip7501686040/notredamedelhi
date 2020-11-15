@@ -1,6 +1,6 @@
 <?php
 include"connect.php"; 
-include"function.php";
+require_once('header.php');
 $page=$_GET['page'];
 if($page=='sp'){
 	$result=getseniorPhotos($conn);
@@ -18,7 +18,7 @@ else if($page=='jp'){
 	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=1">
 	<title>junior photos</title>
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
-	<?php   require_once('header.php');?>
+	
 </head>
 <body>
 
