@@ -1,7 +1,7 @@
 <?php  require_once('header.php'); 
 require_once('function.php');
 $id=$_GET['n'];
- $result = mysqli_query($conn,"SELECT * FROM events where id=$id" );
+ $result = mysqli_query($conn,"SELECT * FROM eventsindex where id=$id" );
  while($row = mysqli_fetch_array($result)){
  ?>
 <br>
