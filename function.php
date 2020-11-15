@@ -161,4 +161,15 @@ function school_info($conn){
    }  
 }
  
+
+ function getobjectives($conn){
+	$result = mysqli_query($conn,"SELECT * FROM objectives" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+}  
 ?>
