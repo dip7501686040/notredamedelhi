@@ -123,6 +123,20 @@ require('header.php');
                 <a href="add_Exam&prom.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>Exam & prom</h2>
+                        </div>
+                        </a>
+                        </div>
+            <div class="col-sm-3">
+                <a href="add_rules.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Rules</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="add_history.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>History</h2>
                     </div>
                 </a>
             </div>

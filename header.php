@@ -70,8 +70,8 @@ $schoolinfo = mysqli_fetch_array($school);
                         </div>
                     </div>
                 </div> 
-            <button type="button" class="btn" style="background-color:#13355e;color:white;">Alumni</button> &nbsp;
-            <a href="https://www.facebook.com/notredamedelhi" target="_new" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></a> &nbsp;
+            <a href="<?php echo $Academic['alumni']  ?>" target="_new"><button type="button" class="btn" style="background-color:#13355e;color:white;">Alumni</button></a> &nbsp;
+            <a href="<?php echo $Academic['facebook']  ?>" target="_new" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></a> &nbsp;
            
       
             </div>

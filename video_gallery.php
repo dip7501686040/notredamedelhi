@@ -1,6 +1,6 @@
 <?php
+require_once('header.php');
 include "connect.php";
-include "function.php";
 $page = $_GET['page'];
 if ($page == 'sv') {
 	$result = getseniorVideo($conn);
@@ -17,7 +17,6 @@ if ($page == 'sv') {
 	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=1">
 	<title>junior photos</title>
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
-	<?php require_once('header.php'); ?>
 	<style type="text/css">
 		@media screen and (max-width: 769px) {
 

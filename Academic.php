@@ -54,6 +54,14 @@ $Academic = mysqli_fetch_array($result);
 				<th>H P E</th>
 				<td><input type="text" name="hpe" value="<?php echo $Academic['hpe']  ?>"></td>
 			</tr>
+			<tr>
+				<th>Facebook link</th>
+				<td><input type="text" name="facebook" value="<?php echo $Academic['facebook']  ?>"></td>
+			</tr>
+			<tr>
+				<th>Alumni</th>
+				<td><input type="text" name="alumni" value="<?php echo $Academic['alumni']  ?>"></td>
+			</tr>
 		</table>
 		<input type="submit" name="submit" value="Update"  >
 	</form>
