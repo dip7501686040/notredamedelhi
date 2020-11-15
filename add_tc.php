@@ -4,11 +4,12 @@ include 'connect.php';
 $statusMsg = '';
 
 // File upload path
-$targetDir = "uploads/";
+$targetDir = "TCs/";
 $fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 $r_num=$_POST['r_number'];
+$a_num=$_POST['a_number'];
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','pdf');
@@ -16,9 +17,9 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $insert = mysqli_query($conn,"INSERT into tc_issued(file,r_number) VALUES ('".$fileName."','".$r_num."')");
+            $insert = mysqli_query($conn,"INSERT into tc_issued(file,r_number,a_number) VALUES ('".$fileName."','".$r_num."','".$a_num."')");
             if($insert){
-                $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+                $statusMsg = "The Registration no ".$r_num. " has been uploaded successfully.";
                 header("location:tc_issued.php?msg=done&name=".$statusMsg);
             }else{
                 $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;

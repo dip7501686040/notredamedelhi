@@ -56,7 +56,7 @@ $Academic = mysqli_fetch_array($result);
                                 <form action="tc_verify.php" action="POST">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Registration Number</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" >
+                                        <input type="text" class="form-control" id="exampleInputEmail1" name="check" >
                                     </div>
 
                                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -143,7 +143,7 @@ $Academic = mysqli_fetch_array($result);
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color: white;">H P E</a></li>
+                                                    <li class="nav-item"><a href="<?php echo $Academic['hpe']  ?>" class="nav-link text-small pb-0 " style="color: white;">H P E</a></li>
 
                                                 </ul>
                                             </div>
@@ -193,12 +193,12 @@ $Academic = mysqli_fetch_array($result);
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color:white;">Pre-Primary to 8th</a></li>
+                                                    <li class="nav-item"><a href="pre-8.php" class="nav-link text-small pb-0 " style="color:white;">Pre-Primary to 8th</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="" class="nav-link text-small pb-0 " style="color:white;">Class 11th Admission</a></li>
+                                                    <li class="nav-item"><a href="admission11.php" class="nav-link text-small pb-0 " style="color:white;">Class 11th Admission</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">

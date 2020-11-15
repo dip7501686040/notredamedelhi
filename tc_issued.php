@@ -30,6 +30,10 @@ if(isset($_GET['msg'])){
     <input type="text" name="r_number" class="form-control" id="exampleInputEmail1" >
   </div>
   <div class="form-group">
+    <label for="exampleInputEmail1">Adminssion Numbers</label>
+    <input type="text" name="a_number" class="form-control" id="exampleInputEmail1" >
+  </div>
+  <div class="form-group">
     <label for="exampleFormControlFile1">Upload TC (pdf,jpg,jpeg,doc)</label>
     <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
   </div>
