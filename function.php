@@ -171,5 +171,25 @@ function school_info($conn){
    else{
    	return "no Data";
    }  
+} 
+function getrules($conn){
+	$result = mysqli_query($conn,"SELECT * FROM rules" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
 }  
+function gethistory($conn){
+	$result = mysqli_query($conn,"SELECT * FROM history" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return "no Data";
+   }  
+} 
 ?>
