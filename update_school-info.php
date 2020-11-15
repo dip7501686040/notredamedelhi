@@ -10,12 +10,12 @@ require('header.php');
       $name = $_GET['name'];
       echo '<div class="alert alert-success alert-dismissible">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-<strong>Success!</strong>.' . $name . ' Your TC is successfully Added.
+<strong>Success!</strong>.' . $name . ' Your File is successfully Added.
 </div>';
     } else {
       echo '<div class="alert alert-danger alert-dismissible">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-<strong>Danger!</strong> You Failed to add TC .
+<strong>Danger!</strong> You Failed to add File .
 </div>';
     }
   }
