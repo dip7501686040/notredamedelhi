@@ -4,6 +4,8 @@ $db_handler = new DBController();
 require_once('function.php');
 $result = mysqli_query($conn,"SELECT * FROM Academic_link where id=1" );
 $Academic = mysqli_fetch_array($result);
+$school = school_info($conn);
+$schoolinfo = mysqli_fetch_array($school);
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +105,7 @@ $Academic = mysqli_fetch_array($result);
                                             <div class="col-lg-6 mb-4">
 
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="school_info.php" class="nav-link text-small pb-0 " style="color: white;">School Information</a></li>
+                                                    <li class="nav-item"><a href="view_school_info.php?data=<?php echo $schoolinfo['file']; ?>" target="_new" class="nav-link text-small pb-0 " style="color: white;">School Information</a></li>
                                                     <li class="nav-item"><a href="all_faculty.php" class="nav-link text-small pb-0 " style="color: white;">Faculty</a></li>
                                                 </ul>
                                             </div>

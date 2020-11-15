@@ -143,7 +143,6 @@ $row = mysqli_fetch_array($result);
                     ?>
                 </marquee>
             </div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
  <?php 
 if(isset($_GET['status'])){
  if($_GET['status']=='done'){
@@ -171,7 +170,7 @@ if(isset($_GET['status'])){
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">issued TC </h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Issued TC </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

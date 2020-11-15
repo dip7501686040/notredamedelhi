@@ -150,4 +150,15 @@ function join_date($conn,$id){
    	return "no Data";
    }  
 }
+function school_info($conn){
+	$result = mysqli_query($conn,"SELECT * from school_info  WHERE  id = (SELECT Max(id) from school_info);" );
+	if(mysqli_num_rows($result) > 0){
+		return $result;
+
+	}
+   else{
+   	return 1;
+   }  
+}
+ 
 ?>
