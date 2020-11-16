@@ -33,38 +33,80 @@ $schoolinfo = mysqli_fetch_array($school);
     <link rel="stylesheet" href="css/footer.css">
 
     <style>
-        /* ============ only desktop view ============ */
-        @media all and (min-width: 992px) {
-            .navbar .nav-item .dropdown-menu {
-                display: block;
-                opacity: 0;
-                visibility: hidden;
-                transition: .3s;
-                margin-top: 0;
-            }
+ .navbar{
+     background: #fff;
+     padding-top: 0;
+     padding-bottom: 0;
+     box-shadow: 1px 3px 4px 0 #adadad33;
+}
+ .navbar-light .navbar-brand {
+     color: #13355e;
+}
+ .navbar-light .navbar-nav .nav-link {
+     color: #13355e;
+}
+ .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+     color: #fff;
+}
+ .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+     color: #fff;
+}
+ .navbar-light .navbar-nav .nav-link{
+     padding-top: 22px;
+     padding-bottom: 22px;
+     transition: 0.3s;
+     padding-left: 24px;
+     padding-right: 24px;
+         font-size: 14px;
+}
+ .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+     background: #13355e;
+     transition: 0.3s;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color:#13355e !important;
+}
+.sm-menu{
+    border-radius: 0px;
+    border: 0px;
+    top: 97%;
+    box-shadow: rgba(173, 173, 173, 0.2) 1px 3px 4px 0px;
+}
+.dropdown-item {
+    color: #3c3c3c;
+        font-size: 14px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #2196F3;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.navbar-tog{
+    color: #1ebdc2;
+}
+.megamenu-li {
+	position: static;
+}
 
-            .navbar .nav-item:hover .nav-link {
-                color: #fff;
-            }
+.megamenu {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 15px;
+}
+.megamenu h6{
+    margin-left: 21px;
+}
+.megamenu i{
+    width: 20px;
+}
 
-            .navbar .dropdown-menu.fade-down {
-                top: 80%;
-                transform: rotateX(-75deg);
-                transform-origin: 0% 0%;
-            }
-
-            .navbar .dropdown-menu.fade-up {
-                top: 180%;
-            }
-
-            .navbar .nav-item:hover .dropdown-menu {
-                transition: .3s;
-                opacity: 1;
-                visibility: visible;
-                top: 100%;
-                transform: rotateX(0deg);
-            }
-        }
 
         /* ============ desktop view .end// ============ */
 
@@ -128,43 +170,105 @@ $schoolinfo = mysqli_fetch_array($school);
 
     </div>
     <!--......navbar.......-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span> 
         </button>
-        <div class="collapse navbar-collapse " id="main_nav">
-
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-                <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-                <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> Hover up </a>
-                    <ul class="dropdown-menu fade-down">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
-                            </div>
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
-                            <div class="col-sm">col-sm</div>
+        <div class="collapse navbar-collapse" id="mobile_nav">
+        
+        <ul class="navbar-nav navbar-light mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item dropdown megamenu-li dmenu">
+                <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
+                <div class="dropdown-menu megamenu sm-menu container mx-auto border-top" aria-labelledby="dropdown01">
+                    <div class="row" style="width: 100%;">
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            
+                            <a class="dropdown-item" href="legecy.php" ><i class="fab fa-magento"></i> Legacy</a>
+                            <a class="dropdown-item" href="history.php"><i class="fab fa-magento"></i> History</a>
+                        </div>
+                       <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <a class="dropdown-item" href="objectives.php"><i class="fab fa-wordpress-simple"></i> Aims and Objectives </a>
+                            <a class="dropdown-item" href="rules.php"><i class="fab fa-php"></i> Rules and Regulations </a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <a class="dropdown-item" href="view_school_info.php?data=<?php echo $schoolinfo['file']; ?>"><i class="fas fa-tablet-alt"></i> School Information </a>
+                            <a class="dropdown-item" href="all_faculty.php"><i class="fas fa-mobile-alt"></i> Faculty</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <a class="dropdown-item" href="principle.php"><i class="fas fa-leaf fa-rotate-90"></i> Principals</a>
                         </div>
                     </div>
-                    </ul>
-                   
-                </li>
-            </ul>
-
-
-
-        </div> <!-- navbar-collapse.// -->
-
-
-    </nav>
+                </div>
+            </li>
+            <li class="nav-item dmenu dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+                </a>
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Software Development</a>
+                    <a class="dropdown-item" href="#">Web Designing & Development</a>
+                    <a class="dropdown-item" href="#">Mobile Application</a>
+                    <a class="dropdown-item" href="#">Business Solutions & Business Process</a>
+                    <a class="dropdown-item" href="#">Digital Marketing & SEO Services</a>
+                    <a class="dropdown-item" href="#">Web Hosting & Maintenance</a>
+                    <a class="dropdown-item" href="#">Cyber Security</a>
+                    <a class="dropdown-item" href="#">Block Chain Implementation</a>
+                    <a class="dropdown-item" href="#">Big Data</a>
+                </div>
+            </li>
+            <!--========-->
+            <li class="nav-item dropdown megamenu-li dmenu">
+                <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Services</a>
+                <div class="dropdown-menu megamenu sm-menu border-top" aria-labelledby="dropdown01">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>Ecommerce</h6>
+                            <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Magento Development</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Magento 2 Migration</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Odoo ERP</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> Mobile Commerce</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-magento"></i> CRM for Commerce</a>
+                        </div>
+                       <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>LAMP Technology</h6>
+                            <a class="dropdown-item" href="#"><i class="fab fa-php"></i> PHP Website Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-circle"></i> Phalcon Development</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-laravel"></i> Laravel Development</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-wordpress-simple"></i> WordPress Development</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-php"></i> Symfony Development</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 border-right mb-4">
+                            <h6>Mobile</h6>
+                            <a class="dropdown-item" href="#"><i class="fab fa-apple"></i> iPhone App Development</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-android"></i> Android App Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Phone Gap App Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-tablet-alt"></i> Hybrid App Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Ionic Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-tablet-alt"></i> React Native Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Xamarin App Development</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 mb-4">
+                            <h6>Node.js & MongoDB</h6>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cubes"></i> Full Stack Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cube"></i> MEAN Stack</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-angular"></i> AngularJS</a>
+                            <a class="dropdown-item" href="#"><i class="fab fa-node-js"></i> Node.JS Development</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-leaf fa-rotate-90"></i> MongoDB Development</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--=========-->
+            <li class="nav-item"><a class="nav-link" href="<?php echo siteURL;?>portfolio.php">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo siteURL;?>career.php">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo siteURL;?>contact-us.php">Contact us</a></li>
+   
+        </ul>
+        </div>
+    </div>
+</nav>
 
     <!--......//navbar.......-->
 
@@ -196,4 +300,19 @@ $schoolinfo = mysqli_fetch_array($school);
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+    $(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(105)
+    });
+}); 
+ 
+    $(document).ready(function() {
+	$(".megamenu").on("click", function(e) {
+		e.stopPropagation();
+	});
+});
+
     </script>
