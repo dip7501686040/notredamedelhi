@@ -17,8 +17,8 @@ $Admission = mysqli_fetch_array($result);
 	</div>
 
 	<div class="d1 d2">
-		<h4 style="color:red;">NOTICE</h4>
-		<marquee direction="left" onMouseOver="this.stop()"  onMouseOut="this.start()"><h2><?php echo $Admission['notice'];  ?></h2></marquee>
+		<h3 style="color:red;">NOTICE</h3>
+		<h4><?php echo nl2br( $Admission['notice']) ; ?></h4>
 	</div>
 
 	<div>

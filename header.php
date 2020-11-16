@@ -20,6 +20,8 @@ $schoolinfo = mysqli_fetch_array($school);
 
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
 
+    
+
 
     <link rel="stylesheet" href="css/footer.css">
 
@@ -88,7 +90,7 @@ $schoolinfo = mysqli_fetch_array($school);
         <div id="navbarContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a href="index.php" class="nav-link font-weight-bold text-uppercase">Home</a></li>
-                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">About us</a>
+                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle fade-down font-weight-bold text-uppercase">About us</a>
                     <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
                         <div class="container">
                             <div class="row bg-white rounded-0 m-0 shadow-sm">
