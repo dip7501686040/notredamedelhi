@@ -32,6 +32,18 @@ $schoolinfo = mysqli_fetch_array($school);
             font-family: 'El Messiri', sans-serif;
         }
     </style>
+    <style type="text/css">
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{ color: #000;  }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}   
+/* ============ desktop view .end// ============ */
+
+
+</style>
 </head>
 
 <body>
@@ -71,7 +83,7 @@ $schoolinfo = mysqli_fetch_array($school);
                     </div>
                 </div> 
             <a href="<?php echo $Academic['alumni']  ?>" target="_new"><button type="button" class="btn" style="background-color:#13355e;color:white;">Alumni</button></a> &nbsp;
-            <a href="<?php echo $Academic['facebook']  ?>" target="_new" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></a> &nbsp;
+            <a href="<?php echo $Academic['facebook'] ; ?>" target="_new" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></a> &nbsp;
            
       
             </div>
@@ -89,11 +101,11 @@ $schoolinfo = mysqli_fetch_array($school);
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a href="index.php" class="nav-link font-weight-bold text-uppercase">Home</a></li>
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">About us</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm">
-                                <div class="col-lg-7 col-xl-8" style="background-color: #13355e;">
-                                    <div class="p-4">
+                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-12 m-0">
+                        <div class="container" style="width: 100%;">
+                            <div class="row bg-white rounded-0 m-0 shadow-sm" >
+                                <div class="col-lg-12 col-xl-12" style="background-color: #13355e;">
+                                    <div class="p-12">
                                         <div class="row">
                                             <div class="col-lg-6 mb-4">
 
@@ -121,10 +133,10 @@ $schoolinfo = mysqli_fetch_array($school);
                                                 </ul>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
-                                <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(images/nav_pic.jpg)no-repeat;height:18rem;"></div>
-                            </div>
+                               
                         </div>
                     </div>
                 </li>

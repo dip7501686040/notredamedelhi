@@ -82,7 +82,7 @@ $row = mysqli_fetch_array($result);
 
             </div>
             <div class="card-footer border-success" style="background-color: green;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
-                <a href="calendaruser.php"><button class="btn btn-light " style="margin-bottom:0.50rem;">View all Events</button></a>
+                <button class="btn btn-light " style="margin-bottom:0.50rem;" onclick="window.location.href='calendaruser.php';">View all Events</button>
             </div>
         </div>
     </div>
@@ -130,10 +130,10 @@ $row = mysqli_fetch_array($result);
 
                     ?>
 
-                        <h6><?php echo $notice['date']; ?></h6>
+                        <h6><?php  echo date('d M Y', strtotime($notice['date']));  ?></h6>
                         <a href="notice_uploads/<?php echo $notice['file']; ?>" target="_new">
                             <p class="notice_body_text" style="color:#dc3545;">
-                                <?php echo strtoupper($notice['notice']); ?><img src="images/notice.gif" alt="" style="height: 3em;float:right;">
+                                <?php echo strtoupper($notice['notice']); ?><?php if($notice['new']=='YES'){echo '<img src="images/notice.gif" alt="" style="height: 3em;float:right;">';} ?>
                             </p>
                             <hr style="border-top: 1px dotted red;">
                         </a>
@@ -143,6 +143,13 @@ $row = mysqli_fetch_array($result);
                     ?>
                 </marquee>
             </div>
+            <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
+                <button class="btn btn-light" style="margin-bottom:0.50rem;"onclick="window.location.href='all_notices.php';">More News</button>
+            </div>
+        </div>
+    </div>
+</div>
+
  <?php 
 if(isset($_GET['status'])){
  if($_GET['status']=='done'){
@@ -160,12 +167,6 @@ if(isset($_GET['status'])){
 </script>';
  }}
    ?>
- 
-
-
-
-
-
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -185,21 +186,6 @@ if(isset($_GET['status'])){
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-            <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
-                <a href=""><button class="btn btn-light" style="margin-bottom:0.50rem; ">More News</button></a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--........//index content........-->
 <?php
 require_once('event_slider.php');

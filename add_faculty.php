@@ -70,8 +70,18 @@
       while($row = mysqli_fetch_array($result)){  ?>
        <tr>
         <td><?php echo $count; ?></td>
-        <td><?php echo $row['name']; ?></td>
-        <td><?php echo $row['Designation']; ?></td>
+        <td><form action="faculty.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="col" value="name">
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <input type="text" name="data"  style="border:none;display: inline-block;width: 70%"  value="<?php echo $row['name'] ?>">
+            <input type="submit" name="tsubmit" value="update" style="display: inline-block;width: 25%">
+            </form></td>
+        <td><form action="faculty.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="col" value="Designation">
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <input type="text" name="data"  style="border:none;display: inline-block;width: 70%"  value="<?php echo $row['Designation'] ?>">
+            <input type="submit" name="tsubmit" value="update" style="display: inline-block;width: 25%">
+            </form></td>
         <td><form action="delete_post.php" method="GET" enctype="multipart/form-data" >
       <input type="hidden" name="table" value="faculty">
       <input type="hidden" name="loc" value="add_faculty.php">

@@ -189,4 +189,15 @@ function getexam_prom($conn)
 	}
 }
 
+function getnotice($conn)
+{
+	$result = mysqli_query($conn, "SELECT * FROM notices order by id desc");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
+
 ?>
