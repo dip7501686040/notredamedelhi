@@ -1,6 +1,5 @@
 <?php
 require_once('header.php');
-include "connect.php";
 $page = $_GET['page'];
 if ($page == 'sv') {
 	$result = getseniorVideo($conn);

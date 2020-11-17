@@ -35,15 +35,17 @@ $schoolinfo = mysqli_fetch_array($school);
     <style type="text/css">
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu{ display: none; }
+    
     .navbar .nav-item:hover .nav-link{ color: #000;  }
     .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item.onclick  $( ".dropdown-menu" ).css('display', 'block');
     .navbar .nav-item .dropdown-menu{ margin-top:0; }
 }   
 /* ============ desktop view .end// ============ */
 
 
 </style>
+
 </head>
 
 <body>
@@ -101,9 +103,9 @@ $schoolinfo = mysqli_fetch_array($school);
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a href="index.php" class="nav-link font-weight-bold text-uppercase">Home</a></li>
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">About us</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-12 m-0">
-                        <div class="container" style="width: 100%;">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm" >
+                    <div aria-labelledby="megamneu" class="dropdown-menu ">
+                        <div class="container" >
+                            <div class="row bg-white rounded-0 m-0 shadow-sm"  >
                                 <div class="col-lg-12 col-xl-12" style="background-color: #13355e;">
                                     <div class="p-12">
                                         <div class="row">
@@ -139,6 +141,7 @@ $schoolinfo = mysqli_fetch_array($school);
                                
                         </div>
                     </div>
+                </div>
                 </li>
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Academics </a>
                     <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
@@ -229,30 +232,30 @@ $schoolinfo = mysqli_fetch_array($school);
                 </li>
                 <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Gallery</a>
                     <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm">
-                                <div class="col-lg-7 col-xl-8" style="background-color: #13355e;">
-                                    <div class="p-4">
-                                        <div class="row">
+                        <div class="container mx-auto">
+                            <div class="row bg-white  m-12 shadow-sm">
+                                <div class="col-lg-12 col-xl-8" style="background-color: #13355e;">
+                                    <div class="p-0">
+                                        <div class="row" style="width: 100%;">
 
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="video_gallery.php?page=sv" class="nav-link text-small pb-0" style="color:white;">Video (Senior)</a></li>
+                                                    <li class="nav-item"><a href="new_video.php?page=sv" class="nav-link text-small pb-0" style="color:white;">Video (Senior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="gallery.php?page=sp" class="nav-link text-small pb-0" style="color:white;">Photo (Senior)</a></li>
+                                                    <li class="nav-item"><a href="gallery_new.php?page=sp" class="nav-link text-small pb-0" style="color:white;">Photo (Senior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="video_gallery.php?page=jv" class="nav-link text-small pb-0" style="color:white;">Video (Junior)</a></li>
+                                                    <li class="nav-item"><a href="new_video.php?page=jv" class="nav-link text-small pb-0" style="color:white;">Video (Junior)</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-6 mb-4">
                                                 <ul class="list-unstyled">
-                                                    <li class="nav-item"><a href="gallery.php?page=jp" class="nav-link text-small pb-0" style="color:white;">Photo (Junior)</a></li>
+                                                    <li class="nav-item"><a href="gallery_new.php?page=jp" class="nav-link text-small pb-0" style="color:white;">Photo (Junior)</a></li>
                                                 </ul>
                                             </div>
                                         </div>

@@ -1,9 +1,9 @@
 <?php
 require_once('header.php');
-$img=homeimage($conn);
-$principal=principal($conn);
+$img = homeimage($conn);
+$principal = principal($conn);
 $prow = mysqli_fetch_array($principal);
-$eve=event_date($conn);
+$eve = event_date($conn);
 
 ?>
 
@@ -53,32 +53,34 @@ $row = mysqli_fetch_array($result);
     <div class="event  ">
         <div class="card border-success " style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
             <div class="card-header border-success" style="background-color: green;color:white;">
-            <h3>Diary Dates</h3
-            ></div>
+                <center>
+                    <h3>Diary Dates</h3>
+                </center>
+            </div>
             <div class="wrapper scrollbar-ripe-malinka_a notice_a_body ">
-                <?php while($erow = mysqli_fetch_array($eve)){  ?>
-                <br>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <?php  $string = $erow['start_event'];
-                                $timestamp = strtotime($string);
-                                $month_num=date("m", $timestamp);
-                                 $month_name = date("F", mktime(0, 0, 0, $month_num, 10)); 
+                <?php while ($erow = mysqli_fetch_array($eve)) {  ?>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <?php $string = $erow['start_event'];
+                                    $timestamp = strtotime($string);
+                                    $month_num = date("m", $timestamp);
+                                    $month_name = date("F", mktime(0, 0, 0, $month_num, 10));
                                     ?>
-                                <h3><?php echo date("d", $timestamp); ?></h3>
-                                <b> <?php echo $month_name; ?></b>
-                            </div>
-                            <div class="col">
-                                <h5><?php echo $erow['title'] ?></h5>
+                                    <h3><?php echo date("d", $timestamp); ?></h3>
+                                    <b> <?php echo $month_name; ?></b>
+                                </div>
+                                <div class="col">
+                                    <h5><?php echo $erow['title'] ?></h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php  } ?>
+                <?php  } ?>
                 <br>
-               
+
 
             </div>
             <div class="card-footer border-success" style="background-color: green;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
@@ -89,13 +91,14 @@ $row = mysqli_fetch_array($result);
     <div class="message">
         <div class="card">
             <div class="card-body scrollbar-ripe-malinka">
-                <img src="uploads/<?php echo $prow['img']; ?>" alt="main" class="img-thumbnail" style="height: 15em;float:right;">
                 <h3 class="card-title"><b><span class="border border-secondary" style="padding: 0.10em;box-shadow: 10px 10px 5px grey;">Principal’s Message</span></b>
                 </h3>
-                <br>
-                <p class="card-text" style="font-size: 18px;"><?php echo $prow['message']."<br>".$prow['message2'];  ?>
+                <img src="uploads/<?php echo $prow['img']; ?>" alt="main" class="img-thumbnail" style="height: 15em;float:right;">
 
-                   <br>
+                <br>
+                <p class="card-text" style="font-size: 18px;"><?php echo nl2br($prow['message']) . "<br>" . nl2br($prow['message2']);  ?>
+
+                    <br>
                     <br> <b style="font-family: 'Satisfy', cursive;"> “The highest education is that which does not merely give us information but makes our
                         life in harmony with all existence”</b><br><b style="float: right;">-(Rabindranath Tagore)</b><br>
                     <br> <b style="font-family: 'Satisfy', cursive;">“Creativity leads to thinking, thinking leads to Knowledge, Knowledge make you great” </b><br>
@@ -113,7 +116,9 @@ $row = mysqli_fetch_array($result);
             <div class="card-header border-danger" style="background-color: #dc3545;color:white;">
                 <div class="row">
                     <div class="col">
-                        <h3>Notice Board</h3>
+                        <center>
+                            <h3>Notice Board</h3>
+                        </center>
                     </div>
 
 
@@ -158,9 +163,8 @@ if(isset($_GET['status'])){
         $("#myModal").modal("show");
     });
 </script>';
- } 
- else{
-    echo '<script>
+                } else {
+                    echo '<script>
     $(document).ready(function(){
         alert("TC is Not available");
     });

@@ -71,8 +71,22 @@
       while($row = mysqli_fetch_array($result)){  ?>
        <tr>
         <td><?php echo $count; ?></td>
-        <td><?php echo $row['heading']; ?></td>
-        <td><?php echo nl2br($row['content']); ?></td>
+        <td>
+          <form action="new_rule.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="col" value="heading">
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <input type="text" name="data"  style="border:none;"  value="<?php echo $row['heading'] ?>">
+            <input type="submit" name="tsubmit" value="update" style=" ">
+            </form>
+        </td>
+        <td>
+          <form action="new_rule.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="col" value="content">
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <textarea type="text" name="data"  style="border:none;display:;" rows="4"><?php echo nl2br($row['content']); ?></textarea>
+            <input type="submit" name="tsubmit" value="update" style="display: inline-block;">
+            </form>
+        </td>
         <td><form action="delete_post.php" method="GET" enctype="multipart/form-data" >
       <input type="hidden" name="table" value="rules">
       <input type="hidden" name="loc" value="add_rules.php">

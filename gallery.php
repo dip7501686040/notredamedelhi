@@ -17,7 +17,7 @@ else if($page=='jp'){
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=1">
-	<title>junior photos</title>
+	<title>photos</title>
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
 	
 </head>

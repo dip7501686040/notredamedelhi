@@ -93,6 +93,16 @@ function homeimage($conn)
 	}
 }
 
+function all_homeimage($conn)
+{
+	$result = mysqli_query($conn, "SELECT * FROM homeimage ORDER BY id DESC LIMIT 4");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
 function admission_doc($conn)
 {
 	$result = mysqli_query($conn, "SELECT * FROM admission_doc where id =1");
@@ -121,6 +131,15 @@ function old_principal($conn)
 		return "no Data";
 	}
 }
+function all_principal($conn)
+{
+	$result = mysqli_query($conn, "SELECT * FROM current_principle  order by id desc;");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+} 
 function join_date($conn, $id)
 {
 	$result = mysqli_query($conn, "SELECT start from current_principle  WHERE  id != (SELECT Max(id) from current_principle);");
@@ -140,6 +159,17 @@ function event_date($conn)
 		return "no Data";
 	}
 }
+
+function all_event($conn)
+{
+	$result = mysqli_query($conn, "SELECT * FROM eventsindex order by id desc");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
 function school_info($conn)
 {
 	$result = mysqli_query($conn, "SELECT * from school_info  WHERE  id = (SELECT Max(id) from school_info);");
@@ -192,6 +222,22 @@ function getexam_prom($conn)
 function getnotice($conn)
 {
 	$result = mysqli_query($conn, "SELECT * FROM notices order by id desc");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+function getallphoto($conn){
+	$result = mysqli_query($conn, "SELECT * FROM files where type='photo' or type='Photo' order by id desc");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+function getallvideo($conn){
+	$result = mysqli_query($conn, "SELECT * FROM files where type='Video' or type='video' order by id desc");
 	if (mysqli_num_rows($result) > 0) {
 		return $result;
 	} else {

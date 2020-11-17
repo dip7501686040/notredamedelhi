@@ -2,7 +2,7 @@
 // Include the database configuration file
 include 'connect.php';
 $statusMsg = '';
-
+if($_POST['submit']){
 // File upload path
 $targetDir = "TCs/";
 $fileName = basename($_FILES["file"]["name"]);
@@ -20,7 +20,6 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
             $insert = mysqli_query($conn,"INSERT into tc_issued(file,r_number,a_number) VALUES ('".$fileName."','".$r_num."','".$a_num."')");
             if($insert){
                 $statusMsg = "The Registration no ".$r_num. " has been uploaded successfully.";
-                header("location:tc_issued.php?msg=done&name=".$statusMsg);
             }else{
                 $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
             } 
@@ -33,7 +32,24 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
 }else{
     $statusMsg = 'Please select a file to upload.';
 }
-
+}
+if($_POST['tsubmit']){
 // Display status message
+if($_POST['tsubmit']){
+    $data=$_POST['data'];
+    $col=$_POST['col'];
+    $id=$_POST['id'];
+    $msg="error";
+    $insert = mysqli_query($conn,"UPDATE tc_issued set `$col`='$data' where id=".$id);
+    if($insert){
+                $msg="done";
+                $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+            }else{
+                $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
+            } 
+}
+}
+                header("location:tc_issued.php?msg=done&name=".$statusMsg);
+
 echo $statusMsg;
 ?>

@@ -35,7 +35,7 @@
 <br><br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
             <div class="card">
                 <div class="card-header">
                     12 July 2020
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8">
         <div class="card">
                 <div class="card-header">
                     12 July 2020
@@ -76,7 +76,7 @@
 <br><br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-8">
             <div class="card">
                 <div class="card-header">
                     12 July 2020
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8">
         <div class="card">
                 <div class="card-header">
                     12 July 2020

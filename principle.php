@@ -15,8 +15,8 @@ $principal=old_principal($conn);
 			<div class="profile">
 				<img src="uploads/<?php echo $prow['img'] ?>" class="profile-img">
 
-				<h3 class="pl-name"><?php echo $prow['name'] ?></h3>
-				<h5>SND (<?php echo $prow['start']; ?>)</h5>
+				<h3 class="pl-name"> SND <?php echo $prow['name'] ?></h3>
+				<h5> (<?php echo $prow['start']; ?>)</h5>
 			</div>
   <?php }?>
 			

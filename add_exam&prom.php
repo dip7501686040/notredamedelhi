@@ -63,7 +63,14 @@
       while($row = mysqli_fetch_array($result)){  ?>
        <tr>
         <td><?php echo $count; ?></td>
-        <td><?php echo $row['rule']; ?></td>
+        <td >
+          <form action="new_exam.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="col" value="rule">
+            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+            <input type="text" name="data"  style="border:none;display: inline-block;"  value="<?php echo $row['rule'] ?>">
+            <input type="submit" name="tsubmit" value="update" style="display: inline-block;">
+            </form>
+        </td>
         
         <td><form action="delete_post.php" method="GET" enctype="multipart/form-data" >
       <input type="hidden" name="table" value="exam_prom">
