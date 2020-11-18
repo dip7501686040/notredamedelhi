@@ -184,7 +184,7 @@ $schoolinfo = mysqli_fetch_array($school);
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="event.php" class="nav-link font-weight-bold text-uppercase">Events</a></li>
+                <li class="nav-item"><a href="all_events.php" class="nav-link font-weight-bold text-uppercase">Events</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font-weight-bold text-uppercase" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Achievements

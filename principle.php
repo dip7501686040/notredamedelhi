@@ -6,7 +6,7 @@ $principal=old_principal($conn);
 	<link rel="stylesheet" type="text/css" href="principle.css">
 
 	<div class="container">
-		<h1 class="heading"><span>meet</span>Our Former Principals</h1>
+		<center><h1 class="heading " style="color: blue"><span>meet </span>Our Former Principals</h1></center>
 				<div class="profiles">
 
 		<?php while ($prow = mysqli_fetch_array($principal)) {

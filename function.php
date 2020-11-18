@@ -244,6 +244,15 @@ function getallvideo($conn){
 		return "no Data";
 	}
 }
+function status($conn,$id){
+	$result = mysqli_query($conn, "SELECT status FROM active where id=".$id);
+	$status = mysqli_fetch_array($result);
 
+	if (mysqli_num_rows($result) > 0) {
+		return $status['status'];
+	} else {
+		return "no Data";
+	}
+}
 
 ?>

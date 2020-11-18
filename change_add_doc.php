@@ -47,6 +47,19 @@ if($_POST['tsubmit']){
                 $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
             } 
 }
+if($_POST['ssubmit']){
+    $doc=$_POST['doc'];
+    $field = isset($_POST['switch']) ? $_POST['switch'] : false;
+$dbFlag = $field ? 'Yes' : 'No';
+$msg="error";
+    $insert = mysqli_query($conn,"UPDATE active set `status`='$dbFlag' where id=".$doc);
+    if($insert){
+                $msg="done";
+                $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+            }else{
+                $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
+            } 
+}
 // Display status message
 header("location:update_admission.php?msg=".$msg."&name=".$statusMsg);
 ?>
