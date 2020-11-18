@@ -84,8 +84,10 @@ $row = mysqli_fetch_array($result);
 
             </div>
             <div class="card-footer border-success" style="background-color: green;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
-                <button class="btn btn-light " style="margin-bottom:0.50rem;" onclick="window.location.href='calendaruser.php';">View all Events</button>
-            </div>
+<center>
+<button class="btn btn-light " style="margin-bottom:0.50rem;" onclick="window.location.href='calendaruser.php';">View all Events</button>
+
+</center>            </div>
         </div>
     </div>
     <div class="message">
@@ -149,8 +151,10 @@ $row = mysqli_fetch_array($result);
                 </marquee>
             </div>
             <div class="card-footer  border-danger" style="background-color: #dc3545;color:white;border-radius:0 0 calc(2.25rem - 10px) calc(2.25rem - 10px) ;">
-                <button class="btn btn-light" style="margin-bottom:0.50rem;"onclick="window.location.href='all_notices.php';">More News</button>
-            </div>
+<center>
+<button class="btn btn-light" style="margin-bottom:0.50rem;"onclick="window.location.href='all_notices.php';">More News</button>
+
+</center>            </div>
         </div>
     </div>
 </div>
