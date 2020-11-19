@@ -286,10 +286,10 @@ $schoolinfo = mysqli_fetch_array($school);
                         <div class="dropdown-menu megamenu sm-menu mx-auto border-top" aria-labelledby="dropdown01" style="width: 70%;">
                             <div class="row">
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
-                                    <a class="dropdown-item" href="gallery_new.php?page=sp"><i class="fab fa-magento"></i>Senior (Photo)</a>
+                                    <a class="dropdown-item" href="all_gallery.php?type=Senior"><i class="fab fa-magento"></i>Senior (Photo)</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
-                                    <a class="dropdown-item" href="gallery_new.php?page=jp"><i class="fab fa-php"></i>Junior (Photo)</a>
+                                    <a class="dropdown-item" href="all_gallery.php?type=Junior"><i class="fab fa-php"></i>Junior (Photo)</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
                                     <a class="dropdown-item" href="new_video.php?page=sv"><i class="fab fa-apple"></i> Senior (video)</a>

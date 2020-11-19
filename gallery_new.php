@@ -1,12 +1,9 @@
 <?php
 require_once('header.php');
-$page=$_GET['page'];
-if($page=='sp'){
-    $result=getseniorPhotos($conn);
-}
-else if($page=='jp'){
-    $result=getJuniorPhotos($conn);
-}
+$type=$_GET['type'];
+$title=$_GET['title'];
+
+    $result=images($conn,$type,$title);
 ?>
 <link rel="stylesheet" href="css/gallery_new.css">
 
@@ -20,7 +17,11 @@ else if($page=='jp'){
     <div class="container page-top">
 
 
-
+<nav aria-label="breadcrumb"  >
+  <ol class="breadcrumb" style="background-color:  #072b52; color: white;" >
+    <li class="breadcrumb-item active mx-auto" aria-current="page" style="color: white;font-size: 20px;"><?php echo $title; ?></li>
+  </ol>
+</nav>
 <div class="row">
 
 <?php
@@ -31,7 +32,7 @@ else if($page=='jp'){
     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
         <a href="<?php echo $imageURL  ?>" class="fancybox" rel="ligthbox" style="height:650px ;width:940px;">
             <img  src="<?php echo $imageURL; ?>" class="zoom img-fluid "  alt="<?php echo $row['title'] ?>">
-            <center><h4><?php echo $row['title']  ?> </h4></center>
+            
            
         </a>
     </div>
@@ -48,7 +49,8 @@ else if($page=='jp'){
 
 </div>
 
+        </div>
 <script src="script/gallery_new.js"></script>
 <?php
-require_once('header.php');
+require_once('footer.php');
 ?>

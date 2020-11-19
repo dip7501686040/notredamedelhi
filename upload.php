@@ -10,6 +10,7 @@ $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 $category=$_POST['category'];
 $type=$_POST['type'];
+$title=$$_POST['title'];
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf','mp4','MPG','mkv');
@@ -17,7 +18,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $insert = mysqli_query($conn,"INSERT into files (file_name,category,type, uploaded_on) VALUES ('".$fileName."','".$category."','".$type."', NOW())");
+            $insert = mysqli_query($conn,"INSERT into files (file_name,category,title,type, uploaded_on) VALUES ('".$fileName."','".$category."','".$title."','".$type."', NOW())");
             if($insert){
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
             }else{

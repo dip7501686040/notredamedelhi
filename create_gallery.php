@@ -19,10 +19,17 @@ $vresult=getallvideo($conn);
         <label for="fname">File </label>
       </div>
       <div class="col-75">
-        <input type="file" id="file" name="file">
+        <input type="file" id="file" name="file" multiple="multiple">
       </div>
     </div>
-   
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Title </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="file" name="title" multiple="multiple">
+      </div>
+    </div>
     <div class="row">
       <div class="col-25">
         <label for="Category">Category</label>

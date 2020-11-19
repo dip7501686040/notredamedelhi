@@ -1,99 +1,42 @@
 <?php
 require_once('header.php');
+$type=$_GET['type'];
+$fol=folders($conn,$type);
+
 ?>
 <br>
 
 <div class=container>
-    <div class="card-deck">
-        <div class="card">
-            <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
+    <div class="row">
+        <?php  
+            while($row = mysqli_fetch_array($fol)) {
+    $title=$row['title'];
+    $img=mysqli_fetch_array(top_img($conn,$title,$type));
+         ?>
+         <div class="col-md-3">
+        <div class="card" >
+            <img src="uploads/<?php echo $img['file_name'];  ?>" class="card-img-top" alt="..." style="height: 12em;">
             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-               <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
+                <center><h5 class="card-title" style="height: 3em"><?php echo $title ?></h5></center>
+               <a href="gallery_new.php?title=<?php echo $title ?>&type=<?php echo $type ?>" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
             </div>
             <div class="card-footer">
                 <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
             </div>
         </div>
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
+    </div>
+        <?php 
+    }
+         ?>
+        
         </div>
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
-        </div>
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
-        </div>
+        
+        
     </div>
 
 </div>
 <br><br>
-<div class=container>
-    <div class="card-deck">
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
-        </div>
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
-        </div>
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
-        </div>
-        <div class="card">
-             <img src="images/imgno.jpg" class="card-img-top" alt="..." style="height: 12em;">
-             <div class="card-body">
-                <center><h5 class="card-title">Card title</h5></center>
-                <a href="" style="text-decoration: none;"> <center><p class="card-text"><b style="color: red;">|| View More ||</b> </p></center></a>
-            </div>
-            <div class="card-footer">
-                <center><small class="text-muted">Posted Date : 12/july/2020 </small></center>
-            </div>
-        </div>
-    </div>
 
-</div>
 <br> <br>
 <nav aria-label="Page navigation example ">
   <ul class="pagination" style="justify-content: center;">
