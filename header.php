@@ -1,4 +1,5 @@
 <?php
+session_start();
 require('dbcontroller.php');
 $db_handler = new DBController();
 require_once('function.php');
@@ -7,7 +8,6 @@ $Academic = mysqli_fetch_array($result);
 $school = school_info($conn);
 $schoolinfo = mysqli_fetch_array($school);
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -179,8 +179,13 @@ $schoolinfo = mysqli_fetch_array($school);
                 </div>
                 <a href="<?php echo $Academic['alumni']  ?>" target="_new"><button type="button" class="btn" style="background-color:#13355e;color:white;">Alumni</button></a> &nbsp;
                 <a href="<?php echo $Academic['facebook']  ?>" target="_new" class="btn"><img src="images/icon1.png" alt="" style="float: right;"></a> &nbsp;
+      <?php
+if(isset($_SESSION['name']))
+{	echo  '  <a href="admin.php" target="_new"><button type="button" class="btn" style="background-color:#13355e;color:white;">Admin</button></a> &nbsp;
+    <a href="admin_logout.php" target="_new"><button type="button" class="btn" style="background-color:#13355e;color:white;">Logout</button></a> &nbsp;
+'
 
-
+             ; } ?>
             </div>
         </div>
     </div>
@@ -215,7 +220,7 @@ $schoolinfo = mysqli_fetch_array($school);
                                     <a class="dropdown-item" href="rules.php"><i class="fab fa-php"></i> Rules and Regulations </a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
-                                    <a class="dropdown-item" href="view_school_info.php?data=<?php echo $schoolinfo['file']; ?>"><i class="fas fa-tablet-alt"></i> School Information </a>
+                                    <a class="dropdown-item" href="school_information.php"><i class="fas fa-tablet-alt"></i> School Information </a>
                                     <a class="dropdown-item" href="all_faculty.php"><i class="fas fa-mobile-alt"></i> Faculty</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 mb-4">
@@ -256,7 +261,7 @@ $schoolinfo = mysqli_fetch_array($school);
                         <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Academic Achievements</a>
                             <a class="dropdown-item" href="#">Sports Achievements</a>
-                            <a class="dropdown-item" href="#">Awards</a>
+                            <a class="dropdown-item" href="awards.php">Awards</a>
                         </div>
                     </li>
                     <!--========-->

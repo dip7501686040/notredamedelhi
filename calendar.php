@@ -1,5 +1,8 @@
 <?php
-require_once('header.php');
+require('header.php');
+if(isset($_SESSION['name']))
+{	
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -111,6 +114,7 @@ require_once('header.php');
   </div>
 
 <br><br>
+
   <!-- Footer -->
 <footer style="background-color: #13355e;">
      <div class="container py-5">
@@ -148,3 +152,12 @@ require_once('header.php');
 <!-- Footer -->
 </body>
 </html>
+
+
+<?php
+
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
+?>

@@ -8,6 +8,8 @@ require_once('header.php');
 
 </head>
 <body>
+	<br><br>
+	<center><h3 style="color: #072b52;" >AIMS AND OBJECTIVES</h3></center>
 	<div class="container">
 <div class="row">
 	<?php 

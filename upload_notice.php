@@ -1,6 +1,8 @@
-
 <?php
 require('header.php');
+if(isset($_SESSION['name']))
+{	
+
 ?>
 <link rel="stylesheet" type="text/css" href="css/form.css">
 <div class="card admin_dashboard">
@@ -95,5 +97,8 @@ require('header.php');
 
 <?php
 require('footer.php');
-
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
 ?>

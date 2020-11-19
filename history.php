@@ -10,7 +10,7 @@ require_once('header.php');
 
 <body>
 	<br><br>
-	<center><h3>HISTORY</h3></center>
+	<center><h3 style="color: #072b52;" >HISTORY</h3></center>
 	<div class="container">
 		<div class="row">
 			<div class="card">

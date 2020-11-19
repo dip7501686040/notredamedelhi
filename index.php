@@ -52,7 +52,7 @@ $row = mysqli_fetch_array($result);
 <div class="event_message_notice">
     <div class="event  ">
         <div class="card border-success " style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
-            <div class="card-header border-success" style="background-color: green;color:white;">
+            <div class="card-header border-success" style="background-color: green;color:white;border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(0rem - 0px) calc(0rem - 0px);" >
                 <center>
                     <h3>Diary Dates</h3>
                 </center>
@@ -113,9 +113,9 @@ $row = mysqli_fetch_array($result);
             </div>
         </div>
     </div>
-    <div class="notice">
+    <div class="notice" style="padding: 0rem;">
         <div class="card border-danger" style="border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px) calc(2.25rem - 10px);">
-            <div class="card-header border-danger" style="background-color: #dc3545;color:white;">
+            <div class="card-header border-danger" style="background-color: #dc3545;color:white;border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) calc(0rem - 0px) calc(0rem - 0px);">
                 <div class="row">
                     <div class="col">
                         <center>

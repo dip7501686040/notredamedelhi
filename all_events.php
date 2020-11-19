@@ -5,7 +5,11 @@ $result = mysqli_query($conn, "SELECT * FROM eventsindex where id!=(SELECT max(i
 
 <br>
 <div class="container">
-
+<br><br>
+	<center>
+		<h3 style="color: #072b52;">EVENTS</h3>
+    </center>
+    <br>
     <div class="row">
         <?php while ($row1 = mysqli_fetch_array($result1)) { ?>
             <div class="col-sm-8">

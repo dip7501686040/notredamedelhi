@@ -7,7 +7,11 @@ require_once('header.php');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
+
 <body>
+<br><br>
+	<center><h3 style="color: #072b52;" >RULES AND REGULATIONS</h3></center>
 	<div class="container">
 <div class="row">
 	<?php 

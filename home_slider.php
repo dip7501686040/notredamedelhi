@@ -1,5 +1,9 @@
-<?php  require_once('header.php'); ?>
+<?php
+require('header.php');
+if(isset($_SESSION['name']))
+{	
 
+?>
     <div class="container">
     	<?php
 
@@ -73,4 +77,11 @@
     </tbody>
   </table>
 </div>
-<?php require_once('footer.php');  ?>
+
+<?php
+require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
+?>

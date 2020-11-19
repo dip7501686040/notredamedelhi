@@ -1,5 +1,8 @@
 <?php
 require('header.php');
+if(isset($_SESSION['name']))
+{	
+
 ?>
 <div class="container">
     <?php
@@ -136,7 +139,10 @@ require('header.php');
     </tbody>
   </table>
 </div>
-
 <?php
 require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
 ?>

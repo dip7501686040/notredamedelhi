@@ -1,9 +1,14 @@
 <?php
 require('header.php');
+if(isset($_SESSION['name']))
+{	
+
 ?>
 <div class="card admin_dashboard">
     <div class="card-header">
         Admin Dashboard
+        <?php echo "<a href='admin_logout.php'><button class='btn btn-secondary' style='float:right'margin-left:150px;;>LOGOUT </button></a>";
+        ?>
     </div>
     <div class="card-body">
         <div class="row">
@@ -25,13 +30,6 @@ require('header.php');
                 <a href="upload_notice.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>Notice</h2>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="videos.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
-                    <div class="card-body text-center">
-                        <h4>Youtube Video</h4>
                     </div>
                 </a>
             </div>
@@ -146,4 +144,8 @@ require('header.php');
 </div>
 <?php
 require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
 ?>

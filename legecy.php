@@ -140,7 +140,9 @@
 </head>
 
 <body>
-	<h2 align="center">OUR LEGACY</h2>
+<br><br>
+	<center><h3 style="color: #072b52;" >AIMS AND OBJECTIVES</h3></center>
+	<div class="container">
 	<div class="main">
 		<div class="one">
 			<b>Notre Dame School</b> strives to keep alive the legacy of <b>St. Julie Billiart</b>, her Spiritual Mother,who
@@ -174,6 +176,7 @@
 			The Sisters committed themselves to sharing their faith in God and working for the education of children who were
 			economically poor, believing that education was the best way to better their lives.
 		</div>
+	</div>
 	</div>
 <?php  require_once('footer.php'); ?>	
 </body>

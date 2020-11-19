@@ -1,5 +1,9 @@
-<?php require_once('header.php');
-     
+<?php
+require('header.php');
+if(isset($_SESSION['name']))
+{	
+
+?>
       $result = mysqli_query($conn,"SELECT * FROM Academic_link where id=1" );
 $Academic = mysqli_fetch_array($result);
   ?>
@@ -68,4 +72,10 @@ $Academic = mysqli_fetch_array($result);
 </div>
 
 
-<?php require_once('footer.php');  ?>
+<?php
+require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
+?>

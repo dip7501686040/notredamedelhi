@@ -1,5 +1,8 @@
 <?php
 require_once('header.php');
+if(isset($_SESSION['name']))
+{	
+
 $result = mysqli_query($conn, "SELECT * FROM admission_doc where id=1");
 $Admission = mysqli_fetch_array($result);
 ?>
@@ -542,7 +545,10 @@ $Admission = mysqli_fetch_array($result);
 
 
 <!--------------footer--------------->
-
 <?php
-require_once('footer.php');
+require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
 ?>

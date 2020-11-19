@@ -11,6 +11,9 @@ $data=$_GET['data'];
 		}
 	}
 </style>
+<br><br>
+<center><h3>Salary Details</h3></center>
+<br>
 <center><embed src="school_information/<?php echo $data; ?>" width="100%" height="800px;" /></center>
 
 

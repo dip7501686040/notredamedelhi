@@ -8,7 +8,10 @@
 	}
 </style>
 <div class="container">
-	<h3 align="center">EXAMINATION AND PROMOTIONS</h3>
+<br><br>
+	<center>
+		<h3 style="color: #072b52;">EXAMINATION AND PROMOTION</h3>
+	</center>
 	<ol>
 		<?php 
       $result= getexam_prom($conn);

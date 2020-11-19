@@ -1,4 +1,7 @@
 <?php require_once('header.php');
+if(isset($_SESSION['name']))
+{	
+
 $result = getallphoto($conn);
 $vresult=getallvideo($conn);
 
@@ -150,4 +153,11 @@ $vresult=getallvideo($conn);
     $( ".video" ).css('display', 'none');
   });
 </script>
-<?php require_once('footer.php'); ?>
+
+<?php
+require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
+?>

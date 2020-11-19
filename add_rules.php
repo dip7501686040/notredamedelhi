@@ -1,7 +1,9 @@
-<?php require_once('header.php'); 
+<?php
+require('header.php');
+if(isset($_SESSION['name']))
+{	
 
- ?>
-
+?>
 <link rel="stylesheet" type="text/css" href="css/form.css">
 <div class="container" class="con">
 	<?php
@@ -102,4 +104,11 @@
   </table>
 </div>
 
-<?php  require_once('footer.php'); ?>
+
+<?php
+require('footer.php');
+}
+else{
+    echo "<script>window.location.href='admin_login.php'</script>";
+}
+?>
