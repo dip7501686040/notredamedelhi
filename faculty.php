@@ -28,6 +28,35 @@ if($_POST['tsubmit']){
                 $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
             } 
 }
+if($_POST['csubmit']){
+    $subject=$_POST['subject'];
+$con=$_POST['con'];
+$insert = mysqli_query($conn,"INSERT into sub_co (subject,co_ordinator) VALUES ('$subject','$con')");
+echo"shubham";
+if($insert){
+    $msg="done";
+    
+    
+}
+else{
+    $msg="error";
+}
+}
+if($_POST['ctsubmit']){
+    $data=$_POST['data'];
+    $col=$_POST['col'];
+    $id=$_POST['id'];
+    $msg="error";
+    $insert = mysqli_query($conn,"UPDATE sub_co set `$col`='$data' where id=".$id);
+    if($insert){
+                $msg="done";
+                $text="Updated";
+                $statusMsg = "The faculty updated  successfully.";
+            }else{
+
+                $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
+            } 
+}
 header("location:add_faculty.php?msg=".$msg."&name=".$name);
 
 ?>

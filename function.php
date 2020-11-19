@@ -181,6 +181,15 @@ function school_info($conn)
 	}
 }
 
+function getinfo($conn)
+{
+	$result = mysqli_query($conn, "SELECT * FROM school_info2");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
 
 function getobjectives($conn)
 {
@@ -301,5 +310,14 @@ function images($conn,$type,$title){
 	}
 }
 
+function getcoordinator($conn)
+{
+	$result = mysqli_query($conn, "SELECT * FROM sub_co");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
 
 ?>

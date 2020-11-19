@@ -9,7 +9,7 @@ $eve = event_date($conn);
 
 <link rel="stylesheet" href="css/calendar.css">
 <!--........slider........-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide imge" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -18,11 +18,11 @@ $eve = event_date($conn);
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/slider_photo5.jpg" class="d-block w-100" alt="..." style="height: 30rem;">
+            <img src="images/slider_photo5.jpg" class="d-block w-100 imge" alt="...">
         </div>
         <?php while ($irow = mysqli_fetch_array($img)) {  ?>
             <div class="carousel-item">
-                <img src="uploads/<?php echo $irow['img']  ?>" class="d-block w-100" alt="..." style="height: 30rem;">
+                <img src="uploads/<?php echo $irow['img']  ?>" class="d-block w-100 imge" alt="..">
             </div>
         <?php
         }

@@ -7,7 +7,7 @@ if (isset($_POST['notice_upload'])) {
         $tmpname = $_FILES['notice_file']['tmp_name'];
         $msg='error';
         $path = "notice_uploads/" . $filename;
-        $query = "insert into notices (id, notice, date, file,new) values (NULL, '" . trim($_POST['notice_purpose']) . "', CURDATE(), '" . $filename . "','".$_POST['new']."')";
+        $query = "insert into notices ( notice, date, file,new) values ('" . trim($_POST['notice_purpose']) . "', CURDATE(), '" . $filename . "','".$_POST['new']."')";
         $result = mysqli_query($conn,$query);
 
         if ($result) {

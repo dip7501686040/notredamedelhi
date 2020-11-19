@@ -88,6 +88,9 @@
   height: 15rem;
   overflow-y: scroll;
 }
+.imge{
+  height: 30rem;
+}
 @media only screen and (max-width: 768px) {
   .event_message_notice {
     flex-direction: column;
@@ -98,7 +101,9 @@
   .slide1{
     height: 30rem;
   }
-  
+  .imge{
+    height: 15rem;
+  }
 }
 .card-header:first-child {
   border-radius: calc(2.25rem - 10px) calc(2.25rem - 10px) 0 0;

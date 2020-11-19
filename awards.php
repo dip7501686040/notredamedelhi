@@ -1,5 +1,9 @@
 <?php
 require_once('header.php');
+$result = mysqli_query($conn, "SELECT * FROM winners where id=1");
+$winner1 = mysqli_fetch_array($result);
+$result2 = mysqli_query($conn, "SELECT * FROM winners where id=2");
+$winner2 = mysqli_fetch_array($result2);
 ?>
 <br>
 <br><br>
@@ -18,9 +22,9 @@ require_once('header.php');
         <br>
 
     
-        <center><b>AGNA ANTO </b> of <b>IX A</b> received the award for the academic year <b> 2018-’19.</b></center>
+        <center><b><?php echo $winner1['name']; ?></b> of <b><?php echo $winner1['class']  ?></b> received the award for the academic year <b> <?php echo $winner1['date'] ?>.</b></center>
         <br><br>
-        <center><img src="images/imgno.jpg"  class=" img-responsive img-thumbnail" alt="" style="height: 14em;"> </center>
+        <center><img src="documents/<?php echo $winner1['img'];  ?>"  class=" img-responsive img-thumbnail" alt="" style="height: 14em;"> </center>
     </div>
 </div>
 <br><br>
@@ -34,9 +38,9 @@ require_once('header.php');
             respectful, loving, and caring towards one and all.</p>
         <br>
         <br>
-        <center><b>AMAN KUMAR YADAV</b> of <b>VIII A</b> received the award for the academic year <b> 2018-’19.</b></center>
+        <center><b><?php echo $winner2['name'];  ?></b> of <b><?php echo $winner2['class'] ?></b> received the award for the academic year <b> <?php echo $winner2['date'] ?>.</b></center>
         <br><br>
-        <center><img src="images/imgno.jpg"  class=" img-responsive img-thumbnail" alt="" style="height: 14em;"> </center>
+        <center><img src="documents/<?php echo $winner2['img']  ?>"  class=" img-responsive img-thumbnail" alt="" style="height: 14em;"> </center>
     </div>
 </div>
 

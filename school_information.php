@@ -13,34 +13,16 @@ require_once('header.php');
             </tr>
         </thead>
         <tbody>
+            <?php 
+      $result= getinfo($conn);
+      while($row = mysqli_fetch_array($result)){  ?>
             <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td><b><?php echo $row['heading']; ?></b></td>
+                <td><?php  echo $row['info'] ?></td>
             </tr>
-            <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
+
+        <?php  } ?>
+           
         </tbody>
     </table>
     <br><br>

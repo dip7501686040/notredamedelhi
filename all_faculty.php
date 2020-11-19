@@ -39,23 +39,25 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">S.no</th>
+        <th scope="col">Subject</th>
+        <th scope="col">Co -Ordinator</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
+      <?php
+      $result = getcoordinator($conn);
+      $count = 1;
+      while ($row = mysqli_fetch_array($result)) {  ?>
+        <tr>
+          <td><?php echo $count; ?></td>
+          <td><?php echo $row['subject']; ?></td>
+          <td><?php echo $row['co_ordinator']; ?></td>
+        </tr>
+      <?php
+        $count = $count + 1;
+      }
+      ?>
     </tbody>
   </table>
 </div>
