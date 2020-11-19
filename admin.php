@@ -112,6 +112,14 @@ require('header.php');
             </div>
 
             <div class="col-sm-3">
+                <a href="update_school-info.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Achievements</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
                 <a href="add_objectives.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>Add Objectives</h2>
