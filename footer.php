@@ -11,17 +11,15 @@
   
   </div>
     <div class="col-md-2">
-     <a href="" style="color:white;">About us </a> <br>
-<a href="" style="color:white;"> Academics </a> <br>
-<a href="" style="color:white;">Events </a>  <br>
-<a href="" style="color:white;"> Achievements </a> <br>
-<a href="" style="color:white;">Admission </a> <br>
-<a href="" style="color:white;">Gallery </a> <br>
+     <a href="index.php" style="color:white;">Home </a> <br>
+<a href="all_events.php" style="color:white;">Events </a>  <br>
+<a href="contact.php" style="color:white;">Contact us</a><br>
+<a href="https://nds.genericsoftware.in/Parent/login.aspx" style="color:white;">Parent Login</a><br>
+<a href="<?php echo $Academic['alumni']  ?>" target="_new" style="color:white;">Alumni</a><br>
+
 <br></div>
     <div class="col-md-4">
-      <img src="images/icon1.png" alt="" style="float: right;">
-      <img src="images/icon2.png" alt="" style="float: right;">
-      <a href="https://www.facebook.com/notredamedelhi" target="_new"><img src="images/icon3.png" alt="" style="float: right;"></a>
+      <a href="https://www.facebook.com/notredamedelhi" target="_new"><img src="images/icon1.png" alt="" style="float: right;"></a>
       
     </div>
   </div>
