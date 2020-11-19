@@ -1,9 +1,6 @@
 <?php require_once('header.php');
-if(isset($_SESSION['name']))
-{	
-
-$result = getallphoto($conn);
-$vresult=getallvideo($conn);
+$result = all_sport_achiev($conn);
+$vresult=all_academic_achive($conn);
 
  ?>
 <link rel="stylesheet" href="css/gallery_new.css">
@@ -16,49 +13,61 @@ $vresult=getallvideo($conn);
 
 <link rel="stylesheet" type="text/css" href="css/form.css">
 <div class="container">
-  <form action="upload.php" method="post" enctype="multipart/form-data">
+  <br>
+  <br>
+
+     <center>
+  <h2>Add Your Achievement</h2>
+       
+     </center>
+     <br>
+  <form action="achiev.php" method="post" enctype="multipart/form-data">
     <div class="row">
       <div class="col-25">
         <label for="fname">File </label>
       </div>
       <div class="col-75">
-        <input type="file" id="file" name="file" multiple="multiple">
+        <input type="file" id="file" name="file">
       </div>
     </div>
+   
     <div class="row">
       <div class="col-25">
-        <label for="fname">Title </label>
+        <label for="Category">Type Of Achievement</label>
       </div>
       <div class="col-75">
-        <input type="text" id="file" name="title" multiple="multiple">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="Category">Category</label>
-      </div>
-      <div class="col-75">
-        <select id="Cateegory" name="category">
-          <option value="defult">Choose category</option>
-          <option value="Senior">Senior</option>
-          <option value="Junior">Junior</option>
+        <select id="Cateegory" name="type">
+          <option value="defult">Choose Type</option>
+          <option value="Academic">Academic</option>
+          <option value="Sports">Sports</option>
         </select>
       </div>
     </div>
     
      <div class="row">
       <div class="col-25">
-        <label for="country">Type</label>
+        <label for="Category">Title</label>
       </div>
       <div class="col-75">
-        <select id="type" name="type">
-          <option value="Defult">Choose Type</option>
-          <option value="Photo">Photo</option>
-          <option value="Video">Video</option>
-        </select>
+        <input type="text" name="title">
       </div>
     </div>
-    
+    <div class="row">
+      <div class="col-25">
+        <label for="Category">Discription</label>
+      </div>
+      <div class="col-75">
+        <textarea name="dis" rows="4"></textarea>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="Category">Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date" name="date">
+      </div>
+    </div>
     <div class="row" style="padding-left: 50%;">
       <input type="submit" value="Upload" name="submit">
     </div>
@@ -68,9 +77,9 @@ $vresult=getallvideo($conn);
 <div class="container border  border-dark" style="margin-top: 10px;margin-bottom: 20px; padding-top: 10px;" >
 
   <div  style="margin-left: 45%;" >
-<button class="pbutton btn btn-primary ">Photos</button> <button style="margin-left: 10px" class="vbutton btn btn-success">Videos</button>
+<button class="abutton btn btn-primary ">Academic</button> <button style="margin-left: 10px" class="sbutton btn btn-success">Sports</button>
 </div>
-  <div class="photo">
+  <div class="Academic">
      <div class="container page-top">
 
 
@@ -79,16 +88,16 @@ $vresult=getallvideo($conn);
 
 <?php
         
-   while($row = mysqli_fetch_array($result)) {
-    $imageURL = 'uploads/'.$row["file_name"];
+   while($row = mysqli_fetch_array($vresult)) {
+    $imageURL = 'achiev/'.$row["img"];
 ?>
     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
         <a href="<?php echo $imageURL  ?>" class="fancybox" rel="ligthbox" style="height:650px ;width:940px;">
              <img  src="<?php echo $imageURL; ?>" class="zoom img-fluid "  alt="<?php echo $row['title'] ?>">
             <center><h4><?php echo $row['title']  ?> </h4></center>
            <form action="delete_post.php" method="GET" enctype="multipart/form-data" >
-      <input type="hidden" name="table" value="files">
-      <input type="hidden" name="loc" value="create_gallery.php">
+      <input type="hidden" name="table" value="achievement">
+      <input type="hidden" name="loc" value="add_achievement.php">
     <input type="hidden" name="delete" value="<?php echo $row['id'] ?>">
     <input type="submit" name="submit" value="Remove" style="align-self: center;">
   </form>
@@ -108,33 +117,31 @@ $vresult=getallvideo($conn);
 </div>
   </div>
 
-  <div class="video" style="display: none;">
+  <div class="Sports" style="display: none;">
+    <center><h2 > Sports</h2></center>
      <div class="container page-top">
 
+      
 
 
 <div class="row">
-
 <?php
         
-   while($vrow = mysqli_fetch_array($vresult)) {
-    $imageURL = 'uploads/'.$vrow["file_name"];
+   while($vrow = mysqli_fetch_array($result)) {
+    $imageURL = 'achiev/'.$vrow["img"];
 ?>
     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
         <a href="<?php echo $imageURL  ?>" class="fancybox" rel="ligthbox" style="height:650px ;width:940px;">
-             <video width="320" height="240" controls class="zoom img-fluid "  alt="<?php echo $row['title'] ?>">
-                            <source src="<?php echo 'uploads/' . $vrow['file_name'] ?>" type="video/mp4">
-
-
-                        </video>
+              <img  src="<?php echo $imageURL; ?>" class="zoom img-fluid "  alt="<?php echo $vrow['title'] ?>">
             <center><h4><?php echo $vrow['title']  ?> </h4></center>
+</a>
            <form action="delete_post.php" method="GET" enctype="multipart/form-data" >
-      <input type="hidden" name="table" value="files">
-      <input type="hidden" name="loc" value="create_gallery.php">
+      <input type="hidden" name="table" value="achievement">
+      <input type="hidden" name="loc" value="add_achievement.php">
     <input type="hidden" name="delete" value="<?php echo $vrow['id'] ?>">
     <input type="submit" name="submit" value="Remove" style="align-self: center;">
   </form>
-        </a>
+        
     </div>
 <?php  } ?>
     
@@ -151,20 +158,13 @@ $vresult=getallvideo($conn);
   </div>
 </div>
 <script type="text/javascript">
-   $( ".vbutton" ).click(function() {
-    $( ".photo" ).css('display', 'none');
-    $( ".video" ).css('display', 'block');
+   $( ".sbutton" ).click(function() {
+    $( ".Academic" ).css('display', 'none');
+    $( ".Sports" ).css('display', 'block');
   });
-    $( ".pbutton" ).click(function() {
-    $( ".photo" ).css('display', 'block');
-    $( ".video" ).css('display', 'none');
+    $( ".abutton" ).click(function() {
+    $( ".Academic" ).css('display', 'block');
+    $( ".Sports" ).css('display', 'none');
   });
 </script>
-
-<?php
-require('footer.php');
-}
-else{
-    echo "<script>window.location.href='admin_login.php'</script>";
-}
-?>
+<?php require_once('footer.php'); ?>

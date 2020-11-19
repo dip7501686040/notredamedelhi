@@ -255,5 +255,51 @@ function status($conn,$id){
 		return "no Data";
 	}
 }
+function all_sport_achiev($conn){
+	$result = mysqli_query($conn, "SELECT * FROM achievement where type='Sport' or type='sport' order by id desc");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
+function all_academic_achive($conn){
+	$result = mysqli_query($conn, "SELECT * FROM achievement where type='Academic' or type='academic' order by id desc");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
+
+function folders($conn,$type){
+	$result = mysqli_query($conn, "SELECT title FROM files where category='$type' and type='Photo' group by title having count(title)>0 ");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
+function top_img($conn,$title,$type){
+	$result = mysqli_query($conn, "SELECT file_name FROM files where title='$title' And category='$type' And type='Photo'  LIMIT 1");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
+function images($conn,$type,$title){
+	$result = mysqli_query($conn, "SELECT * FROM files where title='$title' And category='$type' And type='Photo'");
+	if (mysqli_num_rows($result) > 0) {
+		return $result;
+	} else {
+		return "no Data";
+	}
+}
+
 
 ?>

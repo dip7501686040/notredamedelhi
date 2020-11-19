@@ -4,13 +4,14 @@ include 'connect.php';
 $statusMsg = '';
 
 // File upload path
-$targetDir = "uploads/";
+$targetDir = "achiev/";
 $fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-$category=$_POST['category'];
+$title=$_POST['title'];
 $type=$_POST['type'];
-$title=$$_POST['title'];
+$con=$_POST['dis'];
+$date=$_POST['date'];
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf','mp4','MPG','mkv');
@@ -18,7 +19,7 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $insert = mysqli_query($conn,"INSERT into files (file_name,category,title,type, uploaded_on) VALUES ('".$fileName."','".$category."','".$title."','".$type."', NOW())");
+            $insert = mysqli_query($conn,"INSERT into achievement (img,title,type,content,date) VALUES ('".$fileName."','".$title."','".$type."','".$con."', '".$date."')");
             if($insert){
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
             }else{
@@ -36,5 +37,5 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
 
 // Display status message
 echo $statusMsg;
-header("location:create_gallery.php")
+header("location:add_achievement.php")
 ?>

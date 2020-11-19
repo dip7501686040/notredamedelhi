@@ -259,8 +259,8 @@ if(isset($_SESSION['name']))
                             Achievements
                         </a>
                         <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Academic Achievements</a>
-                            <a class="dropdown-item" href="#">Sports Achievements</a>
+                            <a class="dropdown-item" href="academic_achievement.php">Academic Achievements</a>
+                            <a class="dropdown-item" href="sports_achievement.php">Sports Achievements</a>
                             <a class="dropdown-item" href="awards.php">Awards</a>
                         </div>
                     </li>
@@ -291,10 +291,10 @@ if(isset($_SESSION['name']))
                         <div class="dropdown-menu megamenu sm-menu mx-auto border-top" aria-labelledby="dropdown01" style="width: 70%;">
                             <div class="row">
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
-                                    <a class="dropdown-item" href="gallery_new.php?page=sp"><i class="fab fa-magento"></i>Senior (Photo)</a>
+                                    <a class="dropdown-item" href="all_gallery.php?type=Senior"><i class="fab fa-magento"></i>Senior (Photo)</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
-                                    <a class="dropdown-item" href="gallery_new.php?page=jp"><i class="fab fa-php"></i>Junior (Photo)</a>
+                                    <a class="dropdown-item" href="all_gallery.php?type=Junior"><i class="fab fa-php"></i>Junior (Photo)</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
                                     <a class="dropdown-item" href="new_video.php?page=sv"><i class="fab fa-apple"></i> Senior (video)</a>
