@@ -200,7 +200,7 @@ $schoolinfo = mysqli_fetch_array($school);
 
                 <ul class="navbar-nav navbar-light mx-auto">
                     `<li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>`
                     <li class="nav-item dropdown megamenu-li dmenu">
                         <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
