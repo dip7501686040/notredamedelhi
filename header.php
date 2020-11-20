@@ -279,7 +279,7 @@ if(isset($_SESSION['name']))
                                     <a class="dropdown-item" href="admission11.php"><i class="fab fa-apple"></i> Class 11th Admission</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 mb-4">
-                                    <a class="dropdown-item" href="all_fees.php"><i class="fas fa-cubes"></i> Fee Structure</a>
+                                    <a class="dropdown-item" href="fee_structure.php"><i class="fas fa-cubes"></i> Fee Structure</a>
                                 </div>
                             </div>
                         </div>

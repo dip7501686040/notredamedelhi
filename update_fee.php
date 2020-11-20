@@ -8,19 +8,38 @@
     }
 </style>
 <div class="container">
+    <?php
+
+       if(isset($_GET['msg'])){
+        if($_GET['msg']=="done"){
+            $name=$_GET['name'];
+            echo'<div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong>.'.$name.' added successfully as a faculty.
+  </div>';
+        }
+        else{
+            echo'<div class="alert alert-danger alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Danger!</strong> faculty is not added .
+  </div>';
+        }
+       }
+
+    ?>
     <br><br>
     <center>
         <h3 style="color: #072b52;">FEE STRUCTURE</h3>
     </center>
     <br><br>
-    <form>
+    <form action="fee.php" method="post" enctype="multipart/form-data">
     <div class="card">
 
         <div class="card-body">
             <center>
                 <h4 style="font-family: cursive;color:red;"><b>NOTRE DAME SCHOOL </b></h4>
                 <h5>BTPS STAFF COLONY, BADARPUR,DELHI</h5>
-                <h4>FEE STRUCTURE FOR THE ACADEMIC YEAR <b><?php echo $row['session']; ?></b></h4>
+                <h4>FEE STRUCTURE FOR THE ACADEMIC YEAR <b><input type="text" name="session" value="<?php echo $row['session']; ?>"></b></h4>
             </center>
 
         </div>
@@ -38,22 +57,22 @@
             <tr>
                 <td>Pre School &Pre Primary</td>
                 <td>₹
-                     <?php  echo $row['one'] ?></td>
+                     <input type="number" name="one" value="<?php echo $row['one'] ?>"></td>
             </tr>
             <tr>
                 <td>Class I-V</td>
                 <td> ₹
-                    <?php  echo $row['two'] ?></td>
+                    <input type="number" name="two" value="<?php echo $row['two'] ?>"></td>
             </tr>
             <tr>
                 <td>Class VI-X</td>
                 <td>₹
-                    <?php  echo $row['three'] ?></td>
+                    <input type="number" name="three" value="<?php echo $row['three'] ?>"></td>
             </tr>
             <tr>
                 <td>Class XI & XII</td>
                 <td>₹
-                    <?php  echo $row['four'] ?></td>
+                    <input type="number" name="four" value="<?php echo $row['four'] ?>"></td>
             </tr>
         </tbody>
     </table>
@@ -65,7 +84,7 @@
             <h5><b>Annual Fee (Yearly) </b></h5>
             <tr>
                 <th scope="col"> Pre-School to Class XII </th>
-                <th scope="col">₹ <?php  echo $row['five'] ?></th>
+                <th scope="col">₹ <input type="number" name="five" value="<?php echo $row['five'] ?>"></th>
             </tr>
         </thead>
 
@@ -83,27 +102,31 @@
             <tr>
                 <td>Pre School &Pre Primary</td>
                 <td>₹
-                    <?php  echo $row['six'] ?>
+                    <input type="number" name="six" value="<?php echo $row['six'] ?>">
                 </td>
             </tr>
             <tr>
                 <td>Class I-V</td>
                 <td> ₹
-                    <?php  echo $row['seven'] ?></td>
+                    <input type="number" name="seven" value="<?php echo $row['seven'] ?>"></td>
             </tr>
             <tr>
                 <td>Class VI-X</td>
                 <td>₹
-                    <?php  echo $row['eight'] ?></td>
+                    <input type="number" name="eight" value="<?php echo $row['eight'] ?>"></td>
             </tr>
             <tr>
                 <td>Class XI & XII</td>
                 <td>₹
-                    <?php  echo $row['nine'] ?></td>
+                    <input type="number" name="nine" value="<?php echo $row['nine'] ?>"></td>
             </tr>
         </tbody>
     </table>
+    <center><input type="submit" name="submit" value="update" class="btn btn-success" ></center>
 </form>
 </div>
+<br>
+<br>
+<br>
 
 <?php require_once('footer.php'); ?>

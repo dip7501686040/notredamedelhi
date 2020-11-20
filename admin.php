@@ -28,7 +28,7 @@ if(isset($_SESSION['name']))
                 </a>
             </div>
              <div class="col-sm-3">
-                <a href="add_fees.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
+                <a href="update_fee.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>Fee Structure</h2>
                     </div>
