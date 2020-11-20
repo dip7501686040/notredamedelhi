@@ -6,7 +6,12 @@ $prow = mysqli_fetch_array($principal);
 $eve = event_date($conn);
 
 ?>
-
+<style>.navbar {
+    background: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 1px 3px 4px 0 #adadad33;
+}</style>
 <link rel="stylesheet" href="css/calendar.css">
 <!--........slider........-->
 <div id="carouselExampleIndicators" class="carousel slide imge" data-ride="carousel">
