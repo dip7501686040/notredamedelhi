@@ -24,9 +24,9 @@ $winner2 = mysqli_fetch_array($result2);
         <br>
       <form action="change_award.php" method="post" enctype="multipart/form-data">
     
-        <center><b><input type="text" name="name" value="<?php echo  $winner1['name'];  ?>"></b> of <b><input type="text" name="class" value="<?php echo  $winner1['class'];  ?>"></b> received the award for the academic year <b> <input type="text" name="year" value="<?php echo  $winner1['date'];  ?>">.</b></center>
+        <center><b><input type="text" name="name" value="<?php echo  $winner1['name'];  ?>"></b> of <b><input type="text" name="class" value="<?php echo  $winner1['class'];  ?>"></b> received the award for the academic year <b> <input type="text" name="year" value="<?php echo  $winner1['date'];  ?>">.</b><input type="submit" class="btn btn-success" name="tsubmit" value="Change"></center>
         <input type="hidden" name="id" value="1">
-        <input type="submit" name="tsubmit" value="Change" align="center">
+        
     </form>
         <br><br>
         <center><img src="documents/<?php echo $winner1['img']; ?>"  class=" img-responsive img-thumbnail" alt="" style="height: 14em;"> </center>
@@ -52,9 +52,9 @@ $winner2 = mysqli_fetch_array($result2);
         <br>
         <form action="change_award.php" method="post" enctype="multipart/form-data">
     
-        <center><b><input type="text" name="name" value="<?php echo  $winner2['name'];  ?>"></b> of <b><input type="text" name="class" value="<?php echo  $winner2['class'];  ?>"></b> received the award for the academic year <b> <input type="text" name="year" value="<?php echo  $winner2['date'];  ?>">.</b></center>
+        <center><b><input type="text" name="name" value="<?php echo  $winner2['name'];  ?>"></b> of <b><input type="text" name="class" value="<?php echo  $winner2['class'];  ?>"></b> received the award for the academic year <b> <input type="text" name="year" value="<?php echo  $winner2['date'];  ?>">.</b><input type="submit" class="btn btn-success" name="tsubmit" value="Change" align="center"></center>
         <input type="hidden" name="id" value="2">
-        <input type="submit" name="tsubmit" value="Change" align="center">
+        
     </form>
         <br><br>
         <center><img src="documents/<?php echo $winner2['img']; ?>"  class=" img-responsive img-thumbnail" alt="" style="height: 14em;"> </center>

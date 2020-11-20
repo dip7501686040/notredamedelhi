@@ -4,6 +4,14 @@ if(isset($_SESSION['name']))
 {	
 
 ?>
+<style type="text/css">
+    h2{
+        text-transform: capitalize;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
 <div class="card admin_dashboard">
     <div class="card-header">
         Admin Dashboard
@@ -15,14 +23,14 @@ if(isset($_SESSION['name']))
             <div class="col-sm-3">
                 <a href="add_faculty.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
-                        <h2>FACULTY</h2>
+                        <h2>Faculty</h2>
                     </div>
                 </a>
             </div>
              <div class="col-sm-3">
                 <a href="add_fees.php" class="card text-white bg-warning mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
-                        <h2>FEE Structure</h2>
+                        <h2>Fee Structure</h2>
                     </div>
                 </a>
             </div>
@@ -75,7 +83,7 @@ if(isset($_SESSION['name']))
             <div class="col-sm-3">
                 <a href="home_slider.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
-                        <h2>index slider</h2>
+                        <h2>Index slider</h2>
                     </div>
                 </a>
             </div>
@@ -143,6 +151,14 @@ if(isset($_SESSION['name']))
                 <a href="add_history.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
                     <div class="card-body text-center">
                         <h2>History</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-3">
+                <a href="update_awards.php" class="card text-white bg-primary mb-4 admin_dashboard_item">
+                    <div class="card-body text-center">
+                        <h2>Awards</h2>
                     </div>
                 </a>
             </div>
