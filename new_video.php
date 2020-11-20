@@ -19,7 +19,9 @@ if ($page == 'sv') {
     <div class="container page-top">
 
 
-
+    <br>
+    <center><h3 style="color: #072b52;" >VIDEO-GALLERY</h3></center>
+    <BR></BR>
 <div class="row">
 
 <?php
