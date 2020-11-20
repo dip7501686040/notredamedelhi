@@ -3,7 +3,9 @@ require_once('header.php');
 ?>
 
 <link rel="stylesheet" href="css/contact.css">
-
+<br><br>
+    <center><h3 style="color: #072b52;" >CONTACT US</h3></center>
+    <BR></BR>
 
 <!--For all screen-->
 <div class="page">
