@@ -43,9 +43,13 @@ if(isset($_SESSION['name']))
                  <option value="YES">YES</option>
                  </select>
              </div>
+              <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+    <label class="form-check-label" for="exampleCheck1" >Attech file</label>
+  </div>
                 <div class="form-group">
                     <label for="notice_file" class="col-form-label">Notice File</label>
-                    <input type="file" class="form-control" id="notice_file" name="notice_file" >
+                    <input type="file" class="form-control" id="notice_file" name="notice_file">
                 </div>
             </div>
             <div class="modal-footer">

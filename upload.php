@@ -10,7 +10,7 @@ $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 $category=$_POST['category'];
 $type=$_POST['type'];
-$title=$$_POST['title'];
+$title=$_POST['title'];
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf','mp4','MPG','mkv');

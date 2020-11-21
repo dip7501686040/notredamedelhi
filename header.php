@@ -62,7 +62,7 @@ $schoolinfo = mysqli_fetch_array($school);
             padding-top: 22px;
             padding-bottom: 22px;
             transition: 0.3s;
-            padding-left: 24px;
+            padding-left: 12px;
             padding-right: 24px;
             font-size: 18px;
             font-weight: 500;
@@ -70,26 +70,28 @@ $schoolinfo = mysqli_fetch_array($school);
 
         .navbar-light .navbar-nav .nav-link:focus,
         .navbar-light .navbar-nav .nav-link:hover {
-            background: #13355e;
+            color: #00843d;
             transition: 0.3s;
         }
 
         .dropdown-item:focus,
         .dropdown-item:hover {
-            color: #fff;
+            color: #00843d;
             text-decoration: none;
             background-color: #13355e !important;
         }
 
         .sm-menu {
-            border-radius: 0px;
+            border-radius: 5px;
             border: 0px;
             top: 97%;
             box-shadow: rgba(173, 173, 173, 0.2) 1px 3px 4px 0px;
+            background-color: #13355e ;
+            
         }
 
         .dropdown-item {
-            color: #3c3c3c;
+            color: white;
             font-size: 14px;
         }
 
@@ -97,7 +99,6 @@ $schoolinfo = mysqli_fetch_array($school);
         .dropdown-item:active {
             color: #fff;
             text-decoration: none;
-            background-color: #2196F3;
         }
 
         .navbar-toggler {
@@ -238,15 +239,15 @@ if(isset($_SESSION['name']))
                                     <a class="dropdown-item" href="<?php echo $Academic['curriculum']  ?>"><i class="fab fa-magento"></i> Curriculum (9-12)</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
-                                    <a class="dropdown-item" href="<?php echo $Academic['hpe']  ?>"><i class="fab fa-wordpress-simple"></i> H P E </a>
-                                    <a class="dropdown-item" href="<?php echo $Academic['Class_X_Sample_Question_Paper_&_Marking_Scheme_for_Exam']  ?>"><i class="fab fa-php"></i> Sample Question Paper for 10th</a>
+                                    <a class="dropdown-item" href="<?php echo $Academic['hpe']  ?>"><i class="fab fa-wordpress-simple"></i> CBSE Sample paper (12<sup>th</sup>)  </a>
+                                    <a class="dropdown-item" href="<?php echo $Academic['Class_X_Sample_Question_Paper_&_Marking_Scheme_for_Exam']  ?>"><i class="fab fa-php"></i> CBSE Sample paper (10<sup>th</sup>)</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 border-right mb-4">
                                     <a class="dropdown-item" href="<?php echo $Academic['E-Pathshala']  ?>"><i class="fas fa-tablet-alt"></i>Epathshala </a>
                                     <a class="dropdown-item" href="<?php echo $Academic['Diksha']  ?>"><i class="fas fa-mobile-alt"></i> Diksha</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 mb-4">
-                                    <a class="dropdown-item" href="<?php echo $Academic['CBSE_Sample_paper']  ?>"><i class="fas fa-leaf fa-rotate-90"></i> CBSE Sample paper</a>
+                                    <a class="dropdown-item" href="<?php echo $Academic['CBSE_Sample_paper']  ?>"><i class="fas fa-leaf fa-rotate-90"></i>  H P E</a>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +280,7 @@ if(isset($_SESSION['name']))
                                     <a class="dropdown-item" href="admission11.php"><i class="fab fa-apple"></i> Class 11th Admission</a>
                                 </div>
                                 <div class="col-sm-6 col-lg-3 mb-4">
-                                    <a class="dropdown-item" href="all_fees.php"><i class="fas fa-cubes"></i> Fee Structure</a>
+                                    <a class="dropdown-item" href="fee_structure.php"><i class="fas fa-cubes"></i> Fee Structure</a>
                                 </div>
                             </div>
                         </div>

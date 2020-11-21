@@ -16,7 +16,7 @@ require_once('header.php');
       $result= getobjectives($conn);
       
       while($row = mysqli_fetch_array($result)){  ?>
-<div class="col-md-6">
+<div class="col-md-12">
 	<br>
 <h3><?php echo $row['heading']; ?></h3>
 

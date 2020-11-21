@@ -141,7 +141,7 @@
 
 <body>
 <br><br>
-	<center><h3 style="color: #072b52;" >LEGECY</h3></center>
+	<center><h3 style="color: #072b52;" >LEGACY</h3></center>
 	<div class="container">
 	<div class="main">
 		<div class="one">
