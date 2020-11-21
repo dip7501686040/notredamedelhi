@@ -1,8 +1,10 @@
 <?php
 // Include the database configuration file
 include 'connect.php';
-$statusMsg = '';
-if($_POST['submit']){
+$msg="nodata";
+$statusMsg="nodata";
+if(isset($_POST['submit'])){
+    $statusMsg = '';
 // File upload path
 $targetDir = "TCs/";
 $fileName = basename($_FILES["file"]["name"]);
@@ -12,13 +14,14 @@ $r_num=$_POST['r_number'];
 $a_num=$_POST['a_number'];
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
-    $allowTypes = array('jpg','png','jpeg','pdf');
+    $allowTypes = array('jpg','JPG','png','jpeg','pdf','JPEG','PDF');
     if(in_array($fileType, $allowTypes)){
         // Upload file to server
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
             $insert = mysqli_query($conn,"INSERT into tc_issued(file,r_number,a_number) VALUES ('".$fileName."','".$r_num."','".$a_num."')");
             if($insert){
+                $msg="done";
                 $statusMsg = "The Registration no ".$r_num. " has been uploaded successfully.";
             }else{
                 $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
@@ -33,9 +36,10 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     $statusMsg = 'Please select a file to upload.';
 }
 }
-if($_POST['tsubmit']){
+
 // Display status message
 if($_POST['tsubmit']){
+    $statusMsg = '';
     $data=$_POST['data'];
     $col=$_POST['col'];
     $id=$_POST['id'];
@@ -43,13 +47,13 @@ if($_POST['tsubmit']){
     $insert = mysqli_query($conn,"UPDATE tc_issued set `$col`='$data' where id=".$id);
     if($insert){
                 $msg="done";
-                $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+                $statusMsg = "The number ".$data." has been updated successfully.";
             }else{
                 $statusMsg = "Error: " . $insert . "<br>" . mysqli_error($conn);;
             } 
 }
-}
-                header("location:tc_issued.php?msg=done&name=".$statusMsg);
+
+                header("location:tc_issued.php?msg=".$msg."&name=".$statusMsg);
 
 echo $statusMsg;
 ?>

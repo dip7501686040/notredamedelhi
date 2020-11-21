@@ -13,7 +13,7 @@ if(isset($_SESSION['name']))
        		$name=$_GET['title'];
        		echo'<div class="alert alert-success alert-dismissible">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Success!</strong>.'.$name.' added successfully as a faculty.
+    <strong>Success!</strong>.'.$name.' added successfully as a home screen link.
   </div>';
        	}
        	else{
@@ -34,13 +34,16 @@ if(isset($_SESSION['name']))
         <input type="text" id="name" name="title" placeholder="Enter Title to Display" required="Enter title">
       </div>
     </div>
-   
+   <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check">
+    <label class="form-check-label" for="exampleCheck1" >Attech Link</label>
+  </div>
     <div class="row">
       <div class="col-25">
         <label for="fname">Link </label>
       </div>
       <div class="col-75">
-        <input type="text" id="des" name="link" placeholder="Enter link" required="Enter Link">
+        <input type="text" id="des" name="link" placeholder="Enter link" >
       </div>
     </div>
     

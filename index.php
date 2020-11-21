@@ -6,7 +6,26 @@ $prow = mysqli_fetch_array($principal);
 $eve = event_date($conn);
 
 ?>
+<style type="text/css">
+    #more {display: none;}
+</style>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn1");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 <link rel="stylesheet" href="css/calendar.css">
 <!--........slider........-->
 <div id="carouselExampleIndicators" class="carousel slide imge" data-ride="carousel">
@@ -46,7 +65,13 @@ $eve = event_date($conn);
 $result = homelink($conn);
 $row = mysqli_fetch_array($result);
 ?>
-<marquee onMouseOver="this.stop()" onMouseOut="this.start()"><a href="<?php echo $row['link']  ?>" target="_new" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b> <?php echo $row['title']  ?> </b></a></marquee>
+<marquee onMouseOver="this.stop()" onMouseOut="this.start()">
+     <?php if(!isset($row['link'])){
+        echo "<p  style='color: red;font-size: 25px;font-style: bold;text-decoration: none;'><b>". $row['title']." </b></p>";
+     }  else{?>
+    <a href="<?php echo $row['link']  ?>" target="_new" style="color: red;font-size: 25px;font-style: bold;cursor: pointer;text-decoration: none;"><b> <?php echo $row['title']  ?> </b></a>
+    <?php  }?>
+</marquee>
 <!--........//slider........-->
 <!--........index content........-->
 <div class="event_message_notice">
@@ -100,14 +125,13 @@ $row = mysqli_fetch_array($result);
                 <br>
                 <p class="card-text" style="font-size: 18px;"><?php echo nl2br($prow['message']) . "<br>" . nl2br($prow['message2']);  ?>
 
-                    <br>
-                    <br> <b style="font-family: 'Satisfy', cursive;"> “The highest education is that which does not merely give us information but makes our
+                   <span id="dots">...</span><span id="more"><br><br> <b style="font-family: 'Satisfy', cursive;"> “The highest education is that which does not merely give us information but makes our
                         life in harmony with all existence”</b><br><b style="float: right;">-(Rabindranath Tagore)</b><br>
                     <br> <b style="font-family: 'Satisfy', cursive;">“Creativity leads to thinking, thinking leads to Knowledge, Knowledge make you great” </b><br>
                     <b style="float: right;">-(Dr. APJ Abdul Kalam)</b><br>
                     <br> Let this year, be an year of many blessings to all of us in the Notre Dame Family and to all who are associated with us.
-                    <br><br>
-                    <b style="font-family: 'Satisfy', cursive;"><?php echo $prow['name'];  ?>, SND</b>
+                    <br><br></span><button onclick="myFunction()" id="myBtn1" style="float: right;border: none">Read more</button><br>
+                    <b style="font-family: 'Satisfy', cursive;"><?php echo $prow['name'];  ?>, SND</b>  
                 </p>
 
             </div>
@@ -138,13 +162,24 @@ $row = mysqli_fetch_array($result);
                     ?>
 
                         <h6><?php  echo date('d M Y', strtotime($notice['date']));  ?></h6>
+
+                        <?php if(!empty($notice['file'])){ ?>
+
                         <a href="notice_uploads/<?php echo $notice['file']; ?>" target="_new">
-                            <p class="notice_body_text" style="color:#dc3545;">
+                            <p class="notice_body_text" style="color:#dc3545;display: inline-block;">
+                                <?php echo strtoupper($notice['notice']); ?>&nbsp;  <p style="color: blue;display: inline-block;">click</p>   <?php if($notice['new']=='YES'){echo '<img src="images/notice.gif" alt="" style="height: 3em;float:right;">';} ?>
+                                <hr style="border-top: 1px dotted red;">
+                            </p>
+                            
+                        </a>
+                    <?php } 
+                         else{
+                        ?>
+                        <p class="notice_body_text" style="color:#dc3545;">
                                 <?php echo strtoupper($notice['notice']); ?><?php if($notice['new']=='YES'){echo '<img src="images/notice.gif" alt="" style="height: 3em;float:right;">';} ?>
                             </p>
-                            <hr style="border-top: 1px dotted red;">
-                        </a>
                     <?php
+                }
                     }
 
                     ?>

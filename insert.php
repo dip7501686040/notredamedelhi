@@ -1,16 +1,12 @@
 <?php
 
 //insert.php
-
+require_once("connect.php");
 $connect = new PDO('mysql:host=localhost;dbname=notredamedelhi', 'root', '');
 
 if(isset($_POST["title"]))
 {
- $query = "
- INSERT INTO events 
- (title, start_event, end_event) 
- VALUES (:title, :start_event, :end_event)
- ";
+ $query = "INSERT INTO events (title, start_event, end_event) VALUES (:title, :start_event,:end_event)";
  $statement = $connect->prepare($query);
  $statement->execute(
   array(

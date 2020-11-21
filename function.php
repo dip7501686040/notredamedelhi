@@ -66,7 +66,7 @@ function getfeestructure($conn)
 
 function gethomelink($conn)
 {
-	$result = mysqli_query($conn, "SELECT * FROM home_links");
+	$result = mysqli_query($conn, "SELECT * FROM home_links order by id desc");
 	if (mysqli_num_rows($result) > 0) {
 		return $result;
 	} else {
