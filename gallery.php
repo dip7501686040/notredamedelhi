@@ -9,8 +9,6 @@ if($page=='sp'){
 else if($page=='jp'){
 	$result=getJuniorPhotos($conn);
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>
