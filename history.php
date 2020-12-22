@@ -10,15 +10,15 @@ require_once('header.php');
 
 <body>
 	<br><br>
-	<center><h3 style="color: #072b52;" >HISTORY</h3></center>
-	<div class="container">
+	<center><h3 style="color: #072b52;" >HIS Story</h3></center>
+	<div class="container" style="border-style: dotted;border-color:#072b52;box-shadow: 0px 0px 2px 10px #13355e;"> 
 		<div class="row">
 			<div class="card">
 				<div class="card-body">
 					<?php
 					$result = gethistory($conn);
-
-					while ($row = mysqli_fetch_array($result)) {  ?>
+  
+					while ($row = mysqli_fetch_array($result)) {  ?>  
 						<div class="col-md-12">
 							<br>
 

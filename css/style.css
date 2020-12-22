@@ -89,7 +89,7 @@
   overflow-y: scroll;
 }
 .imge{
-  height: 30rem;
+  height: 40rem;
 }
 @media only screen and (max-width: 768px) {
   .event_message_notice {

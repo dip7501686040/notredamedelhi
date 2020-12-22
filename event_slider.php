@@ -14,15 +14,10 @@
     }
 
     .card-img-top {
-        width: 90%;
+        width: 100%;
         height: 225px
     }
 
-    .view {
-        background-color: #dfe6e0;
-        padding: 10px;
-        margin: 20px
-    }
 
     .card {
         width: 95%;

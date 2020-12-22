@@ -139,11 +139,29 @@ $schoolinfo = mysqli_fetch_array($school);
         h3 {
             font-family: 'El Messiri', sans-serif;
         }
+        #watermark{
+		position: fixed;
+	    top: 37%;
+		z-index: -1;
+		left: 40%;
+		opacity: 0.4;
+
+	}
+	@media only screen and (max-width: 768px) {
+		#watermark{
+			position: fixed;
+	    top: 37%;
+		z-index: -1;
+		left: 1%;
+		opacity: 0.4;
+		width: 98%;
+		}
+	}
     </style>
 </head>
 
-<body>
-
+<body style="font-weight: 600;">
+<img src="images/wm.jpeg" id="watermark" alt="">
     <!--........top div.......-->
 
     <div class="container-fluid" style="padding-top:0.20em;padding-bottom:0.20em;">
@@ -187,7 +205,7 @@ if(isset($_SESSION['name']))
 '
 
              ; } ?>
-            </div>
+            </div>  
         </div>
     </div>
 

@@ -109,7 +109,7 @@
             <tr>
                 <td>PTA fee(Yearly)</td>
                 <td>₹
-                    <?php  echo $row['ten'] ?>
+                    <?php  echo $row['ten'] ?>   
                 </td>
             </tr>
             <tr>
@@ -124,7 +124,7 @@
             </tr>
            
         </tbody>
-    </table>
+    </table>  
 </form>
 </div>
 
